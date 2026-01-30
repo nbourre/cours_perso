@@ -6,7 +6,11 @@ Explore data analysis, visualization, and machine learning with Python.
 
 Browse all Data Science lessons below. Click on any lesson to begin learning.
 
-> No lessons published yet. Check back soon, or [create the first Data Science lesson](../../guides/workflow-create-lesson.md)!
+### 🔴 Advanced Lessons
+
+1. **[Pandas for Data Analysis](lesson-001-pandas.md)** (2 hours)  
+   Master pandas library for professional data analysis. Learn DataFrames, operations, transformations, and best practices.
+   - Tags: `python`, `pandas`, `data-analysis`, `data-science`, `dataframes`
 
 ---
 
