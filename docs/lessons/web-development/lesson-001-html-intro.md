@@ -16,6 +16,12 @@ status: "published"
 
 # HTML Fundamentals: Building Web Pages
 
+**Difficulty**: 🟢 Beginner | **Duration**: 45 minutes
+
+**Tags**: [`html`](../../guides/tags-reference.md#html) · [`web`](../../guides/tags-reference.md#web) · [`markup`](../../guides/tags-reference.md#markup) · [`semantic-html`](../../guides/tags-reference.md#semantic-html) · [`elements`](../../guides/tags-reference.md#elements)
+
+---
+
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:

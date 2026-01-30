@@ -17,6 +17,12 @@ status: "published"
 
 # Functions: Code Reuse and Organization
 
+**Difficulty**: 🟢 Beginner | **Duration**: 45 minutes
+
+**Tags**: [`python`](../../guides/tags-reference.md#python) · [`functions`](../../guides/tags-reference.md#functions) · [`code-organization`](../../guides/tags-reference.md#code-organization) · [`parameters`](../../guides/tags-reference.md#parameters) · [`return-values`](../../guides/tags-reference.md#return-values)
+
+---
+
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:

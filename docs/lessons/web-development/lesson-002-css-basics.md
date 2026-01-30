@@ -17,6 +17,12 @@ status: "published"
 
 # CSS Essentials: Styling Your Web Pages
 
+**Difficulty**: 🟢 Beginner | **Duration**: 1 hour
+
+**Tags**: [`css`](../../guides/tags-reference.md#css) · [`styling`](../../guides/tags-reference.md#styling) · [`web`](../../guides/tags-reference.md#web) · [`selectors`](../../guides/tags-reference.md#selectors) · [`layout`](../../guides/tags-reference.md#layout) · [`responsive`](../../guides/tags-reference.md#responsive)
+
+---
+
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:

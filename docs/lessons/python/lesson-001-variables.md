@@ -15,6 +15,12 @@ status: "published"
 
 # Introduction to Variables
 
+**Difficulty**: 🟢 Beginner | **Duration**: 30 minutes
+
+**Tags**: [`python`](../../guides/tags-reference.md#python) · [`variables`](../../guides/tags-reference.md#variables) · [`data-types`](../../guides/tags-reference.md#data-types) · [`basics`](../../guides/tags-reference.md#basics)
+
+---
+
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:

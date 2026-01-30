@@ -18,6 +18,12 @@ status: "published"
 
 # Pandas for Data Analysis
 
+**Difficulty**: 🔴 Advanced | **Duration**: 2 hours
+
+**Tags**: [`python`](../../guides/tags-reference.md#python) · [`pandas`](../../guides/tags-reference.md#pandas) · [`data-analysis`](../../guides/tags-reference.md#data-analysis) · [`data-science`](../../guides/tags-reference.md#data-science) · [`dataframes`](../../guides/tags-reference.md#dataframes)
+
+---
+
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:

@@ -74,17 +74,36 @@ Explore data analysis, visualization, and machine learning with Python.
 
 ---
 
+## �️ Explore by Topic
+
+Browse all lessons across subjects using our tag system. Find related content by clicking any tag:
+
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0;">
+<a href="guides/tags-reference.md#python" style="display: inline-block; padding: 6px 12px; background-color: #e3f2fd; border-radius: 20px; text-decoration: none; font-size: 14px; color: #1976d2;">🐍 python (3)</a>
+<a href="guides/tags-reference.md#web" style="display: inline-block; padding: 6px 12px; background-color: #f3e5f5; border-radius: 20px; text-decoration: none; font-size: 14px; color: #7b1fa2;">🌐 web (2)</a>
+<a href="guides/tags-reference.md#functions" style="display: inline-block; padding: 6px 12px; background-color: #e8f5e9; border-radius: 20px; text-decoration: none; font-size: 14px; color: #388e3c;">functions (1)</a>
+<a href="guides/tags-reference.md#variables" style="display: inline-block; padding: 6px 12px; background-color: #fff3e0; border-radius: 20px; text-decoration: none; font-size: 14px; color: #f57c00;">variables (1)</a>
+<a href="guides/tags-reference.md#html" style="display: inline-block; padding: 6px 12px; background-color: #fce4ec; border-radius: 20px; text-decoration: none; font-size: 14px; color: #c2185b;">html (1)</a>
+<a href="guides/tags-reference.md#css" style="display: inline-block; padding: 6px 12px; background-color: #ede7f6; border-radius: 20px; text-decoration: none; font-size: 14px; color: #512da8;">css (1)</a>
+<a href="guides/tags-reference.md#pandas" style="display: inline-block; padding: 6px 12px; background-color: #e0f2f1; border-radius: 20px; text-decoration: none; font-size: 14px; color: #00796b;">pandas (1)</a>
+<a href="guides/tags-reference.md#data-analysis" style="display: inline-block; padding: 6px 12px; background-color: #f1f8e9; border-radius: 20px; text-decoration: none; font-size: 14px; color: #558b2f;">data-analysis (1)</a>
+</div>
+
+**[View all tags →](guides/tags-reference.md)** | Browse our complete tag index to find lessons by technology, concept, or domain.
+
+---
+
 ## 🎯 Quick Navigation
 
 **For Learners:**
 - **Browse by Subject**: Click any subject above to see all lessons in that category
 - **Browse All Lessons**: [View complete lesson index](lessons/)
-- **Search by Tags**: [Use the tag filter](guides/#tags) to find lessons across subjects
+- **Search by Tags**: [Use the tag filter](guides/tags-reference.md) to find lessons across subjects
 - **Quick Start**: New here? [Get started in 10 minutes](guides/quick-start.md)
 
 **For Content Creators:**
 - **Create a Lesson**: Follow our [step-by-step workflow guide](guides/workflow-create-lesson.md)
-- **Use LLM Templates**: Generate lessons efficiently with [AI-powered templates](guides/using-llm-template.md)
+- **Use LLM Templates**: Generate lessons efficiently with [AI-powered templates](guides/lesson-template-instructions.md)
 - **Lesson Template**: Copy and use our [standard lesson template](templates/lesson-template.md)
 - **Contributing Guide**: Read our [CONTRIBUTING.md](../CONTRIBUTING.md) for submission guidelines
 

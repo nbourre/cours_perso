@@ -75,6 +75,7 @@ nav:
     - LLM Template Usage: guides/lesson-template-instructions.md
     - Metadata Reference: guides/metadata-reference.md
     - Tagging Guide: guides/tagging-guide.md
+    - "Tags Reference": guides/tags-reference.md
   - Resources:
     - Lesson Template: templates/lesson-template.md
     - LLM Prompt Template: templates/llm-prompt-template.txt
