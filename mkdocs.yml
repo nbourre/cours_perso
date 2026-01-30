@@ -76,9 +76,11 @@ nav:
     - Metadata Reference: guides/metadata-reference.md
     - Tagging Guide: guides/tagging-guide.md
     - "Tags Reference": guides/tags-reference.md
+    - Troubleshooting: guides/troubleshooting.md
   - Resources:
     - Lesson Template: templates/lesson-template.md
     - LLM Prompt Template: templates/llm-prompt-template.txt
+  - Contributing: ../CONTRIBUTING.md
 
 repo_name: cours_perso
 repo_url: https://github.com/your-username/cours_perso
