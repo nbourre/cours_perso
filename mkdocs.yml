@@ -1,0 +1,85 @@
+site_name: Personalized Courses - Lesson Management System
+site_description: Browse, create, and manage personalized learning lessons organized by subject with LLM template support
+site_author: Course Contributors
+site_url: https://github.com/your-username/cours_perso
+
+theme:
+  name: material
+  language: en
+  logo: https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/docs/assets/images/favicon.png
+  favicon: https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/docs/assets/images/favicon.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: light-blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light-blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+nav:
+  - Home: index.md
+  - Browse Lessons:
+    - All Lessons: lessons/
+    - Python Basics: lessons/python/index.md
+    - Web Development: lessons/web-development/index.md
+    - Data Science: lessons/data-science/index.md
+  - Guides:
+    - Quick Start: guides/quick-start.md
+    - Create a Lesson: guides/workflow-create-lesson.md
+    - LLM Template Usage: guides/using-llm-template.md
+    - Metadata Reference: guides/metadata-reference.md
+    - Tagging Guide: guides/tagging-guide.md
+  - Resources:
+    - Lesson Template: templates/lesson-template.md
+    - LLM Prompt Template: templates/llm-prompt-template.txt
+
+repo_name: cours_perso
+repo_url: https://github.com/your-username/cours_perso
+edit_uri: edit/main/docs
+
+copyright: Copyright &copy; 2026 Course Contributors. All lessons are open source.
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/cours_perso
+      name: GitHub Repository
+  generator: false

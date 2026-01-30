@@ -1,50 +1,86 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- 
+## Sync Impact Report
+
+**Version Change**: 0.0.0 → 1.0.0 (MAJOR)
+
+**Rationale**: Initial constitution for LLM-generated personalized courses documentation repository. Core principles established for maintainability, ease of user updates, and automation.
+
+**Modified Principles**: N/A (initial version)
+
+**Added Sections**: 
+- Core Principles (5 principles)
+- Documentation Standards
+- Automation & Deployment
+
+**Removed Sections**: N/A
+
+**Templates Status**:
+- ✅ plan-template.md: Aligns with Markdown-first principle
+- ✅ spec-template.md: Aligns with user story and clarity requirements
+- ✅ tasks-template.md: Aligns with structured workflow principle
+- ✅ README.md: Updated with workflow description
+
+**Follow-up TODOs**: None
+-->
+
+# Personalized Courses Documentation Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Markdown-First Documentation
+All course content MUST be written in Markdown format to ensure ease of editing and portability. Documentation files must be self-contained, clearly structured, and human-readable. No binary or proprietary formats are permitted in course content. MkDocs is the standard format for organization and site generation.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+**Rationale**: Markdown ensures accessibility for non-technical users, version control compatibility, and platform independence. MkDocs provides a lightweight, maintainable documentation structure without proprietary vendor lock-in.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Open Source Dependencies Only
+Every dependency, tool, and service MUST be open source with clear licensing. No proprietary or closed-source technologies are permitted. This ensures sustainability, transparency, and cost-free access for all users.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+**Rationale**: Open source dependencies prevent vendor lock-in, allow community contribution, and ensure the project remains freely accessible and modifiable for educational purposes.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. User-Friendly Content Updates
+The workflow for updating course content must be simple enough for non-technical users. Changes to Markdown files trigger automated deployment. No complex build steps or specialized tools are required of content editors.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+**Rationale**: Lowering the barrier to content updates enables wider participation and faster iteration. Automated GitHub Actions workflows eliminate manual deployment steps, reducing errors and improving time-to-publication.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### IV. Automated Deployment via GitHub Actions
+Every push to the repository MUST trigger a GitHub Action that automatically updates the GitHub Pages site. Deployment MUST be fast, reliable, and logged for transparency. No manual deployment steps are permitted.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+**Rationale**: Automation removes human error, ensures consistency, and provides immediate feedback on deployment status. GitHub Actions provides cost-free, native CI/CD integration without external service dependencies.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Structural Consistency & Clarity
+All course documentation MUST follow a consistent structure defined in the MkDocs configuration. Course pages must have clear titles, logical sections, and navigation metadata. No orphaned or undocumented pages are permitted.
+
+**Rationale**: Consistent structure improves user experience, makes content maintainable, and enables automated validation of documentation integrity.
+
+## Documentation Standards
+
+- Course content must use Markdown with `.md` extension
+- Each course must include: overview, learning objectives, modules, and assessment guidance
+- File naming must use lowercase with hyphens (e.g., `advanced-python-concepts.md`)
+- Navigation structure must be defined in `mkdocs.yml`
+- All external links must be valid and current (checked prior to deployment)
+
+## Automation & Deployment
+
+- GitHub Actions workflow triggers on every push to main/master branch
+- Workflow builds MkDocs site and deploys to GitHub Pages
+- Deployment status must be visible in repository (via badge or Actions tab)
+- Failed deployments must halt publication and alert maintainers
+- Build logs must be retained for debugging and audit purposes
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all prior practices. All contributions MUST comply with these five core principles and the documentation standards outlined above.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Amendment Process**: Changes to the constitution require:
+1. Documentation of the proposed amendment and rationale
+2. Review and approval by project maintainers
+3. Migration plan if existing content is affected
+4. Version bump reflecting the scope of change (MAJOR/MINOR/PATCH)
+
+**Compliance Review**: 
+- Quarterly review of documentation structure and publishing workflow
+- Annual assessment of tool versions and dependency updates
+- PRs must verify compliance with Principles I–V before merge
+
+**Version**: 1.0.0 | **Ratified**: 2026-01-30 | **Last Amended**: 2026-01-30
