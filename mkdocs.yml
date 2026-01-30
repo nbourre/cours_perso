@@ -60,15 +60,15 @@ nav:
     - All Lessons: lessons/
     - Python Basics:
       - Overview: lessons/python/index.md
-      - Introduction to Variables: lessons/python/lesson-001-variables.md
-      - Functions: Code Reuse and Organization: lessons/python/lesson-002-functions.md
+      - "Introduction to Variables": lessons/python/lesson-001-variables.md
+      - "Functions: Code Reuse and Organization": lessons/python/lesson-002-functions.md
     - Web Development:
       - Overview: lessons/web-development/index.md
-      - HTML Fundamentals: Building Web Pages: lessons/web-development/lesson-001-html-intro.md
-      - CSS Essentials: Styling Your Web Pages: lessons/web-development/lesson-002-css-basics.md
+      - "HTML Fundamentals: Building Web Pages": lessons/web-development/lesson-001-html-intro.md
+      - "CSS Essentials: Styling Your Web Pages": lessons/web-development/lesson-002-css-basics.md
     - Data Science:
       - Overview: lessons/data-science/index.md
-      - Pandas for Data Analysis: lessons/data-science/lesson-001-pandas.md
+      - "Pandas for Data Analysis": lessons/data-science/lesson-001-pandas.md
   - Guides:
     - Quick Start: guides/quick-start.md
     - Create a Lesson: guides/workflow-create-lesson.md
