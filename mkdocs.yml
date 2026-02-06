@@ -6,6 +6,7 @@ site_url: https://github.com/your-username/cours_perso
 theme:
   name: material
   language: en
+  custom_dir: docs/overrides
   logo: https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/docs/assets/images/favicon.png
   favicon: https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/docs/assets/images/favicon.png
   palette:
