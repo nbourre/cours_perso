@@ -34,16 +34,19 @@ See [Workflow Guide - Using the LLM Template](workflow-create-lesson.md#using-th
 
 ### Step 3: Customize & Paste
 Replace the placeholders:
+
 - [TOPIC] → "Python Functions"
 - [LEVEL] → "Beginner"
 - [DURATION] → "45 minutes"
 
 ### Step 4: Run in Your LLM
+
 - ChatGPT: Paste into chat
 - Claude: Paste into new conversation
 - Gemini: Paste into compose
 
 ### Step 5: Review Output
+
 - Read through for accuracy
 - Check examples work
 - Verify exercises are clear
@@ -59,21 +62,25 @@ Save as `lesson-001-python-functions.md` and submit via PR.
 ### 1. Choose Your LLM
 
 **ChatGPT (GPT-4)**:
+
 - Pros: Fast, creative, good at explanations
 - Cons: Requires paid account
 - Best for: Narrative content, examples
 
 **Claude (Sonnet 3)**:
+
 - Pros: Long context, precise, handles code well
 - Cons: Requires account
 - Best for: Code examples, technical accuracy
 
 **Gemini (Google)**:
+
 - Pros: Free option, integrates with Google docs
 - Cons: May vary in quality
 - Best for: Quick generation, drafts
 
 **Local LLMs** (Ollama, LLaMA):
+
 - Pros: Free, private, fast
 - Cons: May need tweaking
 - Best for: Draft generation, testing
@@ -87,24 +94,29 @@ Save as `lesson-001-python-functions.md` and submit via PR.
 Before using the template, gather these details:
 
 **Topic Details**:
+
 - [ ] Specific topic name (not too broad, not too narrow)
 - [ ] Example: "Python List Comprehensions" (good) vs. "Python" (too broad)
 
 **Target Audience**:
+
 - [ ] Difficulty: Beginner, Intermediate, or Advanced
 - [ ] Prior knowledge assumed
 - [ ] Example: "Beginner Python learners who know loops and lists"
 
 **Time Constraint**:
+
 - [ ] Duration: 30 min, 45 min, 1 hour, 1.5 hours, 2 hours
 - [ ] Includes exercises and self-assessment
 - [ ] Example: "1 hour including exercises"
 
 **Subject Category**:
+
 - [ ] Which subject: Python, Web Development, Data Science, etc.
 - [ ] Example: "Python Basics"
 
 **Tags** (optional, you can add later):
+
 - [ ] 3-5 keywords for discovery
 - [ ] Example: [python, lists, functional-programming, syntax]
 
@@ -174,24 +186,28 @@ Important requirements:
 After the LLM generates the lesson, review carefully:
 
 **Accuracy Check**:
+
 - [ ] Are code examples correct and runnable?
 - [ ] Are explanations accurate for the topic?
 - [ ] Are there any outdated or deprecated concepts?
 - [ ] Do prerequisites make sense?
 
 **Structure Check**:
+
 - [ ] All sections present (objectives, intro, concepts, exercises, assessment)?
 - [ ] Markdown formatting correct?
 - [ ] YAML metadata valid?
 - [ ] Learning objectives addressed in content?
 
 **Content Quality Check**:
+
 - [ ] Explanations are clear for target audience?
 - [ ] Examples are relevant and useful?
 - [ ] Exercises are progressively harder?
 - [ ] Assessment checks understanding?
 
 **Completeness Check**:
+
 - [ ] Lesson completable in stated duration?
 - [ ] No placeholder text remaining?
 - [ ] Links are proper Markdown format?
@@ -233,6 +249,7 @@ response = requests.get('https://api.example.com/data')
 ```
 
 **Fix Formatting Issues**:
+
 - Extra blank lines
 - Inconsistent indentation
 - Wrong heading levels
@@ -245,18 +262,21 @@ response = requests.get('https://api.example.com/data')
 After LLM generation, consider:
 
 **Add Your Expertise**:
+
 - Correct any topic-specific errors
 - Add your own examples if more relevant
 - Adjust tone to your style
 - Add warnings or tips from experience
 
 **Add Local Context**:
+
 - Link to your organization's standards
 - Reference local tools or systems
 - Add company-specific examples
 - Link to internal resources
 
 **Add Interactivity** (if platform supports):
+
 - Interactive code samples
 - Embedded videos
 - Discussion questions
@@ -269,12 +289,14 @@ After LLM generation, consider:
 ### Choose Specific Topics
 
 **Good Topics**:
+
 - "Python List Comprehensions" ✅
 - "Building REST APIs with Flask" ✅
 - "CSS Grid Layout" ✅
 - "Data Cleaning with Pandas" ✅
 
 **Too Broad**:
+
 - "Python" ❌
 - "Web Development" ❌
 - "JavaScript" ❌
@@ -282,18 +304,21 @@ After LLM generation, consider:
 ### Be Explicit About Level
 
 **Beginner**:
+
 - No assumptions about prior knowledge
 - Explain basic concepts
 - Use analogies
 - Simple, concrete examples
 
 **Intermediate**:
+
 - Assume basic understanding
 - Focus on application
 - Include best practices
 - Show common patterns
 
 **Advanced**:
+
 - Assume strong foundation
 - Deep technical dive
 - Discuss edge cases
@@ -352,6 +377,7 @@ Important requirements:
 ```
 
 ### Review & Edit
+
 1. ✅ Content structure is correct
 2. ❌ Code example for useState has syntax error → Fix
 3. ❌ Exercise 3 assumes knowledge of useContext → Add context explanation
@@ -368,30 +394,35 @@ Publish-ready lesson in ~30 minutes (10 min prompt + 10 min generation + 10 min 
 Before submitting any LLM-generated lesson:
 
 ### Content Accuracy
+
 - [ ] All code examples are correct
 - [ ] Explanations are accurate
 - [ ] No deprecated patterns used
 - [ ] Links to docs are current
 
 ### Completeness
+
 - [ ] All required sections present
 - [ ] No placeholder text
 - [ ] Learning objectives match content
 - [ ] Assessment questions test all objectives
 
 ### Clarity
+
 - [ ] Explanations use simple language
 - [ ] Examples clearly demonstrate concepts
 - [ ] Jargon is explained
 - [ ] Content is appropriate for difficulty level
 
 ### Structure
+
 - [ ] Markdown is properly formatted
 - [ ] YAML metadata is valid
 - [ ] File naming follows convention
 - [ ] File in correct directory
 
 ### Technical
+
 - [ ] Code snippets are syntactically correct
 - [ ] Code is runnable (tested if possible)
 - [ ] Examples follow best practices

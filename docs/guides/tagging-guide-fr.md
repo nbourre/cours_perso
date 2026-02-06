@@ -23,6 +23,7 @@ Les tags sont 1-5 mots-clés attachés à chaque leçon qui décrivent son conte
 
 ### Tags Technologiques
 Les outils, langages ou frameworks spécifiques:
+
 - `python`, `javascript`, `java`, `golang`, `rust`
 - `react`, `vue`, `angular`
 - `postgresql`, `mongodb`, `redis`
@@ -31,6 +32,7 @@ Les outils, langages ou frameworks spécifiques:
 
 ### Tags de Concepts
 Des idées abstraites et des modèles:
+
 - `functions`, `loops`, `conditionals`
 - `async`, `promises`, `callbacks`
 - `authentication`, `authorization`
@@ -39,6 +41,7 @@ Des idées abstraites et des modèles:
 
 ### Tags de Domaine
 Des domaines d'application:
+
 - `web`, `backend`, `frontend`
 - `data-analysis`, `visualization`
 - `machine-learning`, `ai`
@@ -46,10 +49,12 @@ Des domaines d'application:
 - `security`, `cryptography`
 
 ### Indicateurs de Difficulté** (optionnel, aussi dans les métadonnées):
+
 - `beginner-friendly`, `intermediate-focused`, `advanced-concepts`
 
 ### Tags Transversaux
 Méta-informations:
+
 - `performance`, `optimization`
 - `testing`, `debugging`
 - `documentation`
@@ -60,12 +65,14 @@ Méta-informations:
 ## Règles de Marquage
 
 ### 1. Utilisez 1-5 Tags par Leçon
+
 - **Minimum**: 1 tag (bien que 3+ recommandé)
 - **Maximum**: 5 tags (évitez la surcharge de tags)
 - **Zone idéale**: 3-4 tags par leçon
 
 ### 2. Format Minuscules et Avec Tirets
 Les tags doivent être:
+
 - ✅ Minuscules: `python-basics`, pas `Python_Basics`
 - ✅ Avec tirets: `rest-api`, pas `rest_api` ou `restapi`
 - ✅ Pas d'espaces: `machine-learning`, pas `machine learning`
@@ -95,6 +102,7 @@ Posez-vous la question: "Qu'est-ce que je chercherais pour trouver cette leçon?
 **Exemple de leçon**: "Async/Await en JavaScript"
 
 **Recherches des Apprenants**:
+
 - "async" → Trouvé ✅
 - "javascript" → Trouvé ✅
 - "callbacks" → Manquant ❌ (ajouter le tag: `callbacks`)
@@ -108,6 +116,7 @@ Posez-vous la question: "Qu'est-ce que je chercherais pour trouver cette leçon?
 
 ### Bases de Python
 Tags courants pour les leçons Python:
+
 - Langage: `python`, `python3`
 - Concepts: `variables`, `functions`, `loops`, `classes`, `modules`
 - Domaines: `data-science`, `web`, `scripting`
@@ -120,6 +129,7 @@ tags: [python, functions, code-organization, scope, parameters]
 
 ### Développement Web
 Tags courants pour les leçons Web:
+
 - Langages: `html`, `css`, `javascript`, `typescript`
 - Frameworks: `react`, `vue`, `angular`, `nextjs`
 - Concepts: `dom`, `async`, `api`, `rest`, `graphql`
@@ -132,6 +142,7 @@ tags: [nodejs, api, rest, express, backend]
 
 ### Science des Données
 Tags courants pour les leçons de Science des Données:
+
 - Langages: `python`, `sql`, `r`
 - Bibliothèques: `pandas`, `numpy`, `matplotlib`, `sklearn`
 - Concepts: `data-cleaning`, `visualization`, `statistics`, `machine-learning`
@@ -151,6 +162,7 @@ tags: [python, matplotlib, data-visualization, pandas, analysis]
 **Sujet**: "Utilisez les compréhensions de liste pour écrire du code Python concis"
 
 **Tags Potentiels**:
+
 - `python` ✅ (technologie primaire)
 - `list-comprehensions` ✅ (concept spécifique)
 - `functional-programming` ✅ (paradigme de programmation)
@@ -167,6 +179,7 @@ tags: [python, list-comprehensions, functional-programming, syntax]
 **Sujet**: "Concevez des APIs RESTful en suivant les meilleures pratiques"
 
 **Tags Potentiels**:
+
 - `api` ✅ (concept primaire)
 - `rest` ✅ (architecture spécifique)
 - `http` ✅ (protocole sous-jacent)
@@ -185,6 +198,7 @@ tags: [api, rest, http, backend, system-design]
 **Sujet**: "Apprenez les Crochets React pour gérer l'état dans les composants fonctionnels"
 
 **Tags Potentiels**:
+
 - `react` ✅ (framework primaire)
 - `javascript` ✅ (langage)
 - `hooks` ✅ (fonctionnalité spécifique)
@@ -222,6 +236,7 @@ Filtre: ["python", "async"]
 ### Pages de Tags
 
 Chaque tag a sa propre page:
+
 - `/tags/python/` → Toutes les leçons Python
 - `/tags/react/` → Toutes les leçons React
 - `/tags/testing/` → Toutes les leçons liées aux tests
@@ -284,6 +299,7 @@ tags: [beginner, intermediate]
 C'est correct d'introduire de nouveaux tags au fur et à mesure que vous créez des leçons. Le système les indexe automatiquement.
 
 **Processus**:
+
 1. Utilisez un nouveau tag dans votre leçon: `tags: [python, decorators, ...]`
 2. Soumettez PR
 3. Les mainteneurs approuvent
@@ -294,6 +310,7 @@ C'est correct d'introduire de nouveaux tags au fur et à mesure que vous créez 
 Si un tag devient obsolète (par exemple, Python 2 → Python 3):
 
 **Processus**:
+
 1. Créez un alias ou un tag de remplacement
 2. Mettez à jour les leçons existantes vers le nouveau tag
 3. Éliminez progressivement l'ancien tag
@@ -302,6 +319,7 @@ Si un tag devient obsolète (par exemple, Python 2 → Python 3):
 ### Standardisation des Tags
 
 Occasionnellement, les mainteneurs peuvent standardiser les tags:
+
 - `async-await` vs `asyncio` → Standardiser vers `async-await`
 - `db` vs `database` → Standardiser vers `database`
 

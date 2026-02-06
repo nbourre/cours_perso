@@ -34,16 +34,19 @@ Voir [Guide de flux de travail - Utilisation du modèle LLM](workflow-create-les
 
 ### Étape 3 : Personnalisez et collez
 Remplacez les espaces réservés :
+
 - [TOPIC] → « Fonctions Python »
 - [LEVEL] → « Débutant »
 - [DURATION] → « 45 minutes »
 
 ### Étape 4 : Exécutez dans votre LLM
+
 - ChatGPT : Collez dans le chat
 - Claude : Collez dans une nouvelle conversation
 - Gemini : Collez dans composer
 
 ### Étape 5 : Vérifiez la sortie
+
 - Lisez pour vérifier la précision
 - Vérifiez que les exemples fonctionnent
 - Vérifiez que les exercices sont clairs
@@ -59,21 +62,25 @@ Enregistrez sous `lesson-001-python-functions.md` et soumettez via RP.
 ### 1. Choisissez votre LLM
 
 **ChatGPT (GPT-4)** :
+
 - Avantages : Rapide, créatif, bon pour les explications
 - Inconvénients : Nécessite un compte payant
 - Meilleur pour : Contenu narratif, exemples
 
 **Claude (Sonnet 3)** :
+
 - Avantages : Contexte long, précis, gère bien les codes
 - Inconvénients : Nécessite un compte
 - Meilleur pour : Exemples de code, précision technique
 
 **Gemini (Google)** :
+
 - Avantages : Option gratuite, s'intègre avec les docs Google
 - Inconvénients : La qualité peut varier
 - Meilleur pour : Génération rapide, brouillons
 
 **LLM locaux** (Ollama, LLaMA) :
+
 - Avantages : Gratuit, privé, rapide
 - Inconvénients : Peut nécessiter des ajustements
 - Meilleur pour : Génération de brouillon, tests
@@ -87,24 +94,29 @@ Enregistrez sous `lesson-001-python-functions.md` et soumettez via RP.
 Avant d'utiliser le modèle, rassemblez ces détails :
 
 **Détails du sujet** :
+
 - [ ] Nom de sujet spécifique (pas trop large, pas trop étroit)
 - [ ] Exemple : « Compréhensions de liste Python » (bon) vs. « Python » (trop large)
 
 **Public cible** :
+
 - [ ] Difficulté : Débutant, Intermédiaire ou Avancé
 - [ ] Savoir antérieur supposé
 - [ ] Exemple : « Apprenants Python débutants qui connaissent les boucles et les listes »
 
 **Contrainte de temps** :
+
 - [ ] Durée : 30 min, 45 min, 1 heure, 1,5 heure, 2 heures
 - [ ] Inclut les exercices et l'auto-évaluation
 - [ ] Exemple : « 1 heure y compris les exercices »
 
 **Catégorie de sujet** :
+
 - [ ] Quel sujet : Python, Développement Web, Science des données, etc.
 - [ ] Exemple : « Bases de Python »
 
 **Étiquettes** (optionnel, vous pouvez ajouter plus tard) :
+
 - [ ] 3-5 mots-clés pour la découverte
 - [ ] Exemple : [python, lists, functional-programming, syntax]
 
@@ -175,24 +187,28 @@ Exigences importantes :
 Après que le LLM génère le cours, vérifiez attentivement :
 
 **Vérification de l'exactitude** :
+
 - [ ] Les exemples de code sont-ils corrects et exécutables?
 - [ ] Les explications sont-elles exactes pour le sujet?
 - [ ] Y a-t-il des concepts obsolètes ou dépréciés?
 - [ ] Les prérequis ont-ils du sens?
 
 **Vérification de la structure** :
+
 - [ ] Toutes les sections sont présentes (objectifs, introduction, concepts, exercices, évaluation)?
 - [ ] La mise en forme Markdown est correcte?
 - [ ] Les métadonnées YAML sont valides?
 - [ ] Les objectifs d'apprentissage sont-ils traités dans le contenu?
 
 **Vérification de la qualité du contenu** :
+
 - [ ] Les explications sont-elles claires pour le public cible?
 - [ ] Les exemples sont-ils pertinents et utiles?
 - [ ] Les exercices sont-ils progressivement plus difficiles?
 - [ ] L'évaluation vérifie-t-elle la compréhension?
 
 **Verifi cation de l'exhaustivité** :
+
 - [ ] Cours réalisable dans la durée indiquée?
 - [ ] Aucun texte d'espace réservé restant?
 - [ ] Les liens sont-ils au format Markdown approprié?
@@ -234,6 +250,7 @@ response = requests.get('https://api.example.com/data')
 ```
 
 **Corriger les problèmes de mise en forme** :
+
 - Lignes vides supplémentaires
 - Indentation incohérente
 - Niveaux de titre incorrects
@@ -246,18 +263,21 @@ response = requests.get('https://api.example.com/data')
 Après la génération LLM, considérez :
 
 **Ajoutez votre expertise** :
+
 - Corrigez les erreurs spécifiques au sujet
 - Ajoutez vos propres exemples s'ils sont plus pertinents
 - Ajustez le ton à votre style
 - Ajoutez des mises en garde ou des conseils tirés de l'expérience
 
 **Ajoutez du contexte local** :
+
 - Liez aux normes de votre organisation
 - Référencez les outils ou systèmes locaux
 - Ajoutez des exemples spécifiques à l'entreprise
 - Liez vers les ressources internes
 
 **Ajoutez de l'interactivité** (si la plateforme le supporte) :
+
 - Exemples de code interactifs
 - Vidéos intégrées
 - Questions de discussion
@@ -270,12 +290,14 @@ Après la génération LLM, considérez :
 ### Choisissez des sujets spécifiques
 
 **Bons sujets** :
+
 - « Compréhensions de liste Python » ✅
 - « Construire des API REST avec Flask » ✅
 - « Layout CSS Grid » ✅
 - « Nettoyage de données avec Pandas » ✅
 
 **Trop large** :
+
 - « Python » ❌
 - « Développement Web » ❌
 - « JavaScript » ❌
@@ -283,18 +305,21 @@ Après la génération LLM, considérez :
 ### Soyez explicite sur le niveau
 
 **Débutant** :
+
 - Aucune hypothèse sur les connaissances antérieures
 - Expliquez les concepts de base
 - Utilisez des analogies
 - Exemples simples et concrets
 
 **Intermédiaire** :
+
 - Supposez une compréhension de base
 - Concentrez-vous sur l'application
 - Inclure les meilleures pratiques
 - Montrez les motifs courants
 
 **Avancé** :
+
 - Supposez une base solide
 - Plongée technique approfondie
 - Discutez des cas limites
@@ -353,6 +378,7 @@ Exigences importantes :
 ```
 
 ### Vérification et édition
+
 1. ✅ La structure du contenu est correcte
 2. ❌ L'exemple de code pour useState a une erreur de syntaxe → Corriger
 3. ❌ L'exercice 3 suppose la connaissance de useContext → Ajouter l'explication du contexte
@@ -369,30 +395,35 @@ Cours prêt à la publication en ~30 minutes (10 min prompt + 10 min génératio
 Avant de soumettre un cours généré par LLM :
 
 ### Précision du contenu
+
 - [ ] Tous les exemples de code sont corrects
 - [ ] Les explications sont exactes
 - [ ] Pas de motifs dépréciés utilisés
 - [ ] Les liens vers la docs sont à jour
 
 ### Exhaustivité
+
 - [ ] Toutes les sections requises présentes
 - [ ] Pas de texte d'espace réservé
 - [ ] Les objectifs d'apprentissage correspondent au contenu
 - [ ] Les questions d'évaluation testent tous les objectifs
 
 ### Clarté
+
 - [ ] Les explications utilisent un langage simple
 - [ ] Les exemples démontrent clairement les concepts
 - [ ] Le jargon est expliqué
 - [ ] Le contenu est approprié pour le niveau de difficulté
 
 ### Structure
+
 - [ ] Markdown est correctement formaté
 - [ ] Les métadonnées YAML sont valides
 - [ ] Le nommage du fichier suit la convention
 - [ ] Le fichier est dans le bon répertoire
 
 ### Technique
+
 - [ ] Les extraits de code sont syntaxiquement corrects
 - [ ] Le code est exécutable (testé si possible)
 - [ ] Les exemples suivent les meilleures pratiques

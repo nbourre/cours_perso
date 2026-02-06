@@ -31,6 +31,7 @@ status: "enum, optional"
 ## Required Fields
 
 ### `title`
+
 - **Type**: String
 - **Required**: Yes
 - **Description**: The lesson's display name
@@ -42,6 +43,7 @@ status: "enum, optional"
 - **Example**: `"Introduction to Python Functions"`
 
 ### `description`
+
 - **Type**: String
 - **Required**: Yes
 - **Description**: One-sentence summary of the lesson
@@ -53,6 +55,7 @@ status: "enum, optional"
 - **Example**: `"Learn how to define, call, and use functions to organize your code"`
 
 ### `difficulty`
+
 - **Type**: Enum
 - **Required**: Yes
 - **Description**: Target audience level
@@ -63,6 +66,7 @@ status: "enum, optional"
 - **Example**: `difficulty: "Beginner"`
 
 ### `duration`
+
 - **Type**: String
 - **Required**: Yes
 - **Description**: Estimated time to complete lesson
@@ -77,6 +81,7 @@ status: "enum, optional"
   - `"1 day"`
 
 ### `tags`
+
 - **Type**: List of strings
 - **Required**: Yes
 - **Description**: Categorical labels for discovery
@@ -89,9 +94,11 @@ status: "enum, optional"
 - **Example**: 
   ```yaml
   tags: [functions, python, code-organization, variables]
+
   ```
 
 ### `learning_objectives`
+
 - **Type**: List of strings
 - **Required**: Yes
 - **Description**: What learners will be able to do
@@ -106,9 +113,11 @@ status: "enum, optional"
     - "Define and call a function"
     - "Use parameters and return values"
     - "Apply functions to organize your code"
+
   ```
 
 ### `created`
+
 - **Type**: Date (ISO 8601)
 - **Required**: Yes
 - **Description**: Lesson creation date
@@ -120,6 +129,7 @@ status: "enum, optional"
 ## Optional Fields
 
 ### `prerequisites`
+
 - **Type**: List of strings (lesson IDs)
 - **Required**: No
 - **Description**: Lessons that should be completed first
@@ -130,9 +140,11 @@ status: "enum, optional"
 - **Example**:
   ```yaml
   prerequisites: [lesson-001-intro, lesson-002-basics]
+
   ```
 
 ### `author`
+
 - **Type**: String
 - **Required**: No
 - **Description**: Who created or significantly contributed
@@ -142,6 +154,7 @@ status: "enum, optional"
 - **Example**: `author: "Claude 3.5 (with human review)"`
 
 ### `updated`
+
 - **Type**: Date (ISO 8601)
 - **Required**: No
 - **Description**: Last modification date
@@ -150,6 +163,7 @@ status: "enum, optional"
 - **Note**: Automatically updated by maintainers; authors need not set this
 
 ### `status`
+
 - **Type**: Enum
 - **Required**: No
 - **Default**: `"published"`
@@ -188,6 +202,7 @@ status: "published"
 ## Validation Rules
 
 ### Metadata Completeness
+
 - [ ] All required fields present: title, description, difficulty, duration, tags, learning_objectives, created
 - [ ] No empty fields (except optional fields)
 - [ ] YAML syntax is valid (no syntax errors)

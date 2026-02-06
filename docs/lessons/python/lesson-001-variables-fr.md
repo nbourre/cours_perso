@@ -25,6 +25,7 @@ lang: fr
 ## Objectifs d'Apprentissage
 
 À la fin de cette leçon, vous serez capable de :
+
 - Comprendre ce que sont les variables et pourquoi elles sont utiles
 - Créer et assigner des valeurs aux variables
 - Comprendre les types de données Python (chaînes, entiers, décimales, booléens)
@@ -34,6 +35,7 @@ lang: fr
 En programmation, une **variable** est un conteneur nommé qui stocke une valeur. Pensez-y comme une boîte étiquetée où vous pouvez mettre des informations que votre programme utilise et consulte plus tard.
 
 Les variables sont essentielles car elles vous permettent de :
+
 - **Stocker des données** dont votre programme a besoin pour fonctionner
 - **Référencer les données** par un nom significatif au lieu de mémoriser les valeurs
 - **Modifier les valeurs** au fur et à mesure que votre programme s'exécute
@@ -44,6 +46,7 @@ Sans variables, la programmation serait presque impossible !
 ## Qu'est-ce qu'une Variable ?
 
 Une variable a trois éléments clés :
+
 1. **Nom** : Comment vous la référencez (par ex. `age`, `user_name`)
 2. **Type** : Quel type de données elle stocke (par ex. texte, nombre)
 3. **Valeur** : Les données réelles stockées (par ex. 25, "Alice")
@@ -109,6 +112,7 @@ has_license = True
 ## Nommer les Variables
 
 Lorsque vous nommez une variable, suivez ces conventions :
+
 - ✅ **Utilisez des lettres minuscules** : `user_name`
 - ✅ **Utilisez des tirets bas entre les mots** : `first_name`, `is_online`
 - ✅ **Utilisez des noms significatifs** : `age` au lieu de `a`
@@ -138,6 +142,7 @@ user age = 25          # Impossible d'utiliser des espaces
 Créez des variables pour stocker des informations vous concernant.
 
 **Tâche** : Écrivez un programme Python qui crée ces variables :
+
 - Votre nom (chaîne de caractères)
 - Votre âge (entier)
 - Votre taille en mètres (décimal)
@@ -160,6 +165,7 @@ print(likes_coding)  # Output: True
 Créez des variables pour représenter un produit dans une boutique en ligne.
 
 **Tâche** : Créez des variables pour :
+
 - Nom du produit (chaîne de caractères)
 - Prix (décimal)
 - Quantité en stock (entier)

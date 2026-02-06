@@ -9,11 +9,15 @@ Parcourez toutes les leçons de Développement Web ci-dessous. Cliquez sur n'imp
 ### 🟢 Leçons Débutant
 
 1. **[Fondamentaux HTML: Construire des Pages Web](lesson-001-html-intro.md)** (45 minutes)  
+
    Créez vos premières pages web avec HTML. Apprenez le balisage sémantique, les éléments courants et la structure des documents.
+
    - Tags: `html`, `web`, `markup`, `semantic-html`, `elements`
 
 2. **[Essentiels CSS: Styliser Vos Pages Web](lesson-002-css-basics.md)** (1 heure)  
+
    Maîtrisez CSS pour rendre vos pages web belles. Apprenez les sélecteurs, les propriétés, la mise en page et les bases du design réactif.
+
    - Tags: `css`, `styling`, `web`, `selectors`, `layout`, `responsive`
 
 ---

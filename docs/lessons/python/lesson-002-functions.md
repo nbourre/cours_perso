@@ -26,6 +26,7 @@ status: "published"
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:
+
 - Understand what functions are and why they're useful
 - Define and call functions with parameters
 - Use return values to get results from functions
@@ -173,6 +174,7 @@ Create a function that converts Celsius to Fahrenheit.
 **Formula**: `F = (C × 9/5) + 32`
 
 **Task**: Write a function named `celsius_to_fahrenheit` that:
+
 - Takes a Celsius temperature as a parameter
 - Calculates the Fahrenheit equivalent
 - Returns the result
@@ -192,6 +194,7 @@ print(celsius_to_fahrenheit(100))  # Output: 212.0
 Create a function that calculates a discount price.
 
 **Task**: Write a function named `apply_discount` that:
+
 - Takes original price and discount percentage as parameters
 - Calculates the new price
 - Returns the discounted price
@@ -213,6 +216,7 @@ print(apply_discount(50, 10))   # Output: 45.0 (10% off)
 Create a function that analyzes a list of numbers.
 
 **Task**: Write a function named `analyze_numbers` that:
+
 - Takes a list of numbers as a parameter
 - Calculates the sum, average, and count
 - Returns all three values

@@ -27,6 +27,7 @@ status: "published"
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:
+
 - Understand pandas DataFrames and how to create them
 - Load and explore data from CSV files and other sources
 - Perform data cleaning and transformation operations
@@ -237,11 +238,13 @@ df.groupby('Department').agg({
 ### Exercise 1: Create and Explore a DataFrame
 
 **Task**: Create a DataFrame with student data:
+
 - Names: Alice, Bob, Carol, David
 - Math Scores: 85, 92, 78, 88
 - English Scores: 88, 85, 90, 79
 
 Then:
+
 1. Show the first 2 rows
 2. Get summary statistics
 3. Find students with Math > 85
@@ -266,6 +269,7 @@ print(df[df['Math'] > 85])
 ### Exercise 2: Data Transformation
 
 **Task**: Using the student DataFrame above:
+
 1. Create a new column 'Average' with average of Math and English scores
 2. Create a column 'Passing' (True if Average >= 80)
 3. Sort by Average in descending order
@@ -282,6 +286,7 @@ print(df_sorted)
 ### Challenge: Sales Data Analysis
 
 **Task**: Given sales data, perform analysis:
+
 1. Load or create a DataFrame with sales data
 2. Calculate total sales by product
 3. Find the product with highest average sales

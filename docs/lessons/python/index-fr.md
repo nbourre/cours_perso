@@ -9,11 +9,15 @@ Parcourez toutes les leçons Python ci-dessous. Cliquez sur n'importe quelle le�
 ### 🟢 Leçons Débutant
 
 1. **[Introduction aux Variables](lesson-001-variables.md)** (30 minutes)  
+
    Apprenez à créer et utiliser des variables pour stocker des données en Python. Couvre les conventions de nommage, les types de données et la conversion de type.
+
    - Tags: `python`, `variables`, `data-types`, `basics`
 
 2. **[Fonctions: Réutilisation et Organisation du Code](lesson-002-functions.md)** (45 minutes)  
+
    Maîtrisez les fonctions Python pour écrire du code réutilisable et organisé. Apprenez les paramètres, les valeurs de retour et la portée.
+
    - Tags: `python`, `functions`, `code-organization`, `parameters`
 
 ---

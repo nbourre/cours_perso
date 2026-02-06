@@ -1,0 +1,6 @@
+rules:
+  list_spacing:
+    enabled: true
+    style: always
+  list_item_spacing:
+    style: compact

@@ -27,6 +27,7 @@ lang: fr
 ## Objectifs d'Apprentissage
 
 À la fin de cette leçon, vous serez capable de :
+
 - Comprendre ce que sont les fonctions et pourquoi elles sont utiles
 - Définir et appeler des fonctions avec des paramètres
 - Utiliser les valeurs de retour pour obtenir les résultats des fonctions
@@ -174,6 +175,7 @@ Créez une fonction qui convertit les degrés Celsius en Fahrenheit.
 **Formule** : `F = (C × 9/5) + 32`
 
 **Tâche** : Écrivez une fonction nommée `celsius_to_fahrenheit` qui :
+
 - Prend une température en Celsius comme paramètre
 - Calcule l'équivalent en Fahrenheit
 - Renvoie le résultat
@@ -193,6 +195,7 @@ print(celsius_to_fahrenheit(100))  # Output: 212.0
 Créez une fonction qui calcule un prix avec réduction.
 
 **Tâche** : Écrivez une fonction nommée `apply_discount` qui :
+
 - Prend le prix original et le pourcentage de réduction comme paramètres
 - Calcule le nouveau prix
 - Renvoie le prix après réduction
@@ -214,6 +217,7 @@ print(apply_discount(50, 10))   # Output: 45.0 (10% off)
 Créez une fonction qui analyse une liste de nombres.
 
 **Tâche** : Écrivez une fonction nommée `analyze_numbers` qui :
+
 - Prend une liste de nombres comme paramètre
 - Calcule la somme, la moyenne, et le nombre d'éléments
 - Renvoie les trois valeurs

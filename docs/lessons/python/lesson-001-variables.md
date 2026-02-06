@@ -24,6 +24,7 @@ status: "published"
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:
+
 - Understand what variables are and why they're useful
 - Create and assign values to variables
 - Understand Python data types (strings, integers, floats, booleans)
@@ -33,6 +34,7 @@ By the end of this lesson, you will be able to:
 In programming, a **variable** is a named container that stores a value. Think of it like a labeled box where you can put information that your program uses and refers to later.
 
 Variables are essential because they allow you to:
+
 - **Store data** that your program needs to work with
 - **Reference data** by a meaningful name instead of memorizing values
 - **Change values** as your program runs
@@ -43,6 +45,7 @@ Without variables, programming would be nearly impossible!
 ## What Is a Variable?
 
 A variable has three key parts:
+
 1. **Name**: How you refer to the variable (e.g., `age`, `user_name`)
 2. **Type**: What kind of data it stores (e.g., text, number)
 3. **Value**: The actual data stored (e.g., 25, "Alice")
@@ -108,6 +111,7 @@ has_license = True
 ## Naming Variables
 
 When you name a variable, follow these conventions:
+
 - ✅ **Use lowercase letters**: `user_name`
 - ✅ **Use underscores between words**: `first_name`, `is_online`
 - ✅ **Use meaningful names**: `age` instead of `a`
@@ -137,6 +141,7 @@ user age = 25          # Can't use spaces
 Create variables to store information about yourself.
 
 **Task**: Write a Python program that creates these variables:
+
 - Your name (string)
 - Your age (integer)
 - Your height in meters (float)
@@ -159,6 +164,7 @@ print(likes_coding)  # Output: True
 Create variables to represent a product in an online store.
 
 **Task**: Create variables for:
+
 - Product name (string)
 - Price (float)
 - Quantity in stock (integer)

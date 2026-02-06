@@ -27,6 +27,7 @@ lang: fr
 ## Objectifs d'Apprentissage
 
 À la fin de cette leçon, vous serez capable de :
+
 - Comprendre la syntaxe CSS et comment appliquer les styles
 - Utiliser les sélecteurs CSS pour cibler les éléments HTML
 - Appliquer efficacement les couleurs, les polices et l'espacement
@@ -37,6 +38,7 @@ lang: fr
 **CSS** (Cascading Style Sheets) est le langage du design web. Bien que le HTML fournisse la structure, le CSS rend les pages web magnifiques en contrôlant les couleurs, les polices, les mises en page et l'espacement.
 
 Le CSS vous permet de :
+
 - **Styliser le texte** : Couleurs, polices, tailles
 - **Contrôler la mise en page** : Positionnement, grilles, flexbox
 - **Ajouter des effets visuels** : Ombres, bordures, animations
@@ -264,6 +266,7 @@ Ajustez les styles en fonction de la taille de l'écran :
 ### Exercice 1 : Styliser une Page Simple
 
 **Tâche** : Créez une page HTML avec CSS qui stylise :
+
 - Un titre avec une couleur de fond et une couleur de texte
 - Des paragraphes avec une police et un espacement spécifiques
 - Au moins un élément avec un sélecteur de classe
@@ -306,6 +309,7 @@ Ajustez les styles en fonction de la taille de l'écran :
 ### Exercice 2 : Créez une Mise en Page de Carte
 
 **Tâche** : Créez une "carte" avec CSS qui a :
+
 - Une bordure
 - Rembourrage à l'intérieur
 - Un effet d'ombre

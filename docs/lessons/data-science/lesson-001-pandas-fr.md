@@ -28,6 +28,7 @@ lang: fr
 ## Objectifs d'Apprentissage
 
 À la fin de cette leçon, vous serez capable de :
+
 - Comprendre les DataFrames pandas et comment les créer
 - Charger et explorer les données à partir de fichiers CSV et d'autres sources
 - Effectuer des opérations de nettoyage et de transformation de données
@@ -238,11 +239,13 @@ df.groupby('Department').agg({
 ### Exercice 1 : Créer et Explorer un DataFrame
 
 **Tâche** : Créez un DataFrame avec les données des étudiants :
+
 - Noms : Alice, Bob, Carol, David
 - Scores Mathématiques : 85, 92, 78, 88
 - Scores Anglais : 88, 85, 90, 79
 
 Ensuite :
+
 1. Afficher les 2 premières lignes
 2. Obtenir des statistiques résumées
 3. Trouver les étudiants avec Mathématiques > 85
@@ -267,6 +270,7 @@ print(df[df['Math'] > 85])
 ### Exercice 2 : Transformation des Données
 
 **Tâche** : Utilisant le DataFrame des étudiants ci-dessus :
+
 1. Créez une nouvelle colonne 'Average' avec la moyenne des scores Mathématiques et Anglais
 2. Créez une colonne 'Passing' (Vrai si Average >= 80)
 3. Triez par Average en ordre décroissant
@@ -283,6 +287,7 @@ print(df_sorted)
 ### Défi : Analyse des Données de Ventes
 
 **Tâche** : Étant donné des données de ventes, effectuer une analyse :
+
 1. Charger ou créer un DataFrame avec les données de ventes
 2. Calculer les ventes totales par produit
 3. Trouver le produit avec les ventes moyennes les plus élevées

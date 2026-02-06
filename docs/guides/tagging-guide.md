@@ -23,6 +23,7 @@ Tags are 1-5 keywords attached to each lesson that describe its content and make
 
 ### Technology Tags
 The specific tools, languages, or frameworks:
+
 - `python`, `javascript`, `java`, `golang`, `rust`
 - `react`, `vue`, `angular`
 - `postgresql`, `mongodb`, `redis`
@@ -31,6 +32,7 @@ The specific tools, languages, or frameworks:
 
 ### Concept Tags
 Abstract ideas and patterns:
+
 - `functions`, `loops`, `conditionals`
 - `async`, `promises`, `callbacks`
 - `authentication`, `authorization`
@@ -39,6 +41,7 @@ Abstract ideas and patterns:
 
 ### Domain Tags
 Areas of application:
+
 - `web`, `backend`, `frontend`
 - `data-analysis`, `visualization`
 - `machine-learning`, `ai`
@@ -46,10 +49,12 @@ Areas of application:
 - `security`, `cryptography`
 
 ### Difficulty Indicators** (optional, also in metadata):
+
 - `beginner-friendly`, `intermediate-focused`, `advanced-concepts`
 
 ### Cross-Cutting Tags
 Meta-information:
+
 - `performance`, `optimization`
 - `testing`, `debugging`
 - `documentation`
@@ -60,12 +65,14 @@ Meta-information:
 ## Tagging Rules
 
 ### 1. Use 1-5 Tags Per Lesson
+
 - **Minimum**: 1 tag (though 3+ recommended)
 - **Maximum**: 5 tags (avoid tag bloat)
 - **Sweet spot**: 3-4 tags per lesson
 
 ### 2. Lowercase, Hyphenated Format
 Tags must be:
+
 - ✅ Lowercase: `python-basics`, not `Python_Basics`
 - ✅ Hyphenated: `rest-api`, not `rest_api` or `restapi`
 - ✅ No spaces: `machine-learning`, not `machine learning`
@@ -95,6 +102,7 @@ Ask yourself: "What would I search for to find this lesson?"
 **Example lesson**: "Async/Await in JavaScript"
 
 **Learner searches**:
+
 - "async" → Found ✅
 - "javascript" → Found ✅
 - "callbacks" → Missing ❌ (add tag: `callbacks`)
@@ -108,6 +116,7 @@ Ask yourself: "What would I search for to find this lesson?"
 
 ### Python Basics
 Common tags for Python lessons:
+
 - Language: `python`, `python3`
 - Concepts: `variables`, `functions`, `loops`, `classes`, `modules`
 - Domains: `data-science`, `web`, `scripting`
@@ -120,6 +129,7 @@ tags: [python, functions, code-organization, scope, parameters]
 
 ### Web Development
 Common tags for Web lessons:
+
 - Languages: `html`, `css`, `javascript`, `typescript`
 - Frameworks: `react`, `vue`, `angular`, `nextjs`
 - Concepts: `dom`, `async`, `api`, `rest`, `graphql`
@@ -132,6 +142,7 @@ tags: [nodejs, api, rest, express, backend]
 
 ### Data Science
 Common tags for Data Science lessons:
+
 - Languages: `python`, `sql`, `r`
 - Libraries: `pandas`, `numpy`, `matplotlib`, `sklearn`
 - Concepts: `data-cleaning`, `visualization`, `statistics`, `machine-learning`
@@ -151,6 +162,7 @@ tags: [python, matplotlib, data-visualization, pandas, analysis]
 **Topic**: "Use list comprehensions to write concise Python code"
 
 **Potential tags**:
+
 - `python` ✅ (primary technology)
 - `list-comprehensions` ✅ (specific concept)
 - `functional-programming` ✅ (programming paradigm)
@@ -167,6 +179,7 @@ tags: [python, list-comprehensions, functional-programming, syntax]
 **Topic**: "Design RESTful APIs following best practices"
 
 **Potential tags**:
+
 - `api` ✅ (primary concept)
 - `rest` ✅ (specific architecture)
 - `http` ✅ (underlying protocol)
@@ -185,6 +198,7 @@ tags: [api, rest, http, backend, system-design]
 **Topic**: "Learn React Hooks to manage state in functional components"
 
 **Potential tags**:
+
 - `react` ✅ (primary framework)
 - `javascript` ✅ (language)
 - `hooks` ✅ (specific feature)
@@ -222,6 +236,7 @@ Filter: ["python", "async"]
 ### Tag Pages
 
 Each tag gets its own page:
+
 - `/tags/python/` → All Python lessons
 - `/tags/react/` → All React lessons
 - `/tags/testing/` → All testing-related lessons
@@ -284,6 +299,7 @@ tags: [beginner, intermediate]
 It's okay to introduce new tags as you create lessons. The system automatically indexes them.
 
 **Process**:
+
 1. Use a new tag in your lesson: `tags: [python, decorators, ...]`
 2. Submit PR
 3. Maintainers approve
@@ -294,6 +310,7 @@ It's okay to introduce new tags as you create lessons. The system automatically 
 If a tag becomes outdated (e.g., Python 2 → Python 3):
 
 **Process**:
+
 1. Create alias or replacement tag
 2. Update existing lessons to new tag
 3. Gradually phase out old tag
@@ -302,6 +319,7 @@ If a tag becomes outdated (e.g., Python 2 → Python 3):
 ### Standardizing Tags
 
 Occasionally, maintainers may standardize tags:
+
 - `async-await` vs `asyncio` → Standardize to `async-await`
 - `db` vs `database` → Standardize to `database`
 

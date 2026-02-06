@@ -9,7 +9,9 @@ Browse all Data Science lessons below. Click on any lesson to begin learning.
 ### 🔴 Advanced Lessons
 
 1. **[Pandas for Data Analysis](lesson-001-pandas.md)** (2 hours)  
+
    Master pandas library for professional data analysis. Learn DataFrames, operations, transformations, and best practices.
+
    - Tags: `python`, `pandas`, `data-analysis`, `data-science`, `dataframes`
 
 ---

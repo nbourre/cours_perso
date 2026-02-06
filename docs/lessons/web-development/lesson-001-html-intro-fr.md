@@ -26,6 +26,7 @@ lang: fr
 ## Objectifs d'Apprentissage
 
 À la fin de cette leçon, vous serez capable de :
+
 - Comprendre ce que le HTML est et son rôle dans les pages web
 - Créer une structure de document HTML valide
 - Utiliser correctement les éléments HTML courants
@@ -36,6 +37,7 @@ lang: fr
 **HTML** (HyperText Markup Language) est la base de chaque page web. Il fournit la structure et le contenu que les navigateurs web affichent. Le HTML fonctionne aux côtés du CSS (style) et de JavaScript (interactivité) pour créer des expériences web complètes.
 
 Pensez au HTML comme le squelette d'une page web :
+
 - **HTML** = Structure (os)
 - **CSS** = Style (peau, muscles)
 - **JavaScript** = Interactivité (mouvement)
@@ -200,6 +202,7 @@ Les balises sémantiques rendent le code plus facile à lire et améliorent l'ac
 ### Exercice 1 : Créez une Page HTML de Base
 
 **Tâche** : Créez une page HTML sur votre passe-temps préféré qui comprend :
+
 - Un titre dans l'onglet du navigateur
 - Un titre principal (h1)
 - Au moins un paragraphe décrivant le passe-temps
@@ -230,6 +233,7 @@ Les balises sémantiques rendent le code plus facile à lire et améliorent l'ac
 ### Exercice 2 : Créez une Page de Recette
 
 **Tâche** : Créez une page de recette avec :
+
 - Un titre de recette (h1)
 - Une liste d'ingrédients (utilisez `<ol>` pour une liste numérotée)
 - Des instructions (utilisez `<ol>` pour les étapes numérotées)

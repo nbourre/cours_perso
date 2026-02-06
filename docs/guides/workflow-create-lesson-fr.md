@@ -120,6 +120,7 @@ Ce flux décrit comment créer un nouveau cours pour le référentiel. Que vous 
 Utilisez la **Liste de contrôle qualité** ci-dessous pour vérifier votre cours :
 
 **Vérification des métadonnées:**
+
 - [ ] Tous les champs requis présents : title, description, difficulty, duration, tags, learning_objectives, created
 - [ ] Le titre est clair et descriptif (3-100 caractères)
 - [ ] La description est 1 phrase, non-technique (10-200 caractères)
@@ -130,6 +131,7 @@ Utilisez la **Liste de contrôle qualité** ci-dessous pour vérifier votre cour
 - [ ] La date de création est au format AAAA-MM-JJ
 
 **Vérification du contenu:**
+
 - [ ] Toutes les sections requises présentes : Objectifs d'apprentissage, Introduction, Concepts principaux, Exercices, Évaluation
 - [ ] Les objectifs d'apprentissage sont référencés dans le contenu
 - [ ] Les exemples sont clairs, pertinents et incluent du code/des diagrammes
@@ -140,6 +142,7 @@ Utilisez la **Liste de contrôle qualité** ci-dessous pour vérifier votre cour
 - [ ] L'écriture est claire et accessible pour le public cible
 
 **Vérification de la structure:**
+
 - [ ] Nommage du fichier : `lesson-[id]-[slug].md` (par ex., `lesson-001-functions.md`)
 - [ ] Fichier situé dans le bon répertoire de sujet : `docs/lessons/[subject]/`
 - [ ] Préambule YAML correctement formaté (entre les marqueurs `---`)
@@ -155,28 +158,33 @@ Utilisez la **Liste de contrôle qualité** ci-dessous pour vérifier votre cour
    ```bash
    git clone https://github.com/[username]/[repo].git
    cd [repo]
+
    ```
 
 2. **Créez une nouvelle branche**
    ```bash
    git checkout -b add-lesson-[slug]
    # Exemple : git checkout -b add-lesson-python-functions
+
    ```
 
 3. **Ajoutez votre fichier de cours**
    ```bash
    git add docs/lessons/[subject]/lesson-[id]-[slug].md
+
    ```
 
 4. **Validez vos modifications**
    ```bash
    git commit -m "Add lesson: [Title]"
    # Exemple : git commit -m "Add lesson: Introduction to Python Functions"
+
    ```
 
 5. **Poussez vers votre fork**
    ```bash
    git push origin add-lesson-[slug]
+
    ```
 
 ---
@@ -292,16 +300,19 @@ Exigences importantes :
 ### Conseils de personnalisation
 
 **Pour différents niveaux** :
+
 - **Débutant** : Supposez aucune connaissance antérieure ; expliquez chaque terme ; utilisez des analogies
 - **Intermédiaire** : Supposez une compréhension de base ; concentrez-vous sur l'application ; incluez les meilleures pratiques
 - **Avancé** : Supposez une base solide ; plongez profond ; discutez des compromis et cas limites
 
 **Pour différentes durées** :
+
 - **30 minutes** : 1 concept principal, 2 exercices simples
 - **1 heure** : 2-3 concepts, 2-3 exercices de difficulté croissante
 - **2+ heures** : Concepts multiples, exercices, projet/capstone
 
 **Pour différents sujets** :
+
 - Remplacez [TOPIC] par une compétence spécifique (par ex., « Conception API REST »)
 - Remplacez [LEVEL] par difficulté (par ex., « Intermédiaire »)
 - Remplacez [DURATION] par estimation de temps (par ex., « 1 heure »)
@@ -313,6 +324,7 @@ Exigences importantes :
 Avant de soumettre, vérifiez :
 
 ### Qualité du contenu
+
 - [ ] Le cours enseigne un concept clair et unique (pas plusieurs sujets sans rapport)
 - [ ] Les objectifs d'apprentissage sont spécifiques et réalisables
 - [ ] Le contenu traite directement de chaque objectif d'apprentissage
@@ -321,6 +333,7 @@ Avant de soumettre, vérifiez :
 - [ ] Pas d'information obsolète ou d'outils dépréciés
 
 ### Exhaustivité
+
 - [ ] Toutes les sections requises sont présentes
 - [ ] Pas de texte d'espace réservé restant (par ex., « [VOTRE SUJET ICI] »)
 - [ ] Tous les liens sont corrects et actifs
@@ -328,6 +341,7 @@ Avant de soumettre, vérifiez :
 - [ ] La mise en forme est cohérente dans tout le document
 
 ### Accessibilité
+
 - [ ] Le langage est clair et évite le jargon (ou l'explique)
 - [ ] Les concepts sont expliqués avant utilisation
 - [ ] Les exemples construisent du simple au complexe
@@ -335,6 +349,7 @@ Avant de soumettre, vérifiez :
 - [ ] Le contenu est approprié pour le niveau de difficulté déclaré
 
 ### Technique
+
 - [ ] La syntaxe Markdown est valide
 - [ ] Le préambule YAML est correctement formaté
 - [ ] Le fichier est au bon endroit : `docs/lessons/[subject]/`

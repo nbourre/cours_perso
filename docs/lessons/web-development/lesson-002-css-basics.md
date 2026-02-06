@@ -26,6 +26,7 @@ status: "published"
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:
+
 - Understand CSS syntax and how to apply styles
 - Use CSS selectors to target HTML elements
 - Apply colors, fonts, and spacing effectively
@@ -36,6 +37,7 @@ By the end of this lesson, you will be able to:
 **CSS** (Cascading Style Sheets) is the language of web design. While HTML provides structure, CSS makes web pages beautiful by controlling colors, fonts, layouts, and spacing.
 
 CSS lets you:
+
 - **Style text**: Colors, fonts, sizes
 - **Control layout**: Positioning, grids, flexbox
 - **Add visual effects**: Shadows, borders, animations
@@ -263,6 +265,7 @@ Adjust styles based on screen size:
 ### Exercise 1: Style a Simple Page
 
 **Task**: Create an HTML page with CSS that styles:
+
 - A heading with a background color and text color
 - Paragraphs with specific font and spacing
 - At least one element with a class selector
@@ -305,6 +308,7 @@ Adjust styles based on screen size:
 ### Exercise 2: Create a Card Layout
 
 **Task**: Create a "card" with CSS that has:
+
 - A border
 - Padding inside
 - A shadow effect

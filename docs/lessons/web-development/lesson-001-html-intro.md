@@ -25,6 +25,7 @@ status: "published"
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:
+
 - Understand what HTML is and its role in web pages
 - Create a valid HTML document structure
 - Use common HTML elements correctly
@@ -35,6 +36,7 @@ By the end of this lesson, you will be able to:
 **HTML** (HyperText Markup Language) is the foundation of every web page. It provides the structure and content that web browsers display. HTML works alongside CSS (styling) and JavaScript (interactivity) to create complete web experiences.
 
 Think of HTML as the skeleton of a web page:
+
 - **HTML** = Structure (bones)
 - **CSS** = Styling (skin, muscles)
 - **JavaScript** = Interactivity (movement)
@@ -199,6 +201,7 @@ Semantic tags make code easier to read and improve accessibility.
 ### Exercise 1: Create a Basic HTML Page
 
 **Task**: Create an HTML page about your favorite hobby that includes:
+
 - A title in the browser tab
 - A main heading (h1)
 - At least one paragraph describing the hobby
@@ -229,6 +232,7 @@ Semantic tags make code easier to read and improve accessibility.
 ### Exercise 2: Create a Recipe Page
 
 **Task**: Create a recipe page with:
+
 - A recipe title (h1)
 - Ingredients list (use `<ol>` for numbered list)
 - Instructions (use `<ol>` for numbered steps)

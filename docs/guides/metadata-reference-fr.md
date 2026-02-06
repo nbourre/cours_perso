@@ -31,6 +31,7 @@ status: "enum, optional"
 ## Champs Obligatoires
 
 ### `title`
+
 - **Type**: Chaîne de caractères
 - **Obligatoire**: Oui
 - **Description**: Le nom d'affichage de la leçon
@@ -42,6 +43,7 @@ status: "enum, optional"
 - **Exemple**: `"Introduction aux Fonctions Python"`
 
 ### `description`
+
 - **Type**: Chaîne de caractères
 - **Obligatoire**: Oui
 - **Description**: Résumé d'une phrase de la leçon
@@ -53,6 +55,7 @@ status: "enum, optional"
 - **Exemple**: `"Apprenez à définir, appeler et utiliser des fonctions pour organiser votre code"`
 
 ### `difficulty`
+
 - **Type**: Enum
 - **Obligatoire**: Oui
 - **Description**: Niveau du public cible
@@ -63,6 +66,7 @@ status: "enum, optional"
 - **Exemple**: `difficulty: "Beginner"`
 
 ### `duration`
+
 - **Type**: Chaîne de caractères
 - **Obligatoire**: Oui
 - **Description**: Temps estimé pour compléter la leçon
@@ -77,6 +81,7 @@ status: "enum, optional"
   - `"1 jour"`
 
 ### `tags`
+
 - **Type**: Liste de chaînes
 - **Obligatoire**: Oui
 - **Description**: Étiquettes catégoriques pour la découverte
@@ -89,9 +94,11 @@ status: "enum, optional"
 - **Exemple**: 
   ```yaml
   tags: [functions, python, code-organization, variables]
+
   ```
 
 ### `learning_objectives`
+
 - **Type**: Liste de chaînes
 - **Obligatoire**: Oui
 - **Description**: Ce que les apprenants pourront faire
@@ -106,9 +113,11 @@ status: "enum, optional"
     - "Définir et appeler une fonction"
     - "Utiliser les paramètres et les valeurs de retour"
     - "Appliquer les fonctions pour organiser votre code"
+
   ```
 
 ### `created`
+
 - **Type**: Date (ISO 8601)
 - **Obligatoire**: Oui
 - **Description**: Date de création de la leçon
@@ -120,6 +129,7 @@ status: "enum, optional"
 ## Champs Optionnels
 
 ### `prerequisites`
+
 - **Type**: Liste de chaînes (IDs de leçon)
 - **Obligatoire**: Non
 - **Description**: Leçons qui doivent être complétées en premier
@@ -130,9 +140,11 @@ status: "enum, optional"
 - **Exemple**:
   ```yaml
   prerequisites: [lesson-001-intro, lesson-002-basics]
+
   ```
 
 ### `author`
+
 - **Type**: Chaîne de caractères
 - **Obligatoire**: Non
 - **Description**: Qui a créé ou contribué significativement
@@ -142,6 +154,7 @@ status: "enum, optional"
 - **Exemple**: `author: "Claude 3.5 (avec révision humaine)"`
 
 ### `updated`
+
 - **Type**: Date (ISO 8601)
 - **Obligatoire**: Non
 - **Description**: Date de dernière modification
@@ -150,6 +163,7 @@ status: "enum, optional"
 - **Note**: Mise à jour automatique par les mainteneurs; les auteurs n'ont pas besoin de le définir
 
 ### `status`
+
 - **Type**: Enum
 - **Obligatoire**: Non
 - **Par Défaut**: `"published"`
@@ -188,6 +202,7 @@ status: "published"
 ## Règles de Validation
 
 ### Complétude des Métadonnées
+
 - [ ] Tous les champs obligatoires présents: titre, description, difficulté, durée, tags, learning_objectives, created
 - [ ] Aucun champ vide (sauf les champs optionnels)
 - [ ] La syntaxe YAML est valide (pas d'erreurs de syntaxe)

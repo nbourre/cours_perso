@@ -170,6 +170,7 @@ status: "draft"
 ```
 
 ### Update a lesson you've already published
+
 - Submit a new PR with the updated file
 - Maintainers review and merge
 - Site auto-updates within minutes

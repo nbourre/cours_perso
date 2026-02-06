@@ -120,6 +120,7 @@ This workflow describes how to create a new lesson for the repository. Whether y
 Use the **Quality Checklist** below to verify your lesson:
 
 **Metadata Check**:
+
 - [ ] All required fields present: title, description, difficulty, duration, tags, learning_objectives, created
 - [ ] Title is clear and descriptive (3-100 characters)
 - [ ] Description is 1 sentence, non-technical (10-200 characters)
@@ -130,6 +131,7 @@ Use the **Quality Checklist** below to verify your lesson:
 - [ ] Created date is in YYYY-MM-DD format
 
 **Content Check**:
+
 - [ ] All required sections present: Learning Objectives, Introduction, Main Concepts, Exercises, Assessment
 - [ ] Learning objectives are referenced in the content
 - [ ] Examples are clear, relevant, and include code/diagrams
@@ -140,6 +142,7 @@ Use the **Quality Checklist** below to verify your lesson:
 - [ ] Writing is clear and accessible for the target audience
 
 **Structure Check**:
+
 - [ ] File naming: `lesson-[id]-[slug].md` (e.g., `lesson-001-functions.md`)
 - [ ] File located in correct subject directory: `docs/lessons/[subject]/`
 - [ ] YAML frontmatter correctly formatted (between `---` markers)
@@ -155,28 +158,33 @@ Use the **Quality Checklist** below to verify your lesson:
    ```bash
    git clone https://github.com/[username]/[repo].git
    cd [repo]
+
    ```
 
 2. **Create a new branch**
    ```bash
    git checkout -b add-lesson-[slug]
    # Example: git checkout -b add-lesson-python-functions
+
    ```
 
 3. **Add your lesson file**
    ```bash
    git add docs/lessons/[subject]/lesson-[id]-[slug].md
+
    ```
 
 4. **Commit your changes**
    ```bash
    git commit -m "Add lesson: [Title]"
    # Example: git commit -m "Add lesson: Introduction to Python Functions"
+
    ```
 
 5. **Push to your fork**
    ```bash
    git push origin add-lesson-[slug]
+
    ```
 
 ---
@@ -292,16 +300,19 @@ Important requirements:
 ### Customization Tips
 
 **For different levels**:
+
 - **Beginner**: Assume no prior knowledge; explain every term; use analogies
 - **Intermediate**: Assume basic understanding; focus on application; include best practices
 - **Advanced**: Assume strong foundation; dive deep; discuss trade-offs and edge cases
 
 **For different durations**:
+
 - **30 minutes**: 1 main concept, 2 simple exercises
 - **1 hour**: 2-3 concepts, 2-3 exercises of increasing difficulty
 - **2+ hours**: Multiple concepts, exercises, project/capstone
 
 **For different topics**:
+
 - Replace [TOPIC] with specific skill (e.g., "REST API Design")
 - Replace [LEVEL] with difficulty (e.g., "Intermediate")
 - Replace [DURATION] with time estimate (e.g., "1 hour")
@@ -313,6 +324,7 @@ Important requirements:
 Before submitting, verify:
 
 ### Content Quality
+
 - [ ] Lesson teaches a clear, single concept (not multiple unrelated topics)
 - [ ] Learning objectives are specific and achievable
 - [ ] Content directly addresses each learning objective
@@ -321,6 +333,7 @@ Before submitting, verify:
 - [ ] No outdated information or deprecated tools
 
 ### Completeness
+
 - [ ] All required sections are present
 - [ ] No placeholder text remaining (e.g., "[YOUR TOPIC HERE]")
 - [ ] All links are correct and active
@@ -328,6 +341,7 @@ Before submitting, verify:
 - [ ] Formatting is consistent throughout
 
 ### Accessibility
+
 - [ ] Language is clear and avoids jargon (or explains it)
 - [ ] Concepts are explained before use
 - [ ] Examples build from simple to complex
@@ -335,6 +349,7 @@ Before submitting, verify:
 - [ ] Content is appropriate for stated difficulty level
 
 ### Technical
+
 - [ ] Markdown syntax is valid
 - [ ] YAML frontmatter is correctly formatted
 - [ ] File is in correct location: `docs/lessons/[subject]/`
