@@ -113,6 +113,13 @@ edit_uri: edit/main/docs
 copyright: Copyright &copy; 2026 Course Contributors. All lessons are open source.
 
 extra:
+  language_switcher:
+    - icon: fontawesome/brands/github
+      name: GitHub Repository
+      link: https://github.com/your-username/cours_perso
+  languages:
+    en: English
+    fr: Français
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/your-username/cours_perso
