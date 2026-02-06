@@ -1,0 +1,232 @@
+# LLM Prompt Template for Lesson Generation
+
+**Purpose**: Ready-to-use prompt for generating lesson content with AI assistants (ChatGPT, Claude, etc.)  
+**Usage**: Copy, customize the [bracketed] placeholders, and paste into your LLM  
+**Output**: Markdown-formatted lesson ready to save as `lesson-[id]-[slug].md`
+
+---
+
+## Customization Instructions
+
+Replace the following placeholders before using this prompt:
+
+- **[TOPIC]**: The specific concept or skill to teach (e.g., "Python Functions", "REST API Design")
+- **[LEVEL]**: Target audience difficulty (Beginner, Intermediate, Advanced)
+- **[DURATION]**: Estimated learning time (e.g., "30 minutes", "1 hour", "2 hours")
+- **[NUM_EXAMPLES]**: Number of practical examples (typically 2-3)
+- **[NUM_EXERCISES]**: Number of exercises to create (typically 2-3)
+- **[CONTEXT]**: Why learners should care about this topic (customize for your audience)
+
+---
+
+## Prompt Template
+
+```
+You are an expert educational content creator. Create a comprehensive, student-friendly lesson 
+on [TOPIC] for [LEVEL] learners. The lesson should be completable in [DURATION].
+
+CRITICAL: Use this EXACT Markdown structure with all required sections:
+
+---
+title: "[TOPIC]"
+description: "Clear one-sentence summary of what learners will gain"
+difficulty: "[LEVEL]"
+duration: "[DURATION]"
+tags: [tag1, tag2, tag3, tag4, tag5]
+prerequisites: []
+learning_objectives:
+  - "Specific, measurable learning objective 1"
+  - "Specific, measurable learning objective 2"
+  - "Specific, measurable learning objective 3"
+created: 2026-01-30
+author: "LLM Assistant"
+status: "published"
+---
+
+# [TOPIC]
+
+## Learning Objectives
+
+By the end of this lesson, you will be able to:
+- [Objective 1 - specific and measurable]
+- [Objective 2 - specific and measurable]
+- [Objective 3 - specific and measurable]
+
+## Introduction
+
+[Engaging introduction explaining WHY this topic matters. Context: [CONTEXT]]
+
+## [Main Concept 1 - Choose a descriptive heading]
+
+[Clear explanation of the first key concept]
+
+### Example 1: [Descriptive title]
+[Concrete example with code/diagram if applicable]
+
+### Example 2: [Descriptive title]
+[Another example showing different aspect]
+
+## [Main Concept 2 - Choose a descriptive heading]
+
+[Explanation of second key concept]
+
+### Example 1: [Descriptive title]
+[Concrete example]
+
+## [Main Concept 3 - Optional, choose a descriptive heading]
+
+[If the topic requires 3 main concepts, add this section]
+
+## Exercises
+
+### Exercise 1: [Descriptive Title]
+
+**Difficulty**: Beginner  
+**Time**: 5-10 minutes
+
+[Clear instructions for what learner should do]
+
+**Expected outcome**: [What should learner be able to do/create]
+
+### Exercise 2: [Descriptive Title]
+
+**Difficulty**: Intermediate  
+**Time**: 15-20 minutes
+
+[Clear instructions for a more challenging exercise]
+
+## Assessment
+
+### Self-Check Questions
+
+1. [Question testing learning objective 1]
+2. [Question testing learning objective 2]
+3. [Question testing learning objective 3]
+
+## Summary
+
+[Recap of key learning points from the lesson]
+
+## Additional Resources
+
+- [Link or reference to related documentation]
+- [Tutorial or tool reference]
+- [Recommended next-level learning path]
+
+## Next Steps
+
+After completing this lesson, explore:
+- [Related concept 1]
+- [Related concept 2]
+- [Suggested follow-up lesson]
+
+---
+
+REQUIREMENTS FOR THIS LESSON:
+
+1. **Clarity**: Use simple, clear language. Avoid jargon or explain all technical terms.
+2. **Examples**: Include [NUM_EXAMPLES] practical, relatable examples (code, diagrams, scenarios)
+3. **Exercises**: Create [NUM_EXERCISES] hands-on exercises with increasing difficulty
+4. **Assessment**: Provide self-check questions that verify all learning objectives are met
+5. **Length**: Content should be completable in [DURATION]
+6. **Engagement**: Use active voice, ask rhetorical questions, provide motivation
+7. **Structure**: Follow the template structure exactly - do NOT add, remove, or rename sections
+8. **Tags**: Choose 5 lowercase, hyphenated tags relevant to the topic (e.g., functions, python, variables, code-organization, beginner-friendly)
+
+CRITICAL: Start with the YAML frontmatter (---title: ...---) and end with "Next Steps" section.
+Do NOT add introduction text before the YAML metadata.
+Do NOT include any text after the lesson content.
+The output should be ready to paste directly into a Markdown file.
+
+Begin the lesson now:
+```
+
+---
+
+## Tips for Best Results
+
+### Before Using the Prompt
+
+1. **Define your tags carefully**: Choose tags that would help learners find this lesson
+   - Examples: `python`, `functions`, `variables`, `async-programming`, `beginner-friendly`
+2. **Consider your audience**: Specificity about difficulty level (Beginner/Intermediate/Advanced) improves output quality
+3. **Customize the context**: Replace [CONTEXT] with something relevant to your audience
+
+### After Getting Generated Content
+
+1. **Review for accuracy**: Verify all code examples are correct
+2. **Check the structure**: Confirm all sections are present and well-organized
+3. **Validate metadata**: Ensure title, tags, and learning objectives are clear
+4. **Test readability**: Read through as if you were the target learner
+5. **Fix any issues**: Small edits often needed (typos, formatting, clarity)
+6. **Add visuals**: Consider adding diagrams or screenshots if helpful
+
+### Common Customizations
+
+**For Python lessons**:
+```
+[TOPIC]: "Python Functions"
+[LEVEL]: "Beginner"
+[DURATION]: "45 minutes"
+[CONTEXT]: "Functions are essential for writing clean, reusable Python code"
+tags: [python, functions, code-organization, variables, beginner-friendly]
+```
+
+**For Web Development lessons**:
+```
+[TOPIC]: "Introduction to REST APIs"
+[LEVEL]: "Intermediate"
+[DURATION]: "1 hour"
+[CONTEXT]: "REST APIs power modern web applications and mobile apps"
+tags: [api, rest, backend, http, web-development]
+```
+
+**For Data Science lessons**:
+```
+[TOPIC]: "Data Analysis with Pandas"
+[LEVEL]: "Intermediate"
+[DURATION]: "90 minutes"
+[CONTEXT]: "Pandas is the most powerful tool for data manipulation in Python"
+tags: [data-science, pandas, python, data-analysis, visualization]
+```
+
+---
+
+## Alternative: Simpler Prompt (If Using Basic LLM)
+
+If the detailed template is too long, try this simpler version:
+
+```
+Create a lesson on [TOPIC] for [LEVEL] learners (duration: [DURATION]).
+
+Structure:
+- YAML metadata (title, description, difficulty, duration, tags, learning_objectives)
+- Learning Objectives (3-5 items)
+- Introduction
+- 2-3 Main Concept sections with examples
+- 2-3 Exercises (beginner → intermediate difficulty)
+- Self-check questions for assessment
+- Summary
+- Next steps
+
+Make it clear, practical, and ready to save as Markdown.
+```
+
+---
+
+## Success Checklist for Generated Content
+
+After receiving content from your LLM:
+
+- [ ] YAML frontmatter present and valid
+- [ ] All required fields filled: title, description, difficulty, duration, tags, learning_objectives
+- [ ] Learning objectives are specific and measurable
+- [ ] At least 2-3 practical examples included
+- [ ] At least 2-3 exercises with increasing difficulty
+- [ ] Assessment section with self-check questions
+- [ ] All sections match the required structure
+- [ ] Markdown syntax is correct (no broken formatting)
+- [ ] Language is clear and accessible for target level
+- [ ] Total time to complete matches the estimated duration
+
+**Ready to commit?** → Rename file to `lesson-[id]-[slug].md` → Place in correct subject directory → Submit PR
