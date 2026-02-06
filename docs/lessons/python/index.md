@@ -9,15 +9,10 @@ Browse all Python lessons below. Click on any lesson to begin learning.
 ### 🟢 Beginner Lessons
 
 1. **[Introduction to Variables](lesson-001-variables.md)** (30 minutes)  
-
    Learn how to create and use variables to store data in Python. Covers naming conventions, data types, and type conversion.
-
    - Tags: `python`, `variables`, `data-types`, `basics`
-
 2. **[Functions: Code Reuse and Organization](lesson-002-functions.md)** (45 minutes)  
-
    Master Python functions to write reusable, organized code. Learn parameters, return values, and scope.
-
    - Tags: `python`, `functions`, `code-organization`, `parameters`
 
 ---
@@ -25,6 +20,7 @@ Browse all Python lessons below. Click on any lesson to begin learning.
 ## What You'll Learn
 
 In the Python Basics subject, you can expect lessons on:
+
 - Variables and data types
 - Functions and control flow
 - Object-oriented programming basics

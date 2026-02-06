@@ -243,16 +243,12 @@ print(f"Sum: {total}, Average: {avg}, Count: {count}")
 
 1. **Qu'est-ce qu'une fonction et pourquoi sont-elles utiles ?**
    - Une fonction est un bloc de code réutilisable qui effectue une tâche. Les fonctions vous aident à éviter la répétition, à organiser le code et à rendre les programmes plus lisibles.
-
 2. **Comment défilez-vous une fonction en Python ?**
    - Utilisez le mot clé `def` suivi du nom de la fonction et des parenthèses : `def function_name(parameters):` puis le corps de la fonction.
-
 3. **Quelle est la différence entre un paramètre et un argument ?**
    - Un paramètre est ce que vous définissez dans la fonction (par ex. `def add(a, b)`). Un argument est la valeur réelle que vous passez lors de l'appel de la fonction (par ex. `add(3, 5)`).
-
 4. **Que fait l'instruction `return` ?**
    - L'instruction `return` renvoie une valeur de la fonction au code qui l'a appelée.
-
 5. **Une fonction peut-elle ne pas avoir de paramètres ?**
    - Oui, vous pouvez écrire `def function_name():` avec des parenthèses vides.
 

@@ -45,19 +45,15 @@ This workflow describes how to create a new lesson for the repository. Whether y
 1. **Identify the topic**
    - What concept or skill will this lesson teach?
    - Examples: "REST API Design", "Python Functions", "CSS Grid Layout"
-
 2. **Determine the level**
    - Is this for Beginner, Intermediate, or Advanced learners?
    - What prior knowledge is assumed?
-
 3. **Estimate the time**
    - How long should it take to complete (including exercises)?
    - Realistic estimates: 30 min, 45 min, 1 hour, 1.5 hours, 2 hours, etc.
-
 4. **Identify the subject category**
    - Which subject does this fit under? (Python, Web Development, Data Science, etc.)
    - If it doesn't fit, propose a new subject category in your PR description
-
 5. **Choose 3-5 tags**
    - What keywords would help someone discover this lesson?
    - Tags must be lowercase and hyphenated (e.g., `api-design`, `rest`, `http`)
@@ -73,15 +69,12 @@ This workflow describes how to create a new lesson for the repository. Whether y
 1. **Copy the lesson template**
    - Download or copy [docs/templates/lesson-template.md](../templates/lesson-template.md)
    - Save as: `lesson-[id]-[slug].md` (e.g., `lesson-001-python-intro.md`)
-
 2. **Fill in metadata** (YAML frontmatter)
    - title, description, difficulty, duration, tags, learning_objectives, created, author
    - See [Metadata Specification](metadata-reference.md) for details
-
 3. **Write content sections**
    - Learning Objectives, Introduction, Main Concepts, Examples, Exercises, Assessment
    - See [Lesson Template Contract](../templates/lesson-template.md) for full structure
-
 4. **Skip to Phase 3** → Review Your Content
 
 #### Option B: Generate with LLM
@@ -89,26 +82,21 @@ This workflow describes how to create a new lesson for the repository. Whether y
 1. **Prepare your prompt**
    - Decide on: topic, level (Beginner/Intermediate/Advanced), duration
    - Example: "I want to teach JavaScript async/await for Intermediate developers in 1 hour"
-
 2. **Copy the LLM prompt template**
    - See [Using the LLM Template](#using-the-llm-template) below
    - Customize it for your lesson
-
 3. **Paste into your LLM** (ChatGPT, Claude, Gemini, etc.)
    - Use the prompt template
    - Include the lesson structure template
    - Request specific sections: learning objectives, examples, exercises
-
 4. **Copy generated content**
    - Copy the LLM's response (should follow the template structure)
    - Paste into a new file: `lesson-[id]-[slug].md`
-
 5. **Review & refine**
    - Read through for accuracy
    - Fix any inconsistencies with your subject
    - Ensure examples are clear
    - Verify learning objectives are covered
-
 6. **Proceed to Phase 3** → Review Your Content
 
 ---
@@ -160,27 +148,23 @@ Use the **Quality Checklist** below to verify your lesson:
    cd [repo]
 
    ```
-
 2. **Create a new branch**
    ```bash
    git checkout -b add-lesson-[slug]
    # Example: git checkout -b add-lesson-python-functions
 
    ```
-
 3. **Add your lesson file**
    ```bash
    git add docs/lessons/[subject]/lesson-[id]-[slug].md
 
    ```
-
 4. **Commit your changes**
    ```bash
    git commit -m "Add lesson: [Title]"
    # Example: git commit -m "Add lesson: Introduction to Python Functions"
 
    ```
-
 5. **Push to your fork**
    ```bash
    git push origin add-lesson-[slug]
@@ -196,7 +180,6 @@ Use the **Quality Checklist** below to verify your lesson:
 1. **Go to GitHub**
    - Navigate to the repository on GitHub
    - Click "Compare & pull request" (should appear after you push)
-
 2. **Fill in PR details**
    - **Title**: "Add lesson: [Title]"
    - **Description**: Include:
@@ -204,11 +187,9 @@ Use the **Quality Checklist** below to verify your lesson:
      - Difficulty level and estimated duration
      - Subject category
      - Any notes for reviewers
-
 3. **Request review**
    - Assign to repository maintainers
    - Add label: "lesson-submission"
-
 4. **Wait for feedback**
    - Maintainers will review for quality and compliance
    - May request changes (don't worry, this is normal!)
@@ -367,19 +348,16 @@ Before submitting, verify:
    - Checks for required metadata fields
    - Verifies file naming and location
    - Status appears in PR as a checkmark or ✗
-
 2. **Maintainer Review** (24-48 hours)
    - Reviewers read your lesson
    - Verify accuracy and quality
    - Check alignment with repository style
    - May request changes (this is normal!)
-
 3. **Feedback & Iteration** (as needed)
    - Respond to reviewer comments
    - Make requested changes
    - Push updates to your branch (PR updates automatically)
    - Reviewers re-check
-
 4. **Approval & Merge** (24 hours after approval)
    - Lesson is merged into main branch
    - GitHub Actions builds and deploys site

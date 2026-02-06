@@ -9,9 +9,7 @@ Parcourez toutes les leçons de Science des Données ci-dessous. Cliquez sur n'i
 ### 🔴 Leçons Avancées
 
 1. **[Pandas pour l'Analyse de Données](lesson-001-pandas.md)** (2 heures)  
-
    Maîtrisez la bibliothèque pandas pour l'analyse de données professionnelle. Apprenez les DataFrames, les opérations, les transformations et les meilleures pratiques.
-
    - Tags: `python`, `pandas`, `data-analysis`, `data-science`, `dataframes`
 
 ---

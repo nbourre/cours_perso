@@ -276,16 +276,12 @@ Les balises sémantiques rendent le code plus facile à lire et améliorent l'ac
 
 1. **Que signifie HTML et quel est son objectif ?**
    - HTML signifie HyperText Markup Language. Son objectif est de fournir la structure et le contenu des pages web.
-
 2. **Quelle est la différence entre une balise ouvrante et une balise fermante ?**
    - Une balise ouvrante marque le début d'un élément (par ex. `<p>`). Une balise fermante marque où il se termine (par ex. `</p>`).
-
 3. **Quels éléments doivent être à l'intérieur de la balise `<head>` ?**
    - Les métadonnées comme le titre de la page (`<title>`), le jeu de caractères (`<meta>`) et les liens aux feuilles de style doivent être dans le `<head>`.
-
 4. **Qu'est-ce que le HTML sémantique et pourquoi est-il important ?**
    - Le HTML sémantique utilise des balises qui décrivent leur objectif (comme `<nav>`, `<article>`, `<footer>`). C'est important pour l'accessibilité et la lisibilité du code.
-
 5. **Quel est l'ordre correct des balises HTML, HEAD et BODY ?**
    - La balise `<html>` enveloppe tout. À l'intérieur se trouvent `<head>` (d'abord) et `<body>` (deuxième).
 

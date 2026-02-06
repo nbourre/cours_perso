@@ -355,16 +355,12 @@ Adjust styles based on screen size:
 
 1. **What does CSS stand for and what is its purpose?**
    - CSS stands for Cascading Style Sheets. Its purpose is to style HTML elements with colors, fonts, layouts, and spacing.
-
 2. **What are the three ways to add CSS to an HTML page?**
    - Inline CSS (in the HTML tag), Internal CSS (in `<style>` tag), External CSS (in separate .css file).
-
 3. **What's the difference between a class selector and an ID selector?**
    - Class selectors (`.classname`) can be used on multiple elements. ID selectors (`#idname`) are unique to one element.
-
 4. **What does the CSS box model include?**
    - The box model includes margin (outside space), border, padding (inside space), and the content.
-
 5. **How do you make a page responsive to different screen sizes?**
    - Use the viewport meta tag and media queries to adjust styles based on screen width.
 

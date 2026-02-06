@@ -275,16 +275,12 @@ Semantic tags make code easier to read and improve accessibility.
 
 1. **What does HTML stand for and what is its purpose?**
    - HTML stands for HyperText Markup Language. Its purpose is to provide the structure and content of web pages.
-
 2. **What is the difference between an opening tag and a closing tag?**
    - An opening tag marks where an element starts (e.g., `<p>`). A closing tag marks where it ends (e.g., `</p>`).
-
 3. **What elements should be inside the `<head>` tag?**
    - Metadata like the page title (`<title>`), character set (`<meta>`), and links to stylesheets should be in the `<head>`.
-
 4. **What is semantic HTML and why is it important?**
    - Semantic HTML uses tags that describe their purpose (like `<nav>`, `<article>`, `<footer>`). It's important for accessibility and code readability.
-
 5. **What's the correct order of HTML, HEAD, and BODY tags?**
    - The `<html>` tag wraps everything. Inside are `<head>` (first) and `<body>` (second).
 

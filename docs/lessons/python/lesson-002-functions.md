@@ -242,16 +242,12 @@ print(f"Sum: {total}, Average: {avg}, Count: {count}")
 
 1. **What is a function and why are functions useful?**
    - A function is a reusable block of code that performs a task. Functions help you avoid repetition, organize code, and make programs more readable.
-
 2. **How do you define a function in Python?**
    - Use the `def` keyword followed by the function name and parentheses: `def function_name(parameters):` then the function body.
-
 3. **What's the difference between a parameter and an argument?**
    - A parameter is what you define in the function (e.g., `def add(a, b)`). An argument is the actual value you pass when calling the function (e.g., `add(3, 5)`).
-
 4. **What does the `return` statement do?**
    - The `return` statement sends a value back from the function to the code that called it.
-
 5. **Can a function have no parameters?**
    - Yes, you can write `def function_name():` with empty parentheses.
 

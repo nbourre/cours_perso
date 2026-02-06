@@ -25,6 +25,23 @@ def is_list_item(line: str) -> bool:
     return False
 
 
+def is_sublist_item(line: str) -> bool:
+    """Check if a line is an indented sublist item (2+ spaces before list marker)."""
+    # Must have at least 2 spaces of indentation before list marker
+    if re.match(r'^\s{2,}[-*+]\s', line):
+        return True
+    if re.match(r'^\s{2,}\d+[.)]\s', line):
+        return True
+    if re.match(r'^\s{2,}[-*+]\s+\[[ xX]\]\s', line):
+        return True
+    return False
+
+
+def get_indent_level(line: str) -> int:
+    """Get the indentation level of a line (number of leading spaces)."""
+    return len(line) - len(line.lstrip())
+
+
 def is_blank_line(line: str) -> bool:
     """Check if a line is blank."""
     return line.strip() == ''
@@ -49,6 +66,8 @@ def fix_list_spacing(content: str) -> str:
     in_yaml = False
     in_code_block = False
     yaml_delimiters = 0
+    list_base_indent = 0  # Track the base indentation of current list
+    pending_blank_lines = []  # Track blank lines we might need to remove
     
     for i, line in enumerate(lines):
         # Track YAML frontmatter
@@ -63,12 +82,30 @@ def fix_list_spacing(content: str) -> str:
         
         # Skip processing inside YAML frontmatter or code blocks
         if in_yaml or in_code_block:
+            # Flush any pending blank lines first
+            fixed_lines.extend(pending_blank_lines)
+            pending_blank_lines = []
             fixed_lines.append(line)
             continue
         
         is_current_list_item = is_list_item(line)
+        is_current_sublist_item = is_sublist_item(line)
+        current_indent = get_indent_level(line)
+        is_blank = is_blank_line(line)
         
-        # Starting a new list
+        # Handle blank lines specially - we might keep or remove them
+        if is_blank:
+            if in_list:
+                # Don't add blank immediately - wait to see what comes next
+                pending_blank_lines.append(line)
+            else:
+                # Not in a list, keep blank lines as-is
+                fixed_lines.append(line)
+            continue
+        
+        # Non-blank line processing
+        
+        # Starting a new list (parent level only)
         if is_current_list_item and not in_list:
             # Ensure blank line before list (unless at start or after blank line)
             if fixed_lines and not is_blank_line(fixed_lines[-1]):
@@ -76,28 +113,44 @@ def fix_list_spacing(content: str) -> str:
                 if not (fixed_lines[-1].strip() == '---' and yaml_delimiters == 2):
                     fixed_lines.append('')
             in_list = True
+            list_base_indent = current_indent
+            # Clear any pending blanks (we're starting fresh)
+            pending_blank_lines = []
             fixed_lines.append(line)
         
-        # Continuing a list
-        elif is_current_list_item and in_list:
-            # Remove blank lines between list items (compact spacing)
-            if fixed_lines and is_blank_line(fixed_lines[-1]):
-                # Keep the blank line if previous was also blank (preserve intentional spacing)
-                if len(fixed_lines) >= 2 and not is_blank_line(fixed_lines[-2]):
-                    fixed_lines.pop()  # Remove the blank line
+        # Another list item (parent or sub) while in list
+        elif (is_current_list_item or is_current_sublist_item) and in_list:
+            # Remove pending blank lines between list items (compact spacing)
+            pending_blank_lines = []
             fixed_lines.append(line)
         
-        # Ending a list
-        elif not is_current_list_item and in_list:
-            in_list = False
-            # Ensure blank line after list (unless next line is blank or we're at end)
-            if not is_blank_line(line):
-                fixed_lines.append('')
-            fixed_lines.append(line)
+        # Non-list content while in a list
+        elif in_list:
+            # Check if this is continuation text (indented under a list item)
+            if current_indent > list_base_indent:
+                # This is continuation text, remove pending blanks
+                pending_blank_lines = []
+                fixed_lines.append(line)
+            else:
+                # Not continuation - we're ending the list
+                in_list = False
+                list_base_indent = 0
+                # Add blank line after list, then the pending blanks, then current line
+                if fixed_lines and not is_blank_line(fixed_lines[-1]):
+                    fixed_lines.append('')
+                # Clear pending blanks (we just ended the list)
+                pending_blank_lines = []
+                fixed_lines.append(line)
         
         # Not in a list
         else:
+            # Add any pending blank lines first
+            fixed_lines.extend(pending_blank_lines)
+            pending_blank_lines = []
             fixed_lines.append(line)
+    
+    # Don't forget any pending blank lines at the end
+    fixed_lines.extend(pending_blank_lines)
     
     return '\n'.join(fixed_lines)
 

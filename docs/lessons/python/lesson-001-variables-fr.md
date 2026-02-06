@@ -187,16 +187,12 @@ print(f"{product_name}: ${price}")
 
 1. **Qu'est-ce qu'une variable et pourquoi les utilisons-nous ?**
    - Une variable est un conteneur nommé qui stocke des données. Nous les utilisons pour stocker les informations dont notre programme a besoin, rendre le code plus lisible, et faciliter la modification des valeurs.
-
 2. **Comment créez-vous une variable en Python ?**
    - Utilisez la syntaxe : `variable_name = value`. Par exemple, `age = 25`.
-
 3. **Quels sont les quatre types de données fondamentaux mentionnés dans cette leçon ?**
    - Les entiers (nombres entiers), les décimales (nombres avec virgule), les chaînes de caractères (texte), et les booléens (Vrai/Faux).
-
 4. **Pouvez-vous nommer une variable avec un espace ? Pourquoi ou pourquoi pas ?**
    - Non, Python ne permet pas les espaces dans les noms de variables. Utilisez plutôt des tirets bas : `user_name` et non `user name`.
-
 5. **Écrivez une ligne Python qui crée une variable nommée `favorite_color` avec la valeur "bleu".**
    - `favorite_color = "bleu"`
 

@@ -356,16 +356,12 @@ Ajustez les styles en fonction de la taille de l'écran :
 
 1. **Que signifie CSS et quel est son objectif ?**
    - CSS signifie Cascading Style Sheets. Son objectif est de styliser les éléments HTML avec des couleurs, des polices, des mises en page et de l'espacement.
-
 2. **Quelles sont les trois façons d'ajouter du CSS à une page HTML ?**
    - CSS Inline (dans la balise HTML), CSS Interne (dans la balise `<style>`), CSS Externe (dans un fichier .css séparé).
-
 3. **Quelle est la différence entre un sélecteur de classe et un sélecteur d'ID ?**
    - Les sélecteurs de classe (`.classname`) peuvent être utilisés sur plusieurs éléments. Les sélecteurs d'ID (`#idname`) sont uniques à un élément.
-
 4. **Que comprend le modèle de boîte CSS ?**
    - Le modèle de boîte comprend la marge (espace externe), la bordure, le rembourrage (espace interne) et le contenu.
-
 5. **Comment rendre une page réactive à différentes tailles d'écran ?**
    - Utilisez la balise viewport meta et les media queries pour ajuster les styles en fonction de la largeur de l'écran.
 

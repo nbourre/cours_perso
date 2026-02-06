@@ -321,16 +321,12 @@ df['Performance'] = df['Sales'] > avg_overall
 
 1. **Qu'est-ce qu'un DataFrame dans pandas ?**
    - Un DataFrame est un tableau 2D avec des lignes et des colonnes, similaire à une feuille de calcul ou une table de base de données.
-
 2. **Comment charger les données d'un fichier CSV dans un DataFrame ?**
    - Utilisez `df = pd.read_csv('filename.csv')`
-
 3. **Comment sélectionnez-vous les lignes où Age > 30 ?**
    - Utilisez `df[df['Age'] > 30]` pour filtrer le DataFrame.
-
 4. **Quelle est la différence entre `.loc[]` et `.iloc[]` ?**
    - `.loc[]` accède par étiquette/nom d'index. `.iloc[]` accède par position (emplacement entier).
-
 5. **Comment créez-vous une nouvelle colonne à partir des colonnes existantes ?**
    - Attribuez une nouvelle colonne : `df['NewColumn'] = df['Col1'] + df['Col2']`
 
