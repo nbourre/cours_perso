@@ -69,6 +69,19 @@ nav:
     - Data Science:
       - Overview: lessons/data-science/index.md
       - "Pandas for Data Analysis": lessons/data-science/lesson-001-pandas.md
+  - Leçons en Français:
+    - Tous les Leçons: lessons/
+    - Python Bases:
+      - Aperçu: lessons/python/index-fr.md
+      - "Introduction aux Variables": lessons/python/lesson-001-variables-fr.md
+      - "Fonctions : Réutilisation et Organisation du Code": lessons/python/lesson-002-functions-fr.md
+    - Développement Web:
+      - Aperçu: lessons/web-development/index-fr.md
+      - "Les Fondamentaux du HTML : Construire des Pages Web": lessons/web-development/lesson-001-html-intro-fr.md
+      - "Les Bases du CSS : Styliser Vos Pages Web": lessons/web-development/lesson-002-css-basics-fr.md
+    - Science des Données:
+      - Aperçu: lessons/data-science/index-fr.md
+      - "Pandas pour l'Analyse de Données": lessons/data-science/lesson-001-pandas-fr.md
   - Guides:
     - Quick Start: guides/quick-start.md
     - Create a Lesson: guides/workflow-create-lesson.md
@@ -77,9 +90,20 @@ nav:
     - Tagging Guide: guides/tagging-guide.md
     - "Tags Reference": guides/tags-reference.md
     - Troubleshooting: guides/troubleshooting.md
+  - Guides (Français):
+    - Démarrage Rapide: guides/quick-start-fr.md
+    - Créer une Leçon: guides/workflow-create-lesson-fr.md
+    - Utilisation du Template LLM: guides/lesson-template-instructions-fr.md
+    - Référence des Métadonnées: guides/metadata-reference-fr.md
+    - Guide de Balisage: guides/tagging-guide-fr.md
+    - "Référence des Tags": guides/tags-reference-fr.md
+    - Dépannage: guides/troubleshooting-fr.md
   - Resources:
     - Lesson Template: templates/lesson-template.md
     - LLM Prompt Template: templates/llm-prompt-template.txt
+  - Ressources (Français):
+    - Template de Leçon: templates/lesson-template-fr.md
+    - Template de Prompt LLM: templates/llm-prompt-template-fr.txt
   - Contributing: ../CONTRIBUTING.md
 
 repo_name: cours_perso
