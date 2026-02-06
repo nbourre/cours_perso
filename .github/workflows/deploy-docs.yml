@@ -5,6 +5,10 @@ on:
     branches:
       - main
       - master
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/deploy-docs.yml"
   pull_request:
     branches:
       - main
@@ -43,7 +47,7 @@ jobs:
         run: mkdocs build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: './site'
 
