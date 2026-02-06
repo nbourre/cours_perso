@@ -1,0 +1,232 @@
+# Modèle d'Invite LLM pour la Génération de Leçons
+
+**Objectif**: Invite prête à l'emploi pour générer du contenu de leçon avec des assistants IA (ChatGPT, Claude, etc.)  
+**Utilisation**: Copiez, personnalisez les placeholders [entre crochets], et collez dans votre LLM  
+**Sortie**: Leçon formatée Markdown prête à enregistrer comme `lesson-[id]-[slug].md`
+
+---
+
+## Instructions de Personnalisation
+
+Remplacez les placeholders suivants avant d'utiliser cette invite:
+
+- **[TOPIC]**: Le concept ou la compétence spécifique à enseigner (par exemple, "Fonctions Python", "Conception d'API REST")
+- **[LEVEL]**: Difficulté du public cible (Beginner, Intermediate, Advanced)
+- **[DURATION]**: Temps d'apprentissage estimé (par exemple, "30 minutes", "1 heure", "2 heures")
+- **[NUM_EXAMPLES]**: Nombre d'exemples pratiques (généralement 2-3)
+- **[NUM_EXERCISES]**: Nombre d'exercices à créer (généralement 2-3)
+- **[CONTEXT]**: Pourquoi les apprenants devraient se soucier de ce sujet (personnalisez pour votre public)
+
+---
+
+## Modèle d'Invite
+
+```
+Vous êtes un créateur de contenu éducatif expert. Créez une leçon complète et conviviale pour les étudiants
+sur [TOPIC] pour les apprenants [LEVEL]. La leçon doit être réalisable en [DURATION].
+
+CRITIQUE: Utilisez cette structure Markdown EXACTE avec toutes les sections obligatoires:
+
+---
+title: "[TOPIC]"
+description: "Résumé clair d'une phrase de ce que les apprenants gagneront"
+difficulty: "[LEVEL]"
+duration: "[DURATION]"
+tags: [tag1, tag2, tag3, tag4, tag5]
+prerequisites: []
+learning_objectives:
+  - "Objectif d'apprentissage spécifique et mesurable 1"
+  - "Objectif d'apprentissage spécifique et mesurable 2"
+  - "Objectif d'apprentissage spécifique et mesurable 3"
+created: 2026-01-30
+author: "Assistant LLM"
+status: "published"
+---
+
+# [TOPIC]
+
+## Learning Objectives
+
+À la fin de cette leçon, vous pourrez:
+- [Objectif 1 - spécifique et mesurable]
+- [Objectif 2 - spécifique et mesurable]
+- [Objectif 3 - spécifique et mesurable]
+
+## Introduction
+
+[Introduction engageante expliquant POURQUOI ce sujet est important. Contexte: [CONTEXT]]
+
+## [Concept Principal 1 - Choisir un titre descriptif]
+
+[Explication claire du premier concept clé]
+
+### Exemple 1: [Titre descriptif]
+[Exemple concret avec code/diagramme le cas échéant]
+
+### Exemple 2: [Titre descriptif]
+[Un autre exemple montrant un aspect différent]
+
+## [Concept Principal 2 - Choisir un titre descriptif]
+
+[Explication du deuxième concept clé]
+
+### Exemple 1: [Titre descriptif]
+[Exemple concret]
+
+## [Concept Principal 3 - Optionnel, choisir un titre descriptif]
+
+[Si le sujet nécessite 3 concepts principaux, ajouter cette section]
+
+## Exercices
+
+### Exercice 1: [Titre Descriptif]
+
+**Difficulté**: Beginner  
+**Temps**: 5-10 minutes
+
+[Instructions claires pour ce que l'apprenant doit faire]
+
+**Résultat attendu**: [Ce que l'apprenant doit pouvoir faire/créer]
+
+### Exercice 2: [Titre Descriptif]
+
+**Difficulté**: Intermediate  
+**Temps**: 15-20 minutes
+
+[Instructions claires pour un exercice plus difficile]
+
+## Évaluation
+
+### Questions d'Auto-Évaluation
+
+1. [Question testant l'objectif d'apprentissage 1]
+2. [Question testant l'objectif d'apprentissage 2]
+3. [Question testant l'objectif d'apprentissage 3]
+
+## Résumé
+
+[Récapitulez les points d'apprentissage clés de la leçon]
+
+## Ressources Supplémentaires
+
+- [Lien ou référence à la documentation connexe]
+- [Référence au tutoriel ou à l'outil]
+- [Chemin d'apprentissage recommandé au niveau suivant]
+
+## Prochaines Étapes
+
+Après avoir complété cette leçon, explorez:
+- [Concept connexe 1]
+- [Concept connexe 2]
+- [Leçon de suivi suggérée]
+
+---
+
+EXIGENCES POUR CETTE LEÇON:
+
+1. **Clarté**: Utilisez un langage simple et clair. Évitez le jargon ou expliquez tous les termes techniques.
+2. **Exemples**: Incluez [NUM_EXAMPLES] exemples pratiques et relatable (code, diagrammes, scénarios)
+3. **Exercices**: Créez [NUM_EXERCISES] exercices pratiques avec une difficulté croissante
+4. **Évaluation**: Fournissez les questions d'auto-évaluation qui vérifient que tous les objectifs d'apprentissage sont atteints
+5. **Longueur**: Le contenu doit être réalisable en [DURATION]
+6. **Engagement**: Utilisez la voix active, posez des questions rhétoriques, fournissez la motivation
+7. **Structure**: Suivez la structure du modèle exactement - NE PAS ajouter, supprimer ou renommer les sections
+8. **Tags**: Choisissez 5 tags minuscules, avec tirets pertinents pour le sujet (par exemple, functions, python, variables, code-organization, beginner-friendly)
+
+CRITIQUE: Commencez par l'en-tête YAML (---title: ...---) et terminez par la section "Prochaines Étapes".
+NE PAS ajouter de texte d'introduction avant les métadonnées YAML.
+NE PAS inclure de texte après le contenu de la leçon.
+La sortie doit être prête à coller directement dans un fichier Markdown.
+
+Commencez la leçon maintenant:
+```
+
+---
+
+## Astuces pour les Meilleurs Résultats
+
+### Avant d'Utiliser l'Invite
+
+1. **Définissez vos tags soigneusement**: Choisissez les tags qui aideraient les apprenants à trouver cette leçon
+   - Exemples: `python`, `functions`, `variables`, `async-programming`, `beginner-friendly`
+2. **Considérez votre public**: La spécificité du niveau de difficulté (Beginner/Intermediate/Advanced) améliore la qualité de la sortie
+3. **Personnalisez le contexte**: Remplacez [CONTEXT] par quelque chose de pertinent pour votre public
+
+### Après Avoir Obtenu du Contenu Généré
+
+1. **Examinez l'exactitude**: Vérifiez que tous les exemples de code sont corrects
+2. **Vérifiez la structure**: Confirmez que toutes les sections sont présentes et bien organisées
+3. **Validez les métadonnées**: Assurez-vous que le titre, les tags et les objectifs d'apprentissage sont clairs
+4. **Testez la lisibilité**: Lisez comme si vous étiez l'apprenant cible
+5. **Corrigez les problèmes**: Des petites éditions sont souvent nécessaires (fautes de frappe, formatage, clarté)
+6. **Ajoutez des visuels**: Considérez l'ajout de diagrammes ou de captures d'écran si utile
+
+### Personnalisations Courantes
+
+**Pour les leçons Python**:
+```
+[TOPIC]: "Fonctions Python"
+[LEVEL]: "Beginner"
+[DURATION]: "45 minutes"
+[CONTEXT]: "Les fonctions sont essentielles pour écrire du code Python propre et réutilisable"
+tags: [python, functions, code-organization, variables, beginner-friendly]
+```
+
+**Pour les leçons de Développement Web**:
+```
+[TOPIC]: "Introduction aux APIs REST"
+[LEVEL]: "Intermediate"
+[DURATION]: "1 heure"
+[CONTEXT]: "Les APIs REST alimentent les applications web modernes et les applications mobiles"
+tags: [api, rest, backend, http, web-development]
+```
+
+**Pour les leçons de Science des Données**:
+```
+[TOPIC]: "Analyse de Données avec Pandas"
+[LEVEL]: "Intermediate"
+[DURATION]: "90 minutes"
+[CONTEXT]: "Pandas est l'outil le plus puissant pour la manipulation de données en Python"
+tags: [data-science, pandas, python, data-analysis, visualization]
+```
+
+---
+
+## Alternatif: Invite Plus Simple (Si Vous Utilisez un LLM de Base)
+
+Si le modèle détaillé est trop long, essayez cette version plus simple:
+
+```
+Créez une leçon sur [TOPIC] pour les apprenants [LEVEL] (durée: [DURATION]).
+
+Structure:
+- Métadonnées YAML (title, description, difficulty, duration, tags, learning_objectives)
+- Objectifs d'Apprentissage (3-5 éléments)
+- Introduction
+- 2-3 sections de Concepts Clés avec exemples
+- 2-3 Exercices (difficulté débutant → intermédiaire)
+- Questions d'auto-évaluation pour l'évaluation
+- Résumé
+- Prochaines étapes
+
+Rendez-le clair, pratique et prêt à enregistrer en Markdown.
+```
+
+---
+
+## Checklist de Succès pour le Contenu Généré
+
+Après avoir reçu du contenu de votre LLM:
+
+- [ ] En-tête YAML présent et valide
+- [ ] Tous les champs obligatoires remplis: title, description, difficulty, duration, tags, learning_objectives
+- [ ] Les objectifs d'apprentissage sont spécifiques et mesurables
+- [ ] Au moins 2-3 exemples pratiques inclus
+- [ ] Au moins 2-3 exercices avec difficulté croissante
+- [ ] Section d'évaluation avec les questions d'auto-évaluation
+- [ ] Toutes les sections correspondent à la structure obligatoire
+- [ ] La syntaxe Markdown est correcte (pas de formatage brisé)
+- [ ] Le langage est clair et accessible pour le niveau cible
+- [ ] Le temps total pour compléter correspond à la durée estimée
+
+**Prêt à s'engager?** → Renommez le fichier en `lesson-[id]-[slug].md` → Placez dans le répertoire de sujet correct → Soumettez PR
