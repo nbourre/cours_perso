@@ -9,6 +9,7 @@ on:
       - "docs/**"
       - "mkdocs.yml"
       - ".github/workflows/deploy-docs.yml"
+      - "requirements.txt"
   pull_request:
     branches:
       - main
