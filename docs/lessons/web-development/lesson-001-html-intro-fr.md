@@ -12,6 +12,7 @@ learning_objectives:
 created: 2026-01-30
 author: "LLM Assistant"
 status: "published"
+lang: fr
 ---
 
 # Les Fondamentaux du HTML : Construire des Pages Web

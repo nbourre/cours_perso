@@ -13,6 +13,7 @@ prerequisites: [lesson-001-html-intro]
 created: 2026-01-30
 author: "LLM Assistant"
 status: "published"
+lang: fr
 ---
 
 # Les Bases du CSS : Styliser Vos Pages Web

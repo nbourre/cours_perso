@@ -13,6 +13,7 @@ prerequisites: [lesson-001-variables]
 created: 2026-01-30
 author: "LLM Assistant"
 status: "published"
+lang: fr
 ---
 
 # Fonctions : Réutilisation et Organisation du Code

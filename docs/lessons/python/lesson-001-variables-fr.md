@@ -11,6 +11,7 @@ learning_objectives:
 created: 2026-01-30
 author: "LLM Assistant"
 status: "published"
+lang: fr
 ---
 
 # Introduction aux Variables
