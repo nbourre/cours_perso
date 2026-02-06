@@ -97,7 +97,6 @@ Browse all lessons across subjects using our tag system. Find related content by
 
 **For Learners:**
 - **Browse by Subject**: Click any subject above to see all lessons in that category
-- **Browse All Lessons**: [View complete lesson index](lessons/)
 - **Search by Tags**: [Use the tag filter](guides/tags-reference.md) to find lessons across subjects
 - **Quick Start**: New here? [Get started in 10 minutes](guides/quick-start.md)
 
@@ -105,7 +104,7 @@ Browse all lessons across subjects using our tag system. Find related content by
 - **Create a Lesson**: Follow our [step-by-step workflow guide](guides/workflow-create-lesson.md)
 - **Use LLM Templates**: Generate lessons efficiently with [AI-powered templates](guides/lesson-template-instructions.md)
 - **Lesson Template**: Copy and use our [standard lesson template](templates/lesson-template.md)
-- **Contributing Guide**: Read our [CONTRIBUTING.md](../CONTRIBUTING.md) for submission guidelines
+- **Contributing Guide**: Read our [CONTRIBUTING.md](CONTRIBUTING.md) for submission guidelines
 
 ---
 
@@ -146,7 +145,7 @@ Browse all lessons across subjects using our tag system. Find related content by
 |-------|---------|-----------|
 | [Quick Start Guide](guides/quick-start.md) | 10-minute onboarding for learners and creators | 10 min |
 | [Lesson Creation Workflow](guides/workflow-create-lesson.md) | Step-by-step guide to create and submit lessons | 15 min |
-| [LLM Template Usage](guides/using-llm-template.md) | How to use AI to generate lessons | 10 min |
+| [LLM Template Usage](guides/lesson-template-instructions.md) | How to use AI to generate lessons | 10 min |
 | [Metadata Reference](guides/metadata-reference.md) | Complete YAML frontmatter specification | 5 min |
 | [Tagging Guide](guides/tagging-guide.md) | How to tag lessons for discoverability | 5 min |
 
@@ -171,8 +170,8 @@ All lessons are stored as **Markdown files with YAML frontmatter** for:
 ## 📞 Questions or Feedback?
 
 - **How do I create a lesson?** → See [Lesson Creation Workflow](guides/workflow-create-lesson.md)
-- **How do I use the LLM template?** → See [Using LLM Templates](guides/using-llm-template.md)
-- **What if I need help?** → Check [FAQ](guides/faq.md) or create an issue
+- **How do I use the LLM template?** → See [LLM Template Instructions](guides/lesson-template-instructions.md)
+- **What if I need help?** → Check [Troubleshooting Guide](guides/troubleshooting.md) or create an issue
 - **Found a problem?** → Submit a pull request or open an issue on GitHub
 
 ---
@@ -181,7 +180,7 @@ All lessons are stored as **Markdown files with YAML frontmatter** for:
 
 This is an open-source project. Contributions are welcome!
 
-- **Want to contribute?** Read [CONTRIBUTING.md](../CONTRIBUTING.md)
+- **Want to contribute?** Read [CONTRIBUTING.md](CONTRIBUTING.md)
 - **Questions?** Open an issue on GitHub
 - **Suggestions?** We'd love your feedback!
 

@@ -359,7 +359,7 @@ Before pushing your PR, verify:
 - **Lessons Questions**: See [Lesson Creation Workflow](workflow-create-lesson.md)
 - **Metadata Reference**: See [Metadata Reference](metadata-reference.md)
 - **Tagging Help**: See [Tagging Guide](tagging-guide.md)
-- **Contributing Process**: See [CONTRIBUTING.md](../CONTRIBUTING.md)
+- **Contributing Process**: See [Contributing Guidelines](../CONTRIBUTING.md)
 - **Quick Start**: See [Quick Start Guide](quick-start.md)
 
 **Happy creating!** 📚✨

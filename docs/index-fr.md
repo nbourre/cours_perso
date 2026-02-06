@@ -97,7 +97,6 @@ Parcourez toutes les leçons entre sujets en utilisant notre système de tags. T
 
 **Pour les Apprenants:**
 - **Parcourir par Sujet**: Cliquez sur n'importe quel sujet ci-dessus pour voir toutes les leçons dans cette catégorie
-- **Parcourir Toutes les Leçons**: [Voir l'index complet des leçons](lessons/)
 - **Rechercher par Tags**: [Utilisez le filtre de tags](guides/tags-reference-fr.md) pour trouver les leçons entre sujets
 - **Démarrage Rapide**: Vous êtes nouveau? [Démarrez en 10 minutes](guides/quick-start-fr.md)
 
@@ -105,7 +104,7 @@ Parcourez toutes les leçons entre sujets en utilisant notre système de tags. T
 - **Créer une Leçon**: Suivez notre [guide de flux de travail étape par étape](guides/workflow-create-lesson-fr.md)
 - **Utiliser les Modèles LLM**: Générez des leçons efficacement avec les [modèles alimentés par l'IA](guides/lesson-template-instructions-fr.md)
 - **Modèle de Leçon**: Copiez et utilisez notre [modèle de leçon standard](templates/lesson-template-fr.md)
-- **Guide de Contribution**: Lisez notre [CONTRIBUTING.md](../CONTRIBUTING-fr.md) pour les directives de soumission
+- **Guide de Contribution**: Lisez notre [CONTRIBUTING.md](CONTRIBUTING-fr.md) pour les directives de soumission
 
 ---
 
@@ -181,7 +180,7 @@ Toutes les leçons sont stockées en tant que **fichiers Markdown avec en-tête 
 
 C'est un projet open-source. Les contributions sont les bienvenues!
 
-- **Vous voulez contribuer?** Lisez [CONTRIBUTING.md](../CONTRIBUTING-fr.md)
+- **Vous voulez contribuer?** Lisez [CONTRIBUTING.md](CONTRIBUTING-fr.md)
 - **Des questions?** Ouvrir une issue sur GitHub
 - **Des suggestions?** Nous aimerions votre retour!
 

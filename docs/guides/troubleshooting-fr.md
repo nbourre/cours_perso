@@ -359,7 +359,7 @@ Avant de pousser votre PR, vérifiez:
 - **Questions sur les Leçons**: Voir [Flux de Travail de Création de Leçon](workflow-create-lesson.md)
 - **Référence des Métadonnées**: Voir [Référence des Métadonnées](metadata-reference.md)
 - **Aide sur le Marquage**: Voir [Guide de Marquage](tagging-guide.md)
-- **Processus de Contribution**: Voir [CONTRIBUTING.md](../CONTRIBUTING.md)
+- **Processus de Contribution**: Voir [Guide de Contribution](../CONTRIBUTING-fr.md)
 - **Démarrage Rapide**: Voir [Guide de Démarrage Rapide](quick-start.md)
 
 **Bon création!** 📚✨

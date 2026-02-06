@@ -58,7 +58,6 @@ plugins:
 nav:
   - Home: index.md
   - Browse Lessons:
-    - All Lessons: lessons/
     - Python Basics:
       - Overview: lessons/python/index.md
       - "Introduction to Variables": lessons/python/lesson-001-variables.md
@@ -71,7 +70,6 @@ nav:
       - Overview: lessons/data-science/index.md
       - "Pandas for Data Analysis": lessons/data-science/lesson-001-pandas.md
   - Leçons en Français:
-    - Tous les Leçons: lessons/
     - Python Bases:
       - Aperçu: lessons/python/index-fr.md
       - "Introduction aux Variables": lessons/python/lesson-001-variables-fr.md
@@ -105,7 +103,8 @@ nav:
   - Ressources (Français):
     - Template de Leçon: templates/lesson-template-fr.md
     - Template de Prompt LLM: templates/llm-prompt-template-fr.txt
-  - Contributing: ../CONTRIBUTING.md
+  - Contributing: CONTRIBUTING.md
+  - Contribuer (Français): CONTRIBUTING-fr.md
 
 repo_name: cours_perso
 repo_url: https://github.com/your-username/cours_perso

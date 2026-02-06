@@ -99,7 +99,6 @@ learning_objectives: [objectif1, objectif2, objectif3]
 | **Structure du cours** | Modèle | [lesson-template.md](../templates/lesson-template.md) |
 | **Champs de métadonnées** | Spécification | [Référence des métadonnées](metadata-reference.md) |
 | **Modèle LLM** | Dans le dossier modèles | `docs/templates/llm-prompt-template.txt` |
-| **Modèle de données** | Docs de conception | [../data-model.md](../data-model.md) |
 
 ---
 

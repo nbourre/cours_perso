@@ -99,7 +99,6 @@ learning_objectives: [objective1, objective2, objective3]
 | **Lesson structure** | Template | [lesson-template.md](../templates/lesson-template.md) |
 | **Metadata fields** | Specification | [Metadata Reference](metadata-reference.md) |
 | **LLM template** | In templates folder | `docs/templates/llm-prompt-template.txt` |
-| **Data model** | Design docs | [../data-model.md](../data-model.md) |
 
 ---
 
@@ -206,7 +205,6 @@ Before you create your pull request:
 - **Questions about structure?** → See [Lesson Template](../templates/lesson-template.md)
 - **Questions about metadata?** → See [Metadata Reference](metadata-reference.md)
 - **Need detailed workflow?** → See [Lesson Workflow Guide](workflow-create-lesson.md)
-- **Want to understand the design?** → See [Data Model](../data-model.md)
 - **Open issues on GitHub** or email maintainers
 
 ---
