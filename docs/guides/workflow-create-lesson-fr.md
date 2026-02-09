@@ -67,36 +67,52 @@ Ce flux décrit comment créer un nouveau cours pour le référentiel. Que vous 
 #### Option A : Rédiger le contenu vous-même
 
 1. **Copiez le modèle de cours**
+
    - Téléchargez ou copiez [docs/templates/lesson-template.md](../templates/lesson-template.md)
    - Enregistrez sous : `lesson-[id]-[slug].md` (par ex., `lesson-001-python-intro.md`)
+
 2. **Remplissez les métadonnées** (préambule YAML)
+
    - title, description, difficulty, duration, tags, learning_objectives, created, author
    - Voir [Spécification des métadonnées](metadata-reference.md) pour les détails
+
 3. **Rédigez les sections de contenu**
+
    - Objectifs d'apprentissage, Introduction, Concepts principaux, Exemples, Exercices, Évaluation
    - Voir [Modèle de cours](../templates/lesson-template.md) pour la structure complète
+
 4. **Passez à la Phase 3** → Vérifiez votre contenu
 
 #### Option B : Générer avec LLM
 
 1. **Préparez votre prompt**
+
    - Décidez de : sujet, niveau (Débutant/Intermédiaire/Avancé), durée
    - Exemple : « Je veux enseigner async/await JavaScript pour les développeurs Intermédiaires en 1 heure »
+
 2. **Copiez le modèle de prompt LLM**
+
    - Voir [Utilisation du modèle LLM](#utilisation-du-modèle-llm) ci-dessous
    - Personnalisez-le pour votre cours
+
 3. **Collez dans votre LLM** (ChatGPT, Claude, Gemini, etc.)
+
    - Utilisez le modèle de prompt
    - Incluez le modèle de structure de cours
    - Demandez des sections spécifiques : objectifs d'apprentissage, exemples, exercices
+
 4. **Copiez le contenu généré**
+
    - Copiez la réponse du LLM (doit suivre la structure du modèle)
    - Collez dans un nouveau fichier : `lesson-[id]-[slug].md`
+
 5. **Vérifiez et affinez**
+
    - Lisez pour vérifier la précision
    - Corrigez les incohérences avec votre sujet
    - Assurez-vous que les exemples sont clairs
    - Vérifiez que les objectifs d'apprentissage sont couverts
+
 6. **Procédez à la Phase 3** → Vérifiez votre contenu
 
 ---
