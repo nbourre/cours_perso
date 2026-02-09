@@ -8,73 +8,65 @@ Welcome to the personalized course repository! This is your go-to place for disc
 
 Lessons are organized by subject for easy discovery. Click on a subject below to browse all lessons in that category.
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+<div class="grid cards" markdown>
 
-<div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; background-color: #f9f9f9;">
+- ### 🐍 Python Basics
 
-### 🐍 Python Basics
+    Learn Python fundamentals: variables, functions, loops, and object-oriented programming.
+ 
+    **📊 Statistics:**
+ 
+    - Total Lessons: **2**
+    - Beginner: 2 | Intermediate: 0 | Advanced: 0
+    - Time to complete: ~1.25 hours
+ 
+    **Popular Topics:**
+ 
+    - Variables & Data Types
+    - Functions & Parameters
+    - Code Organization
+ 
+    [**Browse Python Lessons →**](lessons/python/)
 
-Learn Python fundamentals: variables, functions, loops, and object-oriented programming.
 
-**📊 Statistics:**
-- Total Lessons: **2**
-- Beginner: 2 | Intermediate: 0 | Advanced: 0
-- Time to complete: ~1.25 hours
+- ### 🌐 Web Development
 
-**Popular Topics:**
-- Variables & Data Types
-- Functions & Parameters
-- Code Organization
+    Master HTML, CSS, JavaScript, and modern web frameworks for building beautiful websites.
+    
+    **📊 Statistics:**
+    - Total Lessons: **2**
+    - Beginner: 2 | Intermediate: 0 | Advanced: 0
+    - Time to complete: ~1.75 hours
+    
+    **Popular Topics:**
+    - HTML & Markup
+    - CSS & Styling
+    - Responsive Design
+    
+    [**Browse Web Development Lessons →**](lessons/web-development/)
+    
+    ### 📊 Data Science
+    
+    Explore data analysis, visualization, and machine learning with Python.
 
-[**Browse Python Lessons →**](lessons/python/)
+- **📊 Statistics:**
 
-</div>
-
-<div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; background-color: #f9f9f9;">
-
-### 🌐 Web Development
-
-Master HTML, CSS, JavaScript, and modern web frameworks for building beautiful websites.
-
-**📊 Statistics:**
-- Total Lessons: **2**
-- Beginner: 2 | Intermediate: 0 | Advanced: 0
-- Time to complete: ~1.75 hours
-
-**Popular Topics:**
-- HTML & Markup
-- CSS & Styling
-- Responsive Design
-
-[**Browse Web Development Lessons →**](lessons/web-development/)
-
-</div>
-
-<div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; background-color: #f9f9f9;">
-
-### 📊 Data Science
-
-Explore data analysis, visualization, and machine learning with Python.
-
-**📊 Statistics:**
-- Total Lessons: **1**
-- Beginner: 0 | Intermediate: 0 | Advanced: 1
-- Time to complete: ~2 hours
-
-**Popular Topics:**
-- Data Analysis & Pandas
-- Data Transformation
-- Aggregation & Grouping
-
-[**Browse Data Science Lessons →**](lessons/data-science/)
-
-</div>
+    - Total Lessons: **1**
+    - Beginner: 0 | Intermediate: 0 | Advanced: 1
+    - Time to complete: ~2 hours
+    
+    **Popular Topics:**
+    - Data Analysis & Pandas
+    - Data Transformation
+    - Aggregation & Grouping
+    
+    [**Browse Data Science Lessons →**](lessons/data-science/)
 
 </div>
 
 ---
 
-## �️ Explore by Topic
+## � Explore by Topic
 
 Browse all lessons across subjects using our tag system. Find related content by clicking any tag:
 

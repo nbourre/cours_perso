@@ -8,67 +8,60 @@ Bienvenue dans le référentiel de cours personnalisés! C'est votre lieu incont
 
 Les leçons sont organisées par sujet pour une découverte facile. Cliquez sur un sujet ci-dessous pour parcourir toutes les leçons dans cette catégorie.
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+<div class="grid cards" markdown>
 
-<div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; background-color: #f9f9f9;">
+- ### 🐍 Bases Python
 
-### 🐍 Bases Python
+    Apprenez les fondamentaux de Python: variables, fonctions, boucles et programmation orientée objet.
+    
+    **📊 Statistiques:**
 
-Apprenez les fondamentaux de Python: variables, fonctions, boucles et programmation orientée objet.
+    - Leçons Totales: **2**
+    - Beginner: 2 | Intermediate: 0 | Advanced: 0
+    - Temps pour compléter: ~1.25 heures
+    
+    **Sujets Populaires:**
 
-**📊 Statistiques:**
-- Leçons Totales: **2**
-- Beginner: 2 | Intermediate: 0 | Advanced: 0
-- Temps pour compléter: ~1.25 heures
+    - Variables et Types de Données
+    - Fonctions et Paramètres
+    - Organisation du Code
+    
+    [**Parcourir les Leçons Python →**](lessons/python/)
 
-**Sujets Populaires:**
-- Variables et Types de Données
-- Fonctions et Paramètres
-- Organisation du Code
 
-[**Parcourir les Leçons Python →**](lessons/python/)
+- ### 🌐 Développement Web
+    
+    Maîtrisez HTML, CSS, JavaScript et les frameworks web modernes pour construire de beaux sites.
+    
+    **📊 Statistiques:**
+    - Leçons Totales: **2**
+    - Beginner: 2 | Intermediate: 0 | Advanced: 0
+    - Temps pour compléter: ~1.75 heures
+    
+    **Sujets Populaires:**
+    - HTML et Balisage
+    - CSS et Mise en Style
+    - Design Réactif
+    
+    [**Parcourir les Leçons de Développement Web →**](lessons/web-development/)
+    
 
-</div>
 
-<div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; background-color: #f9f9f9;">
+- ### 📊 Science des Données
 
-### 🌐 Développement Web
-
-Maîtrisez HTML, CSS, JavaScript et les frameworks web modernes pour construire de beaux sites.
-
-**📊 Statistiques:**
-- Leçons Totales: **2**
-- Beginner: 2 | Intermediate: 0 | Advanced: 0
-- Temps pour compléter: ~1.75 heures
-
-**Sujets Populaires:**
-- HTML et Balisage
-- CSS et Mise en Style
-- Design Réactif
-
-[**Parcourir les Leçons de Développement Web →**](lessons/web-development/)
-
-</div>
-
-<div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; background-color: #f9f9f9;">
-
-### 📊 Science des Données
-
-Explorez l'analyse de données, la visualisation et l'apprentissage automatique avec Python.
-
-**📊 Statistiques:**
-- Leçons Totales: **1**
-- Beginner: 0 | Intermediate: 0 | Advanced: 1
-- Temps pour compléter: ~2 heures
-
-**Sujets Populaires:**
-- Analyse de Données et Pandas
-- Transformation des Données
-- Agrégation et Groupement
-
-[**Parcourir les Leçons de Science des Données →**](lessons/data-science/)
-
-</div>
+    Explorez l'analyse de données, la visualisation et l'apprentissage automatique avec Python.
+    
+    **📊 Statistiques:**
+    - Leçons Totales: **1**
+    - Beginner: 0 | Intermediate: 0 | Advanced: 1
+    - Temps pour compléter: ~2 heures
+    
+    **Sujets Populaires:**
+    - Analyse de Données et Pandas
+    - Transformation des Données
+    - Agrégation et Groupement
+    
+    [**Parcourir les Leçons de Science des Données →**](lessons/data-science/)
 
 </div>
 
