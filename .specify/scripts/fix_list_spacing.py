@@ -26,13 +26,13 @@ def is_list_item(line: str) -> bool:
 
 
 def is_sublist_item(line: str) -> bool:
-    """Check if a line is an indented sublist item (2+ spaces before list marker)."""
-    # Must have at least 2 spaces of indentation before list marker
-    if re.match(r'^\s{2,}[-*+]\s', line):
+    """Check if a line is an indented sublist item (4+ spaces before list marker)."""
+    # Must have at least 4 spaces of indentation before list marker
+    if re.match(r'^\s{4,}[-*+]\s', line):
         return True
-    if re.match(r'^\s{2,}\d+[.)]\s', line):
+    if re.match(r'^\s{4,}\d+[.)]\s', line):
         return True
-    if re.match(r'^\s{2,}[-*+]\s+\[[ xX]\]\s', line):
+    if re.match(r'^\s{4,}[-*+]\s+\[[ xX]\]\s', line):
         return True
     return False
 

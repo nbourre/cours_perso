@@ -43,29 +43,20 @@ Ce flux décrit comment créer un nouveau cours pour le référentiel. Que vous 
 **Temps** : 5-10 minutes
 
 1. **Identifiez le sujet**
-
-   - Quel concept ou compétence ce cours enseignera-t-il?
-   - Exemples : « Conception API REST », « Fonctions Python », « Layout CSS Grid »
-
+    - Quel concept ou compétence ce cours enseignera-t-il?
+    - Exemples : « Conception API REST », « Fonctions Python », « Layout CSS Grid »
 2. **Déterminez le niveau**
-
-   - Est-ce pour des apprenants Débutant, Intermédiaire ou Avancé?
-   - Quel savoir antérieur est supposé?
-
+    - Est-ce pour des apprenants Débutant, Intermédiaire ou Avancé?
+    - Quel savoir antérieur est supposé?
 3. **Estimez le temps**
-
-   - Combien de temps faut-il pour compléter (y compris les exercices)?
-   - Estimations réalistes : 30 min, 45 min, 1 heure, 1,5 heure, 2 heures, etc.
-
+    - Combien de temps faut-il pour compléter (y compris les exercices)?
+    - Estimations réalistes : 30 min, 45 min, 1 heure, 1,5 heure, 2 heures, etc.
 4. **Identifiez la catégorie de sujet**
-
-   - Quel sujet ce cours concerne-t-il? (Python, Développement Web, Science des données, etc.)
-   - S'il ne correspond à aucun, proposez une nouvelle catégorie dans la description de votre RP
-
+    - Quel sujet ce cours concerne-t-il? (Python, Développement Web, Science des données, etc.)
+    - S'il ne correspond à aucun, proposez une nouvelle catégorie dans la description de votre RP
 5. **Choisissez 3-5 étiquettes**
-
-   - Quels mots-clés aideraient quelqu'un à découvrir ce cours?
-   - Les étiquettes doivent être en minuscules et avec tirets (par ex., `api-design`, `rest`, `http`)
+    - Quels mots-clés aideraient quelqu'un à découvrir ce cours?
+    - Les étiquettes doivent être en minuscules et avec tirets (par ex., `api-design`, `rest`, `http`)
 
 ---
 
@@ -76,52 +67,36 @@ Ce flux décrit comment créer un nouveau cours pour le référentiel. Que vous 
 #### Option A : Rédiger le contenu vous-même
 
 1. **Copiez le modèle de cours**
-
-   - Téléchargez ou copiez [docs/templates/lesson-template.md](../templates/lesson-template.md)
-   - Enregistrez sous : `lesson-[id]-[slug].md` (par ex., `lesson-001-python-intro.md`)
-
+    - Téléchargez ou copiez [docs/templates/lesson-template.md](../templates/lesson-template.md)
+    - Enregistrez sous : `lesson-[id]-[slug].md` (par ex., `lesson-001-python-intro.md`)
 2. **Remplissez les métadonnées** (préambule YAML)
-
-   - title, description, difficulty, duration, tags, learning_objectives, created, author
-   - Voir [Spécification des métadonnées](metadata-reference.md) pour les détails
-
+    - title, description, difficulty, duration, tags, learning_objectives, created, author
+    - Voir [Spécification des métadonnées](metadata-reference.md) pour les détails
 3. **Rédigez les sections de contenu**
-
-   - Objectifs d'apprentissage, Introduction, Concepts principaux, Exemples, Exercices, Évaluation
-   - Voir [Modèle de cours](../templates/lesson-template.md) pour la structure complète
-
+    - Objectifs d'apprentissage, Introduction, Concepts principaux, Exemples, Exercices, Évaluation
+    - Voir [Modèle de cours](../templates/lesson-template.md) pour la structure complète
 4. **Passez à la Phase 3** → Vérifiez votre contenu
 
 #### Option B : Générer avec LLM
 
 1. **Préparez votre prompt**
-
-   - Décidez de : sujet, niveau (Débutant/Intermédiaire/Avancé), durée
-   - Exemple : « Je veux enseigner async/await JavaScript pour les développeurs Intermédiaires en 1 heure »
-
+    - Décidez de : sujet, niveau (Débutant/Intermédiaire/Avancé), durée
+    - Exemple : « Je veux enseigner async/await JavaScript pour les développeurs Intermédiaires en 1 heure »
 2. **Copiez le modèle de prompt LLM**
-
-   - Voir [Utilisation du modèle LLM](#utilisation-du-modèle-llm) ci-dessous
-   - Personnalisez-le pour votre cours
-
+    - Voir [Utilisation du modèle LLM](#utilisation-du-modèle-llm) ci-dessous
+    - Personnalisez-le pour votre cours
 3. **Collez dans votre LLM** (ChatGPT, Claude, Gemini, etc.)
-
-   - Utilisez le modèle de prompt
-   - Incluez le modèle de structure de cours
-   - Demandez des sections spécifiques : objectifs d'apprentissage, exemples, exercices
-
+    - Utilisez le modèle de prompt
+    - Incluez le modèle de structure de cours
+    - Demandez des sections spécifiques : objectifs d'apprentissage, exemples, exercices
 4. **Copiez le contenu généré**
-
-   - Copiez la réponse du LLM (doit suivre la structure du modèle)
-   - Collez dans un nouveau fichier : `lesson-[id]-[slug].md`
-
+    - Copiez la réponse du LLM (doit suivre la structure du modèle)
+    - Collez dans un nouveau fichier : `lesson-[id]-[slug].md`
 5. **Vérifiez et affinez**
-
-   - Lisez pour vérifier la précision
-   - Corrigez les incohérences avec votre sujet
-   - Assurez-vous que les exemples sont clairs
-   - Vérifiez que les objectifs d'apprentissage sont couverts
-
+    - Lisez pour vérifier la précision
+    - Corrigez les incohérences avec votre sujet
+    - Assurez-vous que les exemples sont clairs
+    - Vérifiez que les objectifs d'apprentissage sont couverts
 6. **Procédez à la Phase 3** → Vérifiez votre contenu
 
 ---
@@ -173,27 +148,23 @@ Utilisez la **Liste de contrôle qualité** ci-dessous pour vérifier votre cour
    git clone https://github.com/[username]/[repo].git
    cd [repo]
    ```
-
 2. **Créez une nouvelle branche**
 
    ```bash
    git checkout -b add-lesson-[slug]
    # Exemple : git checkout -b add-lesson-python-functions
    ```
-
 3. **Ajoutez votre fichier de cours**
 
    ```bash
    git add docs/lessons/[subject]/lesson-[id]-[slug].md
    ```
-
 4. **Validez vos modifications**
 
    ```bash
    git commit -m "Add lesson: [Title]"
    # Exemple : git commit -m "Add lesson: Introduction to Python Functions"
    ```
-
 5. **Poussez vers votre fork**
 
    ```bash
@@ -207,29 +178,22 @@ Utilisez la **Liste de contrôle qualité** ci-dessous pour vérifier votre cour
 **Temps** : 5 minutes
 
 1. **Allez sur GitHub**
-
-   - Accédez au référentiel sur GitHub
-   - Cliquez sur « Compare & pull request » (devrait apparaître après votre push)
-
+    - Accédez au référentiel sur GitHub
+    - Cliquez sur « Compare & pull request » (devrait apparaître après votre push)
 2. **Remplissez les détails de la RP**
-
-   - **Titre** : « Add lesson: [Title] »
-   - **Description** : Incluez :
+    - **Titre** : « Add lesson: [Title] »
+    - **Description** : Incluez :
      - Résumé bref de ce que le cours enseigne
      - Niveau de difficulté et durée estimée
      - Catégorie de sujet
      - Toutes les notes pour les relecteurs
-
 3. **Demandez une révision**
-
-   - Assignez aux responsables du référentiel
-   - Ajoutez l'étiquette : « lesson-submission »
-
+    - Assignez aux responsables du référentiel
+    - Ajoutez l'étiquette : « lesson-submission »
 4. **Attendez les commentaires**
-
-   - Les responsables examineront la qualité et la conformité
-   - Peuvent demander des modifications (ne vous inquiétez pas, c'est normal!)
-   - Les cours approuvés sont fusionnés et automatiquement publiés sur GitHub Pages
+    - Les responsables examineront la qualité et la conformité
+    - Peuvent demander des modifications (ne vous inquiétez pas, c'est normal!)
+    - Les cours approuvés sont fusionnés et automatiquement publiés sur GitHub Pages
 
 ---
 
@@ -380,24 +344,24 @@ Avant de soumettre, vérifiez :
 ### Que se passe-t-il après la soumission?
 
 1. **Vérifications automatisées** (5-10 minutes)
-   - GitHub Actions valide la syntaxe Markdown
-   - Vérifie les champs de métadonnées requis
-   - Vérifie le nommage et l'emplacement du fichier
-   - Le statut apparaît dans la RP sous forme de coche ou ✗
+    - GitHub Actions valide la syntaxe Markdown
+    - Vérifie les champs de métadonnées requis
+    - Vérifie le nommage et l'emplacement du fichier
+    - Le statut apparaît dans la RP sous forme de coche ou ✗
 2. **Révision du responsable** (24-48 heures)
-   - Les relecteurs lisent votre cours
-   - Vérifiez l'exactitude et la qualité
-   - Vérifiez l'alignement avec le style du référentiel
-   - Peuvent demander des modifications (c'est normal!)
+    - Les relecteurs lisent votre cours
+    - Vérifiez l'exactitude et la qualité
+    - Vérifiez l'alignement avec le style du référentiel
+    - Peuvent demander des modifications (c'est normal!)
 3. **Commentaires et itération** (selon les besoins)
-   - Répondez aux commentaires des relecteurs
-   - Effectuez les modifications demandées
-   - Poussez les mises à jour vers votre branche (la RP se met à jour automatiquement)
-   - Les relecteurs revérifient
+    - Répondez aux commentaires des relecteurs
+    - Effectuez les modifications demandées
+    - Poussez les mises à jour vers votre branche (la RP se met à jour automatiquement)
+    - Les relecteurs revérifient
 4. **Approbation et fusion** (24 heures après approbation)
-   - Le cours est fusionné dans la branche principale
-   - GitHub Actions construit et déploie le site
-   - Votre cours est en direct sur GitHub Pages!
+    - Le cours est fusionné dans la branche principale
+    - GitHub Actions construit et déploie le site
+    - Votre cours est en direct sur GitHub Pages!
 
 ### Commentaires courants
 

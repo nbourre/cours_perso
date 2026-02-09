@@ -1,10 +1,11 @@
 rules:
   list_spacing:
     enabled: true
-    style: always
+    style: always  # Blank line before and after lists
   list_item_spacing:
-    style: compact
+    style: compact  # No blank lines between list items
   sublist_spacing:
-    before: always       # always blank line before sublist
-    between: compact    # No blank lines between sublist items
-    after: always        # always blank line after sublist (before next parent item)
+    before: always       # Blank line before sublist
+    between: compact     # No blank lines between sublist items
+    after: always        # Blank line after sublist (before next parent item)
+    indent: 4            # Sublists must use 4 spaces indentation
