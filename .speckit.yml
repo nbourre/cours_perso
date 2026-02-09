@@ -5,7 +5,7 @@ rules:
   list_item_spacing:
     style: compact  # No blank lines between list items
   sublist_spacing:
-    before: always       # Blank line before sublist
+    before: never        # No blank line before sublist (standard Markdown)
     between: compact     # No blank lines between sublist items
-    after: always        # Blank line after sublist (before next parent item)
-    indent: 4            # Sublists must use 4 spaces indentation
+    after: never         # No blank line after sublist (standard Markdown)
+    indent: 4            # Sublists MUST use 4 spaces indentation for proper nesting
