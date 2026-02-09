@@ -11,6 +11,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Lesson takes longer than intended or covers too many concepts.
 
 **Solutions**:
+
 - **Split into multiple lessons**: Break complex topics into separate, focused lessons
 - **Focus on one core concept**: Each lesson should teach 1-2 main ideas
 - **Move advanced content**: Save optional deep-dives for "Further Reading" section
@@ -18,6 +19,7 @@ Common issues and solutions when creating and contributing lessons.
 - **Simplify exercises**: Focus on essential practice, not exhaustive coverage
 
 **Duration Guidelines**:
+
 - 30 min: 1 concept, 2 simple exercises
 - 45 min: 1-2 concepts, 2-3 exercises
 - 1 hour: 2-3 concepts, 3-4 exercises
@@ -28,6 +30,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Code examples have errors or don't run.
 
 **Solutions**:
+
 - **Test every code example**: Run it yourself before submitting
 - **Verify dependencies**: Are required libraries installed?
 - **Check syntax carefully**: Python indentation, JavaScript semicolons, etc.
@@ -44,6 +47,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Students don't understand what exercises are asking.
 
 **Solutions**:
+
 - **Clear instructions**: Start each exercise with "Write a function that..." or "Create a program that..."
 - **Specify input/output**: Show example inputs and expected outputs
 - **Add hints**: For difficult exercises, provide hints after exercises
@@ -55,6 +59,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Lesson references old versions or deprecated features.
 
 **Solutions**:
+
 - **Check version numbers**: Verify all library/framework versions are current
 - **Search for deprecations**: Look for "[feature] deprecated" on documentation
 - **Test on current version**: Ensure examples work with latest release
@@ -70,6 +75,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Metadata validation fails or MkDocs won't build.
 
 **Common errors**:
+
 - **Colons in titles**: Wrap in quotes: `title: "Python: Functions & Organization"`
 - **List syntax**: Use proper YAML list format:
   ```yaml
@@ -82,6 +88,7 @@ Common issues and solutions when creating and contributing lessons.
 - **Escaped characters**: Use quotes if special characters: `description: "What's a variable?"`
 
 **Solutions**:
+
 - **Validate YAML**: Use online YAML validator (yamllint.com)
 - **Check quotes**: Single/double quotes must be balanced
 - **Verify indentation**: YAML is space-sensitive (use 2-space indentation)
@@ -92,6 +99,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Lesson missing metadata fields like `difficulty` or `learning_objectives`.
 
 **Required fields** (all must be present):
+
 - `title`: Lesson name
 - `description`: 1-sentence summary
 - `difficulty`: Beginner / Intermediate / Advanced
@@ -107,6 +115,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Tags don't match existing tags or are formatted wrong.
 
 **Solutions**:
+
 - **Use lowercase**: `python` not `Python`
 - **Use hyphens**: `machine-learning` not `machine_learning`
 - **Check existing tags**: See [Tags Reference](tags-reference.md)
@@ -124,6 +133,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: File created but lesson doesn't appear after build.
 
 **Checklist**:
+
 - [ ] File is in correct location: `docs/lessons/[subject]/lesson-*.md`
 - [ ] File name matches pattern: `lesson-NNN-slug.md`
 - [ ] File has required frontmatter (YAML at top)
@@ -132,6 +142,7 @@ Common issues and solutions when creating and contributing lessons.
 - [ ] Site cache cleared: Hard refresh (Ctrl+Shift+R)
 
 **Solutions**:
+
 - **Check file path**: Ensure subject directory exists
 - **Check frontmatter**: Verify YAML is valid (see YAML issues above)
 - **Rebuild site**: Delete `site/` folder, run `mkdocs build`
@@ -142,6 +153,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Links in lesson don't work or appear as red links.
 
 **Solutions**:
+
 - **Verify link paths**: Links must be relative to `docs/` directory
 - **Use correct syntax**: `[text](path/to/file.md)` for internal links
 - **Test each link**: Click them to verify they work
@@ -164,6 +176,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Formatting renders incorrectly (bold not working, lists broken, etc.).
 
 **Common issues**:
+
 - **Bold**: Use `**text**` or `__text__`, not `*text*`
 - **Lists**: Must have blank line before first item
 - **Code blocks**: Use triple backticks with language: ` ```python `
@@ -171,6 +184,7 @@ Common issues and solutions when creating and contributing lessons.
 - **Escaping**: Use `\` to escape special characters: `\*not bold\*`
 
 **Solutions**:
+
 - **Test locally**: Build with `mkdocs serve` and check in browser
 - **Compare with examples**: Look at working lessons in same subject
 - **Use validator**: Online Markdown validator
@@ -181,6 +195,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Images in lesson aren't showing up.
 
 **Solutions**:
+
 - **Use correct path**: `![alt text](../../assets/image.png)`
 - **Check relative paths**: Count `../` levels correctly
 - **Verify file exists**: Image file actually in `docs/assets/`
@@ -198,6 +213,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Git push fails.
 
 **Solutions**:
+
 - **Check remote**: `git remote -v` (should show your fork)
 - **Pull first**: `git pull origin main` before push
 - **Check branch**: `git branch` (should show your branch)
@@ -210,6 +226,7 @@ Common issues and solutions when creating and contributing lessons.
 **Problem**: Pull request shows conflicts with main branch.
 
 **Solutions** (in order of preference):
+
 1. **Rebase on main**: 
    ```bash
    git fetch upstream
@@ -254,6 +271,7 @@ git push -f origin your-branch
 **Problem**: ChatGPT/Claude content uses terminology above target difficulty.
 
 **Solutions**:
+
 - **Regenerate with better prompt**: Specify "Beginner" and "use simple language"
 - **Rewrite sections**: Use your own simpler explanations
 - **Add definitions**: Define technical terms when first introduced
@@ -265,6 +283,7 @@ git push -f origin your-branch
 **Problem**: Code from ChatGPT/Claude has errors.
 
 **Solutions**:
+
 - **Test every example**: Run it before submitting
 - **Verify versions**: Make sure code works with specified versions
 - **Ask LLM to fix**: Paste error and ask for corrected version
@@ -276,6 +295,7 @@ git push -f origin your-branch
 **Problem**: Generated content doesn't match your course style.
 
 **Solutions**:
+
 - **Customize heavily**: Add your own examples and context
 - **Replace generic sections**: Keep structure, personalize content
 - **Add local references**: Reference your specific course/community
@@ -293,6 +313,7 @@ See [LLM Instructions](lesson-template-instructions.md) for better prompting tec
 **Problem**: PR was closed or asked for changes.
 
 **Common reasons**:
+
 - **Incomplete metadata**: Missing or incorrect YAML fields
 - **Content quality**: Unclear writing, inaccurate info, or broken examples
 - **Style mismatch**: Doesn't follow template or existing lessons
@@ -300,6 +321,7 @@ See [LLM Instructions](lesson-template-instructions.md) for better prompting tec
 - **Insufficient testing**: Examples or exercises don't work
 
 **Solutions**:
+
 - **Read feedback**: Review reviewer comments carefully
 - **Address all points**: Make requested changes
 - **Resubmit as new PR**: After making fixes
@@ -310,6 +332,7 @@ See [LLM Instructions](lesson-template-instructions.md) for better prompting tec
 **Problem**: Lesson live but contains errors or needs updates.
 
 **Solutions**:
+
 - **Submit a new PR**: Fix issues in a new pull request
 - **File an issue**: Report problems for others to fix
 - **Quick fixes**: For typos, small issues, you can edit directly

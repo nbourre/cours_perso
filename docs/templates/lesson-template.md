@@ -30,6 +30,7 @@ status: "published"  # Options: draft, published, archived
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:
+
 - [Learning objective 1]
 - [Learning objective 2]
 - [Learning objective 3]
@@ -115,6 +116,7 @@ By the end of this lesson, you will be able to:
 ## Next Steps
 
 After completing this lesson, you may want to explore:
+
 - [Suggested follow-up lesson 1]
 - [Suggested follow-up lesson 2]
 - [Related concept or skill]
@@ -176,6 +178,7 @@ Use this template:
 [Paste template here]
 
 Important requirements:
+
 - Keep explanations clear and accessible for the target audience
 - Include 2-3 practical examples with code/diagrams
 - Create 2-3 exercises (progressive difficulty)

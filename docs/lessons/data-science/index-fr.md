@@ -17,6 +17,7 @@ Parcourez toutes les leçons de Science des Données ci-dessous. Cliquez sur n'i
 ## Ce Que Vous Apprendrez
 
 Dans le sujet Science des Données, vous pouvez vous attendre à des leçons sur:
+
 - Analyse de données avec Pandas et NumPy
 - Visualisation de données avec Matplotlib et Seaborn
 - Analyse statistique et test d'hypothèses

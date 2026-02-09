@@ -17,6 +17,7 @@ Browse all Data Science lessons below. Click on any lesson to begin learning.
 ## What You'll Learn
 
 In the Data Science subject, you can expect lessons on:
+
 - Data analysis with Pandas and NumPy
 - Data visualization with Matplotlib and Seaborn
 - Statistical analysis and hypothesis testing

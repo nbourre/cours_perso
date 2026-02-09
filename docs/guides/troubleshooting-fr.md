@@ -11,6 +11,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: La leçon prend plus de temps que prévu ou couvre trop de concepts.
 
 **Solutions**:
+
 - **Divisez en plusieurs leçons**: Divisez les sujets complexes en leçons distinctes et ciblées
 - **Concentrez-vous sur un concept clé**: Chaque leçon doit enseigner 1-2 idées principales
 - **Déplacez le contenu avancé**: Sauvegardez les approfondissements optionnels pour la section "Lectures Complémentaires"
@@ -18,6 +19,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 - **Simplifiez les exercices**: Concentrez-vous sur la pratique essentielle, pas une couverture exhaustive
 
 **Directives de Durée**:
+
 - 30 min: 1 concept, 2 exercices simples
 - 45 min: 1-2 concepts, 2-3 exercices
 - 1 heure: 2-3 concepts, 3-4 exercices
@@ -28,6 +30,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: Les exemples de code contiennent des erreurs ou ne s'exécutent pas.
 
 **Solutions**:
+
 - **Testez chaque exemple de code**: Exécutez-le vous-même avant de soumettre
 - **Vérifiez les dépendances**: Les bibliothèques requises sont-elles installées?
 - **Vérifiez la syntaxe soigneusement**: Indentation Python, points-virgules JavaScript, etc.
@@ -44,6 +47,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: Les étudiants ne comprennent pas ce que demandent les exercices.
 
 **Solutions**:
+
 - **Instructions claires**: Commencez chaque exercice par "Écrivez une fonction qui..." ou "Créez un programme qui..."
 - **Spécifiez l'entrée/sortie**: Montrez les exemples d'entrées et les résultats attendus
 - **Ajoutez des indices**: Pour les exercices difficiles, fournissez des indices après les exercices
@@ -55,6 +59,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: La leçon fait référence à des versions anciennes ou des fonctionnalités obsolètes.
 
 **Solutions**:
+
 - **Vérifiez les numéros de version**: Vérifiez que tous les numéros de version de bibliothèque/framework sont actuels
 - **Recherchez des obsolescences**: Recherchez "[fonctionnalité] obsolète" dans la documentation
 - **Testez sur la version actuelle**: Assurez-vous que les exemples fonctionnent avec la dernière version
@@ -70,6 +75,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: La validation des métadonnées échoue ou MkDocs ne construit pas.
 
 **Erreurs courantes**:
+
 - **Deux-points dans les titres**: Enveloppez avec des guillemets: `title: "Python: Fonctions et Organisation"`
 - **Syntaxe de liste**: Utilisez le format de liste YAML approprié:
   ```yaml
@@ -82,6 +88,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 - **Caractères échappés**: Utilisez des guillemets si caractères spéciaux: `description: "Qu'est-ce qu'une variable?"`
 
 **Solutions**:
+
 - **Validez YAML**: Utilisez le validateur YAML en ligne (yamllint.com)
 - **Vérifiez les guillemets**: Les guillemets simples/doubles doivent être équilibrés
 - **Vérifiez l'indentation**: YAML est sensible aux espaces (utilisez l'indentation 2 espaces)
@@ -92,6 +99,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: Leçon manquant des champs de métadonnées comme `difficulty` ou `learning_objectives`.
 
 **Champs obligatoires** (tous doivent être présents):
+
 - `title`: Nom de la leçon
 - `description`: Résumé d'une phrase
 - `difficulty`: Beginner / Intermediate / Advanced
@@ -107,6 +115,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: Les tags ne correspondent pas aux tags existants ou ne sont pas formatés correctement.
 
 **Solutions**:
+
 - **Utilisez des minuscules**: `python` pas `Python`
 - **Utilisez des tirets**: `machine-learning` pas `machine_learning`
 - **Vérifiez les tags existants**: Voir [Référence des Tags](tags-reference.md)
@@ -124,6 +133,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: Fichier créé mais la leçon n'apparaît pas après la construction.
 
 **Checklist**:
+
 - [ ] Le fichier est au bon endroit: `docs/lessons/[subject]/lesson-*.md`
 - [ ] Le nom du fichier correspond au modèle: `lesson-NNN-slug.md`
 - [ ] Le fichier a l'en-tête obligatoire (YAML en haut)
@@ -132,6 +142,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 - [ ] Le cache du site a été effacé: Rafraîchissement difficile (Ctrl+Maj+R)
 
 **Solutions**:
+
 - **Vérifiez le chemin du fichier**: Assurez-vous que le répertoire du sujet existe
 - **Vérifiez l'en-tête**: Vérifiez que le YAML est valide (voir les problèmes YAML ci-dessus)
 - **Reconstruisez le site**: Supprimez le dossier `site/`, exécutez `mkdocs build`
@@ -142,6 +153,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: Les liens dans la leçon ne fonctionnent pas ou apparaissent comme des liens rouges.
 
 **Solutions**:
+
 - **Vérifiez les chemins des liens**: Les liens doivent être relatifs au répertoire `docs/`
 - **Utilisez la syntaxe correcte**: `[text](path/to/file.md)` pour les liens internes
 - **Testez chaque lien**: Cliquez sur eux pour vérifier qu'ils fonctionnent
@@ -164,6 +176,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: Le formatage est rendu incorrectement (le gras ne fonctionne pas, les listes sont cassées, etc.).
 
 **Problèmes courants**:
+
 - **Gras**: Utilisez `**text**` ou `__text__`, pas `*text*`
 - **Listes**: Doit avoir une ligne vierge avant le premier élément
 - **Blocs de code**: Utilisez des backticks triples avec la langue: ` ```python `
@@ -171,6 +184,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 - **Échappement**: Utilisez `\` pour échapper les caractères spéciaux: `\*pas gras\*`
 
 **Solutions**:
+
 - **Testez localement**: Construisez avec `mkdocs serve` et vérifiez dans le navigateur
 - **Comparez avec les exemples**: Regardez les leçons qui fonctionnent dans le même sujet
 - **Utilisez un validateur**: Validateur Markdown en ligne
@@ -181,6 +195,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: Les images de la leçon ne s'affichent pas.
 
 **Solutions**:
+
 - **Utilisez le chemin correct**: `![alt text](../../assets/image.png)`
 - **Vérifiez les chemins relatifs**: Comptez correctement les niveaux `../`
 - **Vérifiez que le fichier existe**: Le fichier image est effectivement dans `docs/assets/`
@@ -198,6 +213,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: Git push échoue.
 
 **Solutions**:
+
 - **Vérifiez le remote**: `git remote -v` (doit afficher votre fork)
 - **Tirez d'abord**: `git pull origin main` avant la poussée
 - **Vérifiez la branche**: `git branch` (doit afficher votre branche)
@@ -210,6 +226,7 @@ Problèmes courants et solutions lors de la création et de la contribution de l
 **Problème**: La demande de tirage montre des conflits avec la branche principale.
 
 **Solutions** (dans l'ordre de préférence):
+
 1. **Rebasez sur main**: 
    ```bash
    git fetch upstream
@@ -254,6 +271,7 @@ git push -f origin your-branch
 **Problème**: Le contenu de ChatGPT/Claude utilise une terminologie au-dessus de la difficulté cible.
 
 **Solutions**:
+
 - **Régénérez avec une meilleure invite**: Spécifiez "Beginner" et "utilisez un langage simple"
 - **Réécrivez les sections**: Utilisez vos propres explications plus simples
 - **Ajoutez des définitions**: Définissez les termes techniques quand ils sont introduits pour la première fois
@@ -265,6 +283,7 @@ git push -f origin your-branch
 **Problème**: Le code de ChatGPT/Claude contient des erreurs.
 
 **Solutions**:
+
 - **Testez chaque exemple**: Exécutez-le avant de soumettre
 - **Vérifiez les versions**: Assurez-vous que le code fonctionne avec les versions spécifiées
 - **Demandez au LLM de corriger**: Collez l'erreur et demandez une version corrigée
@@ -276,6 +295,7 @@ git push -f origin your-branch
 **Problème**: Le contenu généré ne correspond pas au style de votre cours.
 
 **Solutions**:
+
 - **Personnalisez fortement**: Ajoutez vos propres exemples et contexte
 - **Remplacez les sections génériques**: Gardez la structure, personnalisez le contenu
 - **Ajoutez des références locales**: Référencez votre cours/communauté spécifique
@@ -293,6 +313,7 @@ Voir [Instructions LLM](lesson-template-instructions.md) pour des techniques d'i
 **Problème**: La PR a été fermée ou des modifications ont été demandées.
 
 **Raisons courantes**:
+
 - **Métadonnées incomplètes**: Champs YAML manquants ou incorrects
 - **Qualité du contenu**: Écriture peu claire, informations inexactes ou exemples brisés
 - **Non-concordance de style**: Ne suit pas le modèle ou les leçons existantes
@@ -300,6 +321,7 @@ Voir [Instructions LLM](lesson-template-instructions.md) pour des techniques d'i
 - **Test insuffisant**: Les exemples ou exercices ne fonctionnent pas
 
 **Solutions**:
+
 - **Lisez les commentaires**: Lisez attentivement les commentaires du relecteur
 - **Abordez tous les points**: Apportez les modifications demandées
 - **Soumettez une nouvelle PR**: Après avoir apporté les corrections
@@ -310,6 +332,7 @@ Voir [Instructions LLM](lesson-template-instructions.md) pour des techniques d'i
 **Problème**: La leçon est en direct mais contient des erreurs ou a besoin de mises à jour.
 
 **Solutions**:
+
 - **Soumettez une nouvelle PR**: Corrigez les problèmes dans une nouvelle demande de tirage
 - **Créez une issue**: Signalez les problèmes pour que d'autres les résolvent
 - **Corrections rapides**: Pour les typos, les petits problèmes, vous pouvez éditer directement

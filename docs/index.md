@@ -154,12 +154,14 @@ Browse all lessons across subjects using our tag system. Find related content by
 ## 🔧 Technical Overview
 
 This site is built with:
+
 - **MkDocs**: Simple, fast documentation platform
 - **Material Theme**: Beautiful, responsive design
 - **GitHub Pages**: Free hosting with automatic deployment
 - **GitHub Actions**: Automatic build and deployment on changes
 
 All lessons are stored as **Markdown files with YAML frontmatter** for:
+
 - ✅ Easy version control (Git)
 - ✅ Simple editing (any text editor)
 - ✅ Consistent structure (templates)

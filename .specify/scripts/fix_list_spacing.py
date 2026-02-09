@@ -67,6 +67,9 @@ def fix_list_spacing(content: str) -> str:
         between: compact (no blank lines between sublist items)
         after: always (blank line after sublist)
     """
+    # Normalize line endings to Unix style for consistent processing
+    content = content.replace('\r\n', '\n').replace('\r', '\n')
+    
     lines = content.split('\n')
     fixed_lines = []
     in_list = False
@@ -115,16 +118,23 @@ def fix_list_spacing(content: str) -> str:
         
         # Starting a new list (parent level only)
         if is_current_list_item and not in_list:
-            # Ensure blank line before list (unless at start or after blank line)
-            if fixed_lines and not is_blank_line(fixed_lines[-1]):
-                # Don't add blank line after YAML frontmatter end
-                if not (fixed_lines[-1].strip() == '---' and yaml_delimiters == 2):
-                    fixed_lines.append('')
+            # Clear any pending blank lines first
+            pending_blank_lines = []
+            
+            # Ensure blank line before list (list_spacing: always)
+            if fixed_lines:
+                last_line = fixed_lines[-1]
+                last_line_is_blank = is_blank_line(last_line)
+                
+                # Don't add blank line after YAML frontmatter end or if already blank
+                if not last_line_is_blank:
+                    is_yaml_end = last_line.strip() == '---' and yaml_delimiters == 2
+                    if not is_yaml_end:
+                        fixed_lines.append('')
+            
             in_list = True
             in_sublist = False
             list_base_indent = current_indent
-            # Clear any pending blanks (we're starting fresh)
-            pending_blank_lines = []
             fixed_lines.append(line)
         
         # Parent list item while in list
@@ -210,7 +220,15 @@ def process_file(file_path: Path) -> bool:
     """Process a single markdown file. Returns True if file was modified."""
     try:
         content = file_path.read_text(encoding='utf-8')
+        
+        # Detect original line ending style
+        has_crlf = '\r\n' in content
+        
         fixed_content = fix_list_spacing(content)
+        
+        # Restore original line ending style
+        if has_crlf:
+            fixed_content = fixed_content.replace('\n', '\r\n')
         
         if content != fixed_content:
             file_path.write_text(fixed_content, encoding='utf-8')

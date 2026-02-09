@@ -30,6 +30,7 @@ status: "published"  # Options: draft, published, archived
 ## Objectifs d'Apprentissage
 
 À la fin de cette leçon, vous pourrez:
+
 - [Objectif d'apprentissage 1]
 - [Objectif d'apprentissage 2]
 - [Objectif d'apprentissage 3]
@@ -115,6 +116,7 @@ status: "published"  # Options: draft, published, archived
 ## Prochaines Étapes
 
 Après avoir complété cette leçon, vous voudrez peut-être explorer:
+
 - [Leçon de suivi suggérée 1]
 - [Leçon de suivi suggérée 2]
 - [Concept connexe ou compétence]
@@ -176,6 +178,7 @@ Utilisez ce modèle:
 [Collez le modèle ici]
 
 Exigences importantes:
+
 - Gardez les explications claires et accessibles pour le public cible
 - Incluez 2-3 exemples pratiques avec code/diagrammes
 - Créez 2-3 exercices (difficulté progressive)

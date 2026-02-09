@@ -123,12 +123,14 @@ Tags for areas of application:
 
 ### Example 1: Finding Beginner-Friendly Content
 Browse lessons tagged with foundational concepts:
+
 - `variables` (variables and data types)
 - `basics` (introductory content)
 - `fundamentals` (foundational concepts)
 
 ### Example 2: Finding Web Development Lessons
 Browse all web-related lessons:
+
 - `web` (web development lessons)
 - `html` (web structure)
 - `css` (web styling)
@@ -136,6 +138,7 @@ Browse all web-related lessons:
 
 ### Example 3: Finding Data Analysis Content
 Browse data-specific lessons:
+
 - `data-analysis`
 - `data-science`
 - `pandas`
@@ -214,6 +217,7 @@ New tags are automatically indexed when you add them to lessons. To add a new ta
 ## Want to Find Lessons by Tag?
 
 Currently, browse this page to see which lessons have each tag. In the future, lessons will be filterable by tag with:
+
 - Tag cloud on the homepage
 - Tag filter on subject pages
 - Global tag search

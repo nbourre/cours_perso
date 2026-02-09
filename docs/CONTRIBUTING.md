@@ -13,6 +13,7 @@ Thank you for your interest in contributing to this personalized lesson reposito
 👉 **[Lesson Creation Workflow Guide](guides/workflow-create-lesson.md)** ← Start here!
 
 The workflow guide covers:
+
 - Planning your lesson
 - Writing or generating content with LLM
 - Testing and quality checking
@@ -214,6 +215,7 @@ lesson-010-async-await.md
 ## 🤖 Using LLM to Generate Content
 
 See [LLM Template Instructions](guides/lesson-template-instructions.md) for:
+
 - How to use ChatGPT, Claude, or other LLMs
 - Prompt templates for different topics
 - How to review and refine generated content
@@ -326,6 +328,7 @@ Example: `author: "Adapted from my course on REST APIs"`
 ## 🙏 Thank You!
 
 Thank you for contributing to the lesson repository! Your work helps others learn and grow. We appreciate your effort in:
+
 - Creating quality educational content
 - Making complex topics accessible
 - Helping build a learning community

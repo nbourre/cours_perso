@@ -11,6 +11,7 @@
 Instead of writing lessons from scratch, you can use Large Language Models (LLMs) like ChatGPT, Claude, or Gemini to generate lesson content that follows our template. This guide shows you how to get the best results.
 
 **Key Benefits**:
+
 - ✅ Generate complete lessons in 15-30 minutes
 - ✅ Consistent structure every time
 - ✅ LLM handles repetitive parts (examples, exercises)
@@ -135,6 +136,7 @@ Use this exact Markdown structure:
 [FULL TEMPLATE HERE]
 
 Important requirements:
+
 - Explanations must be clear and accessible for [LEVEL] learners
 - Include at least 2-3 practical examples with code or walkthroughs
 - Make exercises progressive (easy → hard)
@@ -171,6 +173,7 @@ status: "published"
 [... rest of template ...]
 
 Important requirements:
+
 - Explanations must be clear for Intermediate learners
 - Include 2-3 practical examples with runnable code
 - Make exercises progressive (easy → hard)
@@ -370,6 +373,7 @@ The lesson should take approximately 1 hour to complete.
 [Full template provided]
 
 Important requirements:
+
 - Explain what Hooks are for beginners
 - Include 3-4 practical examples with full code
 - Progressive exercises from basic hooks to combining hooks

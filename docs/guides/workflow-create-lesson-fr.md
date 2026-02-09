@@ -229,6 +229,7 @@ status: "published"
 ## Objectifs d'apprentissage
 
 À la fin de ce cours, vous serez capable de :
+
 - [Objectif 1]
 - [Objectif 2]
 - [Objectif 3]
@@ -270,6 +271,7 @@ status: "published"
 ---
 
 Exigences importantes :
+
 - Les explications doivent être claires et accessibles pour les apprenants [LEVEL]
 - Incluez au moins 2-3 exemples pratiques avec code ou procédures
 - Rendez les exercices progressifs (facile → difficile)

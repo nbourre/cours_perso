@@ -11,6 +11,7 @@
 Au lieu de rédiger des cours à partir de zéro, vous pouvez utiliser des modèles de langage volumineux (LLM) tels que ChatGPT, Claude ou Gemini pour générer du contenu de cours qui suit notre modèle. Ce guide vous montre comment obtenir les meilleurs résultats.
 
 **Avantages clés** :
+
 - ✅ Générez des cours complets en 15-30 minutes
 - ✅ Structure cohérente à chaque fois
 - ✅ Le LLM gère les parties répétitives (exemples, exercices)
@@ -135,6 +136,7 @@ Utilisez cette structure Markdown exacte :
 [MODÈLE COMPLET ICI]
 
 Exigences importantes :
+
 - Les explications doivent être claires et accessibles pour les apprenants [LEVEL]
 - Incluez au moins 2-3 exemples pratiques avec code ou procédures
 - Rendez les exercices progressifs (facile → difficile)
@@ -172,6 +174,7 @@ status: « published »
 [... reste du modèle ...]
 
 Exigences importantes :
+
 - Les explications doivent être claires pour les apprenants Intermédiaires
 - Incluez 2-3 exemples pratiques avec du code exécutable
 - Rendez les exercices progressifs (facile → difficile)
@@ -371,6 +374,7 @@ Le cours devrait prendre environ 1 heure pour être complété.
 [Modèle complet fourni]
 
 Exigences importantes :
+
 - Expliquez ce que sont les Hooks pour les débutants
 - Incluez 3-4 exemples pratiques avec code complet
 - Exercices progressifs des hooks de base à la combinaison des hooks

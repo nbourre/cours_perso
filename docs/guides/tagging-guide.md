@@ -11,6 +11,7 @@
 Tags are 1-5 keywords attached to each lesson that describe its content and make it discoverable. Unlike the Subject (Python, Web Development, etc.), tags enable **cross-subject discovery**.
 
 **Example**: A lesson on "Database Design" in Web Development could be tagged with:
+
 - `database` (learners can find all DB lessons)
 - `system-design` (learners can find architecture lessons)
 - `scalability` (learners interested in performance)

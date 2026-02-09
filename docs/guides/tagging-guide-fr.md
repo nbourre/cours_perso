@@ -11,6 +11,7 @@
 Les tags sont 1-5 mots-clés attachés à chaque leçon qui décrivent son contenu et la rendent découvrable. Contrairement au Sujet (Python, Développement Web, etc.), les tags permettent la **découverte entre sujets**.
 
 **Exemple**: Une leçon sur "Conception de Bases de Données" en Développement Web pourrait être marquée avec:
+
 - `database` (les apprenants peuvent trouver toutes les leçons DB)
 - `system-design` (les apprenants peuvent trouver les leçons d'architecture)
 - `scalability` (les apprenants intéressés par la performance)

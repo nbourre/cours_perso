@@ -13,6 +13,7 @@ Merci de votre intérêt à contribuer à ce référentiel de leçons personnali
 👉 **[Guide du Flux de Travail de Création de Leçon](guides/workflow-create-lesson.md)** ← Commencez ici!
 
 Le guide du flux de travail couvre:
+
 - Planifier votre leçon
 - Écrire ou générer du contenu avec LLM
 - Tester et vérifier la qualité
@@ -214,6 +215,7 @@ lesson-010-async-await.md
 ## 🤖 Utiliser LLM pour Générer du Contenu
 
 Consultez [Instructions du Modèle LLM](guides/lesson-template-instructions.md) pour:
+
 - Comment utiliser ChatGPT, Claude ou d'autres LLM
 - Modèles d'invite pour différents sujets
 - Comment examiner et affiner le contenu généré
@@ -326,6 +328,7 @@ Exemple: `author: "Adapté de mon cours sur les APIs REST"`
 ## 🙏 Merci!
 
 Merci de contribuer au référentiel de leçons! Votre travail aide les autres à apprendre et à grandir. Nous apprécions vos efforts dans:
+
 - Créer du contenu éducatif de qualité
 - Rendre les sujets complexes accessibles
 - Aider à construire une communauté d'apprentissage

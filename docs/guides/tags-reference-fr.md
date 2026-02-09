@@ -123,12 +123,14 @@ Tags pour les domaines d'application:
 
 ### Exemple 1: Trouver du Contenu Convivial pour les Débutants
 Parcourez les leçons marquées avec des concepts fondamentaux:
+
 - `variables` (variables et types de données)
 - `basics` (contenu introductif)
 - `fundamentals` (concepts fondamentaux)
 
 ### Exemple 2: Trouver des Leçons de Développement Web
 Parcourez toutes les leçons liées au web:
+
 - `web` (leçons de développement web)
 - `html` (structure web)
 - `css` (mise en style web)
@@ -136,6 +138,7 @@ Parcourez toutes les leçons liées au web:
 
 ### Exemple 3: Trouver du Contenu d'Analyse de Données
 Parcourez les leçons spécifiques aux données:
+
 - `data-analysis`
 - `data-science`
 - `pandas`
@@ -214,6 +217,7 @@ Les nouveaux tags sont automatiquement indexés lorsque vous les ajoutez à des 
 ## Voulez-vous Trouver des Leçons par Tag?
 
 Actuellement, parcourez cette page pour voir quelles leçons ont chaque tag. À l'avenir, les leçons seront filtrables par tag avec:
+
 - Nuage de tags sur la page d'accueil
 - Filtre de tags sur les pages des sujets
 - Recherche de tags mondiale

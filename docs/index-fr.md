@@ -154,12 +154,14 @@ Parcourez toutes les leçons entre sujets en utilisant notre système de tags. T
 ## 🔧 Aperçu Technique
 
 Ce site est construit avec:
+
 - **MkDocs**: Plateforme de documentation simple et rapide
 - **Thème Material**: Design beau et réactif
 - **GitHub Pages**: Hébergement gratuit avec déploiement automatique
 - **GitHub Actions**: Build automatique et déploiement sur les changements
 
 Toutes les leçons sont stockées en tant que **fichiers Markdown avec en-tête YAML** pour:
+
 - ✅ Contrôle de version facile (Git)
 - ✅ Édition simple (n'importe quel éditeur de texte)
 - ✅ Structure cohérente (modèles)

@@ -229,6 +229,7 @@ status: "published"
 ## Learning Objectives
 
 By the end of this lesson, you will be able to:
+
 - [Objective 1]
 - [Objective 2]
 - [Objective 3]
@@ -270,6 +271,7 @@ By the end of this lesson, you will be able to:
 ---
 
 Important requirements:
+
 - Explanations must be clear and accessible for [LEVEL] learners
 - Include at least 2-3 practical examples with code or walkthroughs
 - Make exercises progressive (easy → hard)
