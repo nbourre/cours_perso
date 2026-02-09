@@ -63,6 +63,7 @@ Ce flux décrit comment créer un nouveau cours pour le référentiel. Que vous 
    - S'il ne correspond à aucun, proposez une nouvelle catégorie dans la description de votre RP
 
 5. **Choisissez 3-5 étiquettes**
+
    - Quels mots-clés aideraient quelqu'un à découvrir ce cours?
    - Les étiquettes doivent être en minuscules et avec tirets (par ex., `api-design`, `rest`, `http`)
 
@@ -225,6 +226,7 @@ Utilisez la **Liste de contrôle qualité** ci-dessous pour vérifier votre cour
    - Ajoutez l'étiquette : « lesson-submission »
 
 4. **Attendez les commentaires**
+
    - Les responsables examineront la qualité et la conformité
    - Peuvent demander des modifications (ne vous inquiétez pas, c'est normal!)
    - Les cours approuvés sont fusionnés et automatiquement publiés sur GitHub Pages
