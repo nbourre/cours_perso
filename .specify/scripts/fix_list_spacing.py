@@ -59,10 +59,18 @@ def is_code_fence(line: str) -> bool:
 
 
 def fix_list_spacing(content: str) -> str:
-    """Fix list spacing in markdown content."""
+    """Fix list spacing in markdown content according to .speckit.yml rules:
+    - list_spacing: always (blank line before and after lists)
+    - list_item_spacing: compact (no blank lines between items)
+    - sublist_spacing:
+        before: always (blank line before sublist)
+        between: compact (no blank lines between sublist items)
+        after: always (blank line after sublist)
+    """
     lines = content.split('\n')
     fixed_lines = []
     in_list = False
+    in_sublist = False
     in_yaml = False
     in_code_block = False
     yaml_delimiters = 0
@@ -95,7 +103,7 @@ def fix_list_spacing(content: str) -> str:
         
         # Handle blank lines specially - we might keep or remove them
         if is_blank:
-            if in_list:
+            if in_list or in_sublist:
                 # Don't add blank immediately - wait to see what comes next
                 pending_blank_lines.append(line)
             else:
@@ -113,29 +121,72 @@ def fix_list_spacing(content: str) -> str:
                 if not (fixed_lines[-1].strip() == '---' and yaml_delimiters == 2):
                     fixed_lines.append('')
             in_list = True
+            in_sublist = False
             list_base_indent = current_indent
             # Clear any pending blanks (we're starting fresh)
             pending_blank_lines = []
             fixed_lines.append(line)
         
-        # Another list item (parent or sub) while in list
-        elif (is_current_list_item or is_current_sublist_item) and in_list:
-            # Remove pending blank lines between list items (compact spacing)
+        # Parent list item while in list
+        elif is_current_list_item and in_list and not in_sublist:
+            # We know pending_blank_lines should be removed (they're between parent items)
             pending_blank_lines = []
             fixed_lines.append(line)
         
-        # Non-list content while in a list
-        elif in_list:
+        # Transition to sublist
+        elif is_current_sublist_item and in_list and not in_sublist:
+            # Add a blank line BEFORE the sublist starts (sublist_spacing: before: always)
+            if not is_blank_line(fixed_lines[-1] if fixed_lines else ''):
+                fixed_lines.append('')
+            # Clear pending blanks
+            pending_blank_lines = []
+            in_sublist = True
+            fixed_lines.append(line)
+        
+        # Continue in sublist
+        elif is_current_sublist_item and in_list and in_sublist:
+            # Remove pending blank lines between sublist items (compact spacing)
+            pending_blank_lines = []
+            fixed_lines.append(line)
+        
+        # End of sublist, back to parent level
+        elif not is_current_sublist_item and in_list and in_sublist:
+            if is_current_list_item:
+                # Next parent item - add blank line AFTER sublist
+                if fixed_lines and not is_blank_line(fixed_lines[-1]):
+                    fixed_lines.append('')
+                in_sublist = False
+                pending_blank_lines = []
+                fixed_lines.append(line)
+            else:
+                # Continuation text or other content - check indent
+                if current_indent > list_base_indent:
+                    # Still part of sublist area, keep it
+                    pending_blank_lines = []
+                    fixed_lines.append(line)
+                else:
+                    # Ending the entire list
+                    in_list = False
+                    in_sublist = False
+                    list_base_indent = 0
+                    # Add blank line after list
+                    if fixed_lines and not is_blank_line(fixed_lines[-1]):
+                        fixed_lines.append('')
+                    pending_blank_lines = []
+                    fixed_lines.append(line)
+        
+        # Non-list content while in a list (no sublist)
+        elif in_list and not in_sublist:
             # Check if this is continuation text (indented under a list item)
             if current_indent > list_base_indent:
-                # This is continuation text, remove pending blanks
+                # This is continuation text
                 pending_blank_lines = []
                 fixed_lines.append(line)
             else:
                 # Not continuation - we're ending the list
                 in_list = False
                 list_base_indent = 0
-                # Add blank line after list, then the pending blanks, then current line
+                # Add blank line after list, then the current line
                 if fixed_lines and not is_blank_line(fixed_lines[-1]):
                     fixed_lines.append('')
                 # Clear pending blanks (we just ended the list)

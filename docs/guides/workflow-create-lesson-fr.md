@@ -43,17 +43,25 @@ Ce flux décrit comment créer un nouveau cours pour le référentiel. Que vous 
 **Temps** : 5-10 minutes
 
 1. **Identifiez le sujet**
+
    - Quel concept ou compétence ce cours enseignera-t-il?
    - Exemples : « Conception API REST », « Fonctions Python », « Layout CSS Grid »
+
 2. **Déterminez le niveau**
+
    - Est-ce pour des apprenants Débutant, Intermédiaire ou Avancé?
    - Quel savoir antérieur est supposé?
+
 3. **Estimez le temps**
+
    - Combien de temps faut-il pour compléter (y compris les exercices)?
    - Estimations réalistes : 30 min, 45 min, 1 heure, 1,5 heure, 2 heures, etc.
+
 4. **Identifiez la catégorie de sujet**
+
    - Quel sujet ce cours concerne-t-il? (Python, Développement Web, Science des données, etc.)
    - S'il ne correspond à aucun, proposez une nouvelle catégorie dans la description de votre RP
+
 5. **Choisissez 3-5 étiquettes**
    - Quels mots-clés aideraient quelqu'un à découvrir ce cours?
    - Les étiquettes doivent être en minuscules et avec tirets (par ex., `api-design`, `rest`, `http`)
@@ -159,32 +167,36 @@ Utilisez la **Liste de contrôle qualité** ci-dessous pour vérifier votre cour
 **Temps** : 5 minutes
 
 1. **Clonez le référentiel** (première fois seulement)
+
    ```bash
    git clone https://github.com/[username]/[repo].git
    cd [repo]
-
    ```
+
 2. **Créez une nouvelle branche**
+
    ```bash
    git checkout -b add-lesson-[slug]
    # Exemple : git checkout -b add-lesson-python-functions
-
    ```
+
 3. **Ajoutez votre fichier de cours**
+
    ```bash
    git add docs/lessons/[subject]/lesson-[id]-[slug].md
-
    ```
+
 4. **Validez vos modifications**
+
    ```bash
    git commit -m "Add lesson: [Title]"
    # Exemple : git commit -m "Add lesson: Introduction to Python Functions"
-
    ```
+
 5. **Poussez vers votre fork**
+
    ```bash
    git push origin add-lesson-[slug]
-
    ```
 
 ---
@@ -194,18 +206,24 @@ Utilisez la **Liste de contrôle qualité** ci-dessous pour vérifier votre cour
 **Temps** : 5 minutes
 
 1. **Allez sur GitHub**
+
    - Accédez au référentiel sur GitHub
    - Cliquez sur « Compare & pull request » (devrait apparaître après votre push)
+
 2. **Remplissez les détails de la RP**
+
    - **Titre** : « Add lesson: [Title] »
    - **Description** : Incluez :
      - Résumé bref de ce que le cours enseigne
      - Niveau de difficulté et durée estimée
      - Catégorie de sujet
      - Toutes les notes pour les relecteurs
+
 3. **Demandez une révision**
+
    - Assignez aux responsables du référentiel
    - Ajoutez l'étiquette : « lesson-submission »
+
 4. **Attendez les commentaires**
    - Les responsables examineront la qualité et la conformité
    - Peuvent demander des modifications (ne vous inquiétez pas, c'est normal!)
