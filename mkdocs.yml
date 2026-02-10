@@ -1,7 +1,7 @@
 site_name: Personalized Courses - Lesson Management System
 site_description: Browse, create, and manage personalized learning lessons organized by subject with LLM template support
 site_author: Course Contributors
-site_url: https://github.com/your-username/cours_perso
+site_url: https://your-username.github.io/cours_perso
 
 theme:
   name: material
@@ -120,7 +120,7 @@ extra:
     - name: English
       link: /
       lang: en
-    - name: Français
+    - name: Français  
       link: /fr/
       lang: fr
   social:
