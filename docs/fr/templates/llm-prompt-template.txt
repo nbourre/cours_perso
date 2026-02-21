@@ -16,6 +16,7 @@ Remplacez les placeholders suivants avant d'utiliser cette invite:
 - **[NUM_EXAMPLES]**: Nombre d'exemples pratiques (généralement 2-3)
 - **[NUM_EXERCISES]**: Nombre d'exercices à créer (généralement 2-3)
 - **[CONTEXT]**: Pourquoi les apprenants devraient se soucier de ce sujet (personnalisez pour votre public)
+- **[OUTPUT_LANGUAGE]**: Langue de sortie obligatoire (par défaut: Français)
 
 ---
 
@@ -24,6 +25,8 @@ Remplacez les placeholders suivants avant d'utiliser cette invite:
 ```
 Vous êtes un créateur de contenu éducatif expert. Créez une leçon complète et conviviale pour les étudiants
 sur [TOPIC] pour les apprenants [LEVEL]. La leçon doit être réalisable en [DURATION].
+
+La sortie doit être écrite en [OUTPUT_LANGUAGE]. Si non précisé, utiliser Français.
 
 CRITIQUE: Utilisez cette structure Markdown EXACTE avec toutes les sections obligatoires:
 
@@ -45,7 +48,7 @@ status: "published"
 
 # [TOPIC]
 
-## Learning Objectives
+## Objectifs d'Apprentissage
 
 À la fin de cette leçon, vous pourrez:
 - [Objectif 1 - spécifique et mesurable]
@@ -132,11 +135,20 @@ EXIGENCES POUR CETTE LEÇON:
 6. **Engagement**: Utilisez la voix active, posez des questions rhétoriques, fournissez la motivation
 7. **Structure**: Suivez la structure du modèle exactement - NE PAS ajouter, supprimer ou renommer les sections
 8. **Tags**: Choisissez 5 tags minuscules, avec tirets pertinents pour le sujet (par exemple, functions, python, variables, code-organization, beginner-friendly)
+9. **Localisation stricte**: Tous les titres de sections, labels, phrases d'introduction et texte narratif DOIVENT être en français.
+10. **Aucun mélange EN/FR**: N'utilisez pas de sections anglaises (interdit: "Learning Objectives", "Exercises", "Assessment", "Summary", "Additional Resources", "Next Steps", "By the end of this lesson...").
+11. **Code en anglais autorisé**: Les identifiants de code, noms de variables et API peuvent rester en anglais.
+12. **Niveaux lisibles**: Dans le corps de la leçon, utilisez "Débutant", "Intermédiaire", "Avancé" pour les exercices.
 
 CRITIQUE: Commencez par l'en-tête YAML (---title: ...---) et terminez par la section "Prochaines Étapes".
 NE PAS ajouter de texte d'introduction avant les métadonnées YAML.
 NE PAS inclure de texte après le contenu de la leçon.
 La sortie doit être prête à coller directement dans un fichier Markdown.
+
+Vérification finale obligatoire avant de répondre:
+- Confirmer qu'aucun intitulé de section en anglais n'est présent.
+- Confirmer que les labels d'exercices utilisent "Difficulté", "Temps", "Résultat attendu".
+- Confirmer que la phrase d'ouverture des objectifs est en français.
 
 Commencez la leçon maintenant:
 ```
@@ -169,6 +181,7 @@ Commencez la leçon maintenant:
 [LEVEL]: "Beginner"
 [DURATION]: "45 minutes"
 [CONTEXT]: "Les fonctions sont essentielles pour écrire du code Python propre et réutilisable"
+[OUTPUT_LANGUAGE]: "Français"
 tags: [python, functions, code-organization, variables, beginner-friendly]
 ```
 
@@ -178,6 +191,7 @@ tags: [python, functions, code-organization, variables, beginner-friendly]
 [LEVEL]: "Intermediate"
 [DURATION]: "1 heure"
 [CONTEXT]: "Les APIs REST alimentent les applications web modernes et les applications mobiles"
+[OUTPUT_LANGUAGE]: "Français"
 tags: [api, rest, backend, http, web-development]
 ```
 
@@ -187,6 +201,7 @@ tags: [api, rest, backend, http, web-development]
 [LEVEL]: "Intermediate"
 [DURATION]: "90 minutes"
 [CONTEXT]: "Pandas est l'outil le plus puissant pour la manipulation de données en Python"
+[OUTPUT_LANGUAGE]: "Français"
 tags: [data-science, pandas, python, data-analysis, visualization]
 ```
 

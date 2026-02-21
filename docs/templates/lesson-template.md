@@ -201,3 +201,4 @@ Generated content should be ready to paste directly into a Markdown file.
 - Lessons missing required sections will be marked as "draft" status until completed
 - Automated validation (GitHub Actions) will check compliance before deployment
 - Template updates are backward-compatible (existing lessons will still render)
+- Section headings and instructional labels in the lesson body MUST remain in English (no EN/FR mixing)

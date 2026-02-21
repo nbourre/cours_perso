@@ -15,6 +15,12 @@ Parcourez toutes les leçons de Développement Web ci-dessous. Cliquez sur n'imp
    Maîtrisez CSS pour rendre vos pages web belles. Apprenez les sélecteurs, les propriétés, la mise en page et les bases du design réactif.
    - Tags: `css`, `styling`, `web`, `selectors`, `layout`, `responsive`
 
+### 🟡 Leçons Intermédiaire
+
+1. **[Bases de Vue.js pour interfaces web IoT](lesson-003-vuejs-iot-basics.md)** (1 heure)  
+   Créez une interface web réactive pour des objets connectés avec Vue.js, directives dynamiques et composants simples.
+   - Tags: `vuejs`, `javascript`, `frontend`, `iot`, `web`
+
 ---
 
 ## Ce Que Vous Apprendrez

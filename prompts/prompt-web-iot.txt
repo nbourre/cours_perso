@@ -10,13 +10,13 @@
 
 Replace the following placeholders before using this prompt:
 
-- **[TOPIC]**: The specific concept or skill to teach (e.g., "Python Functions", "REST API Design")
-- **[LEVEL]**: Target audience difficulty (Beginner, Intermediate, Advanced)
-- **[DURATION]**: Estimated learning time (e.g., "30 minutes", "1 hour", "2 hours")
-- **[NUM_EXAMPLES]**: Number of practical examples (typically 2-3)
-- **[NUM_EXERCISES]**: Number of exercises to create (typically 2-3)
-- **[CONTEXT]**: Why learners should care about this topic (customize for your audience)
-- **[OUTPUT_LANGUAGE]**: Required output language (default: English)
+- **[TOPIC]**: Apprendre les bases de Vue.js pour un programmeur embarqué qui souhaite développer des interfaces web pour l'IoT
+- **[LEVEL]**: Intermédiaire
+- **[DURATION]**: 1 heure
+- **[NUM_EXAMPLES]**: 3
+- **[NUM_EXERCISES]**: 2
+- **[CONTEXT]**: Le lecteur connaît déjà les bases de la programmation générale et souhaite apprendre à créer des interfaces web pour des projets IoT en utilisant Vue.js, un framework JavaScript populaire pour le développement frontend.
+- **[LANGUAGE]**: French
 
 ---
 
@@ -26,7 +26,7 @@ Replace the following placeholders before using this prompt:
 You are an expert educational content creator. Create a comprehensive, student-friendly lesson 
 on [TOPIC] for [LEVEL] learners. The lesson should be completable in [DURATION].
 
-The content must be written in [OUTPUT_LANGUAGE]. If not specified, default to English.
+The content should be written in [LANGUAGE], if not specified, default to English.
 
 CRITICAL: Use this EXACT Markdown structure with all required sections:
 
@@ -135,19 +135,11 @@ REQUIREMENTS FOR THIS LESSON:
 6. **Engagement**: Use active voice, ask rhetorical questions, provide motivation
 7. **Structure**: Follow the template structure exactly - do NOT add, remove, or rename sections
 8. **Tags**: Choose 5 lowercase, hyphenated tags relevant to the topic (e.g., functions, python, variables, code-organization, beginner-friendly)
-9. **Strict localization**: All section headings, labels, and narrative text MUST be in English.
-10. **No mixed language**: Do not include French section names or labels (forbidden: "Objectifs d'Apprentissage", "Exercices", "Évaluation", "Résumé", "Ressources Supplémentaires", "Prochaines Étapes").
-11. **Code language**: Code identifiers and API names should stay in their natural technical form.
 
 CRITICAL: Start with the YAML frontmatter (---title: ...---) and end with "Next Steps" section.
 Do NOT add introduction text before the YAML metadata.
 Do NOT include any text after the lesson content.
 The output should be ready to paste directly into a Markdown file.
-
-Final verification before responding:
-- Confirm there are no non-English section headings.
-- Confirm exercise labels are exactly "Difficulty", "Time", and "Expected outcome".
-- Confirm the objectives lead-in sentence is in English.
 
 Begin the lesson now:
 ```
@@ -180,7 +172,6 @@ Begin the lesson now:
 [LEVEL]: "Beginner"
 [DURATION]: "45 minutes"
 [CONTEXT]: "Functions are essential for writing clean, reusable Python code"
-[OUTPUT_LANGUAGE]: "English"
 tags: [python, functions, code-organization, variables, beginner-friendly]
 ```
 
@@ -190,7 +181,6 @@ tags: [python, functions, code-organization, variables, beginner-friendly]
 [LEVEL]: "Intermediate"
 [DURATION]: "1 hour"
 [CONTEXT]: "REST APIs power modern web applications and mobile apps"
-[OUTPUT_LANGUAGE]: "English"
 tags: [api, rest, backend, http, web-development]
 ```
 
@@ -200,7 +190,6 @@ tags: [api, rest, backend, http, web-development]
 [LEVEL]: "Intermediate"
 [DURATION]: "90 minutes"
 [CONTEXT]: "Pandas is the most powerful tool for data manipulation in Python"
-[OUTPUT_LANGUAGE]: "English"
 tags: [data-science, pandas, python, data-analysis, visualization]
 ```
 

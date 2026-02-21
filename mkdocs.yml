@@ -93,6 +93,7 @@ nav:
         - Aperçu: fr/lessons/web-development/index.md
         - "Les Fondamentaux du HTML : Construire des Pages Web": fr/lessons/web-development/lesson-001-html-intro.md
         - "Les Bases du CSS : Styliser Vos Pages Web": fr/lessons/web-development/lesson-002-css-basics.md
+        - "Bases de Vue.js pour interfaces web IoT": fr/lessons/web-development/lesson-003-vuejs-iot-basics.md
       - Science des Données:
         - Aperçu: fr/lessons/data-science/index.md
         - "Pandas pour l'Analyse de Données": fr/lessons/data-science/lesson-001-pandas.md

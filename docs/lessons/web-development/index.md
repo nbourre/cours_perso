@@ -15,6 +15,12 @@ Browse all Web Development lessons below. Click on any lesson to begin learning.
    Master CSS to make your web pages beautiful. Learn selectors, properties, layout, and responsive design basics.
    - Tags: `css`, `styling`, `web`, `selectors`, `layout`, `responsive`
 
+### 🟡 Intermediate Lessons
+
+1. **[Bases de Vue.js pour interfaces web IoT](lesson-003-vuejs-iot-basics.md)** (1 heure)  
+   Créez une interface web réactive pour des objets connectés avec Vue.js, directives dynamiques et composants simples.
+   - Tags: `vuejs`, `javascript`, `frontend`, `iot`, `web`
+
 ---
 
 ## What You'll Learn

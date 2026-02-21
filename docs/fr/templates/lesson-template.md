@@ -1,7 +1,7 @@
 # Modèle de Leçon Contrat
 
 **Objectif**: Structure Markdown standard pour toutes les leçons  
-**Emplacement**: `docs/templates/lesson-template.md` (modèle accessible aux utilisateurs)  
+**Emplacement**: `docs/fr/templates/lesson-template.md` (modèle accessible aux utilisateurs)  
 **Obligatoire**: Toutes les leçons DOIVENT suivre cette structure
 
 ---
@@ -73,7 +73,7 @@ status: "published"  # Options: draft, published, archived
 
 ### Exercice 1: [Titre Descriptif]
 
-**Difficulté**: Beginner  
+**Difficulté**: Débutant  
 **Temps**: 5-10 minutes
 
 [Décrivez l'exercice et ce que les apprenants doivent faire]
@@ -82,7 +82,7 @@ status: "published"  # Options: draft, published, archived
 
 ### Exercice 2: [Titre Descriptif]
 
-**Difficulté**: Intermediate  
+**Difficulté**: Intermédiaire  
 **Temps**: 15-20 minutes
 
 [Décrivez un exercice plus défi]
@@ -128,7 +128,7 @@ Après avoir complété cette leçon, vous voudrez peut-être explorer:
 - [ ] Tous les champs de métadonnées obligatoires présents (title, description, difficulty, duration, tags, learning_objectives)
 - [ ] Le titre est clair et descriptif
 - [ ] La description est 1 phrase, non-technique
-- [ ] La difficulté est l'une de: Beginner, Intermediate, Advanced
+- [ ] La difficulté (frontmatter) est l'une de: Beginner, Intermediate, Advanced
 - [ ] La durée inclut l'unité (minutes, heures, jours)
 - [ ] Les tags sont 1-5 éléments, minuscules, avec tirets
 - [ ] Les objectifs d'apprentissage sont 3-5 résultats spécifiques et mesurables
@@ -201,3 +201,4 @@ Le contenu généré doit être prêt à coller directement dans un fichier Mark
 - Les leçons manquant des sections obligatoires seront marquées avec le statut "draft" jusqu'à leur achèvement
 - La validation automatisée (GitHub Actions) vérifiera la conformité avant le déploiement
 - Les mises à jour du modèle sont rétro-compatibles (les leçons existantes rendront toujours correctement)
+- Les titres/labels des sections dans le corps de la leçon DOIVENT être en français (pas de mélange EN/FR)
